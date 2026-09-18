@@ -20,7 +20,6 @@ struct mint{
     friend mint operator/(mint a,mint b){return a/=b;}
 };
 using modint998244353=mint;
-
 void ntt(vector<mint>&a,bool inv=0){
     int n=a.size();
     for(int i=1,j=0;i<n;i++){
@@ -43,7 +42,6 @@ void ntt(vector<mint>&a,bool inv=0){
         for(auto&x:a)x*=z;
     }
 }
-
 vector<mint> convolution(vector<mint>a,vector<mint>b){
     if(a.empty()||b.empty())return {};
     int n=a.size()+b.size()-1,z=1;
