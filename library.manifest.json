@@ -1,8 +1,8 @@
 {
   "pdf": "library.pdf",
-  "pages": 17,
+  "pages": 20,
   "paper": "A4",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "columns": 2,
   "margin_mm": 10,
   "column_gap_mm": 6,
@@ -42,68 +42,68 @@
       "bold": true
     }
   },
-  "printed_lines": 1445,
-  "visual_wraps": 20,
-  "total_source_lines": 1121,
+  "printed_lines": 2434,
+  "visual_wraps": 41,
+  "total_source_lines": 1712,
   "sources": [
     {
       "file": "template.cpp",
-      "lines": 16,
-      "printed_lines": 16,
-      "sha256": "6ecbca0273cfc4af934e3bdf62cd1287c02e4ad85cf2978a9f0d1fca9cf7cf52"
+      "lines": 21,
+      "printed_lines": 35,
+      "sha256": "c8101c0f16a17523ba4d8b00917b91632527cbf6504cae13e031c952daeac82a"
     },
     {
       "file": "dsu.cpp",
       "lines": 13,
-      "printed_lines": 18,
+      "printed_lines": 23,
       "sha256": "9bd6258609e9d5fafcf11a5a0a03d7be840bef81bb469ef587240bcec72ca6c9"
     },
     {
       "file": "segtree.cpp",
       "lines": 54,
-      "printed_lines": 78,
+      "printed_lines": 86,
       "sha256": "551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4"
     },
     {
       "file": "lazy_segtree.cpp",
       "lines": 131,
-      "printed_lines": 197,
+      "printed_lines": 224,
       "sha256": "1f7cf6812eb5ad3841c1506a26ad82374b257974d221dbaa11509af3839e2a55"
     },
     {
       "file": "binarytrie.cpp",
-      "lines": 32,
-      "printed_lines": 42,
-      "sha256": "7a9500c29537d5654df8c46988c04405b8dce335c54a8471d95bfa1185045110"
+      "lines": 41,
+      "printed_lines": 58,
+      "sha256": "f892b995b96238701dac104c32f904e20e5d828a02b6d2b9db3cf10c6aadd380"
     },
     {
       "file": "trie.cpp",
-      "lines": 24,
-      "printed_lines": 27,
-      "sha256": "a1bd88d9bbc4c1f36dc7ddda90234447f8e9cce8a44de46aa2d240c998e2092c"
+      "lines": 26,
+      "printed_lines": 34,
+      "sha256": "edc9ae30944fc4b46446e45266c819967464a4b5dbbde70c49b01c36839be26c"
     },
     {
       "file": "suffix_array.cpp",
       "lines": 25,
-      "printed_lines": 38,
+      "printed_lines": 46,
       "sha256": "8f5f09d7155bd06123e9b61524c3e08f74f506eb2b12c634517f4a2b20accb95"
     },
     {
       "file": "lcp_array.cpp",
       "lines": 10,
-      "printed_lines": 17,
+      "printed_lines": 19,
       "sha256": "80307d9a7e20a8e172b0b66c5fa89a6b613536daeb111e85dbc6963810e1dd83"
     },
     {
       "file": "z_algorithm.cpp",
       "lines": 10,
-      "printed_lines": 16,
+      "printed_lines": 17,
       "sha256": "c1778879548e8f4dcfee817fa76584528c7b2792ce3f2024e901cce8ef83eb69"
     },
     {
       "file": "rolling_hash.cpp",
       "lines": 21,
-      "printed_lines": 26,
+      "printed_lines": 31,
       "sha256": "a930917443c03ab6b3e359237dda5c02e322e09e64a40318bd1ce0ad63f3cf85"
     },
     {
@@ -115,44 +115,110 @@
     {
       "file": "twosat.cpp",
       "lines": 35,
-      "printed_lines": 53,
+      "printed_lines": 57,
       "sha256": "f017d09f72050bbac8228d0d64ebef684855e940d07167fac88e231c2cc041bb"
     },
     {
       "file": "rerooting.cpp",
-      "lines": 150,
-      "printed_lines": 163,
-      "sha256": "022c05d2313f4a72a9a7c544fb0815ceb14b35c355f1bc4ac1981dc46d1b9068"
+      "lines": 109,
+      "printed_lines": 136,
+      "sha256": "d958e31409808929a8223c1b55c36aa66c8688f8f392b58b5db67662e7b28aed"
     },
     {
       "file": "maxflow.cpp",
       "lines": 83,
-      "printed_lines": 107,
+      "printed_lines": 115,
       "sha256": "ce8402f77805182da0c9fe639700bd7442cd7c37baddb67d662245fa9222eb0b"
     },
     {
       "file": "mincostflow.cpp",
       "lines": 102,
-      "printed_lines": 120,
+      "printed_lines": 133,
       "sha256": "56de4e37599146e56d522e39c5486e71253b259ea6e71538c31ca4cd63cbe7a6"
     },
     {
       "file": "math.cpp",
       "lines": 59,
-      "printed_lines": 78,
+      "printed_lines": 82,
       "sha256": "f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0"
     },
     {
       "file": "modint_convolution.cpp",
       "lines": 53,
-      "printed_lines": 81,
+      "printed_lines": 94,
       "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
     },
     {
       "file": "geometry.cpp",
-      "lines": 267,
-      "printed_lines": 322,
-      "sha256": "7287865429bfa78946c03b68d21b4918349ce05950788ee2b4b91e34c9a81198"
+      "lines": 266,
+      "printed_lines": 388,
+      "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d"
+    },
+    {
+      "file": "cartesiantree.cpp",
+      "lines": 21,
+      "printed_lines": 29,
+      "sha256": "3feb3f7a2361dbca6ac98f6264df277b79b8390069f015b58dbb7e4bfb25d6b9"
+    },
+    {
+      "file": "convex_hull_trick.cpp",
+      "lines": 45,
+      "printed_lines": 67,
+      "sha256": "02bc0eda4b2ce72142a20cf5086495a05f2f30e94affb840638baefff69b31d9"
+    },
+    {
+      "file": "dynamic_segtree.cpp",
+      "lines": 84,
+      "printed_lines": 99,
+      "sha256": "7e11fd649e9dedc3643a14954010547bb9b96337125fe496202538928f139025"
+    },
+    {
+      "file": "eulertour.cpp",
+      "lines": 29,
+      "printed_lines": 36,
+      "sha256": "5e273cfd2b94f79a448e1fad990e91d7674a0f0bfdc960e4a1436d34ea438067"
+    },
+    {
+      "file": "hld.cpp",
+      "lines": 118,
+      "printed_lines": 136,
+      "sha256": "35d59446461568951b4ce0ad275e03b08660a023647fc3f9286285f3ad5be528"
+    },
+    {
+      "file": "linear_equation.cpp",
+      "lines": 60,
+      "printed_lines": 84,
+      "sha256": "5879b1cfea00517f3ee6f6e44c879b2d3caba8de983b1f46b4cbe3341194a97e"
+    },
+    {
+      "file": "linear_equation_bitset.cpp",
+      "lines": 31,
+      "printed_lines": 45,
+      "sha256": "b640813a10442c1d972300c9651f1a651c4ca3a8e6d7c9dc7601e19510cfd25e"
+    },
+    {
+      "file": "manacher.cpp",
+      "lines": 11,
+      "printed_lines": 18,
+      "sha256": "bd451b6e7c694dbdba1a540afc10749c6cbcefea8141e9882d3028530ceff029"
+    },
+    {
+      "file": "mo.cpp",
+      "lines": 35,
+      "printed_lines": 54,
+      "sha256": "d151507fa0fa4187fd55e9c3f3572018ab55707bd59e59930556ca1c05538421"
+    },
+    {
+      "file": "rollback_mo.cpp",
+      "lines": 103,
+      "printed_lines": 117,
+      "sha256": "f5c4ab0529de51d49aaaa652fa9d69b378a06b588c62fcc9c3357f6e263b36e2"
+    },
+    {
+      "file": "wavelet_matrix.cpp",
+      "lines": 80,
+      "printed_lines": 125,
+      "sha256": "189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a"
     }
   ]
 }

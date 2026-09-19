@@ -184,7 +184,7 @@ def main():
     parser.add_argument("--font-size", type=float, default=9.0,
                         help="Code font size in points (default: 9)")
     parser.add_argument("--orientation", choices=("landscape", "portrait"),
-                        default="landscape")
+                        default="portrait")
     parser.add_argument("--max-pages", type=int, default=25)
     parser.add_argument("--output", type=Path, default=ROOT / "library.pdf")
     args = parser.parse_args()
