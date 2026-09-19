@@ -8,7 +8,6 @@ inline bool equal(const ld&a,const ld&b){ //a,bが誤差を許して等しいか
 inline int sgn(const ld&x){ //xの符号を-1,0,1で返す
     return (x>EPS)-(x<-EPS);
 }
-
 Point unitVector(const Point&a){ //aと同方向の単位ベクトル
     assert(abs(a)>EPS); return a/abs(a);
 }
