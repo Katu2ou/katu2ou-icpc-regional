@@ -18,13 +18,6 @@ from pygments.token import Comment, Keyword, Name, Number, String
 
 ROOT = Path(__file__).resolve().parent.parent
 MM = 72 / 25.4
-ORDER = [
-    "template.cpp", "dsu.cpp", "segtree.cpp", "lazy_segtree.cpp",
-    "binarytrie.cpp", "trie.cpp", "suffix_array.cpp", "lcp_array.cpp",
-    "z_algorithm.cpp", "rolling_hash.cpp", "scc.cpp", "twosat.cpp",
-    "rerooting.cpp", "maxflow.cpp", "mincostflow.cpp", "math.cpp",
-    "modint_convolution.cpp", "geometry.cpp",
-]
 
 PALETTE = {
     "plain": {"color": "#17212B", "bold": False},
@@ -198,9 +191,7 @@ def main():
 
     files = [p for p in ROOT.rglob("*.cpp")
              if not any(part.startswith(".") for part in p.relative_to(ROOT).parts)]
-    ranks = {name: i for i, name in enumerate(ORDER)}
-    files.sort(key=lambda p: (ranks.get(p.relative_to(ROOT).as_posix(), len(ORDER)),
-                              p.relative_to(ROOT).as_posix()))
+    files.sort(key=lambda p: p.relative_to(ROOT).as_posix())
     if not files:
         parser.error("No .cpp files found")
 

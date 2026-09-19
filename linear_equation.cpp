@@ -28,7 +28,6 @@ pair<int,T> GaussElimination(vector<vector<T>>&a,int pe=-1,bool diag=false){
     }
     return {r,det};
 }
-
 // 線形方程式 Ax=b を解く
 // 返り値 : 解なしなら {}
 //          解ありなら {v,w1,...,wk}
