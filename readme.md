@@ -7,6 +7,8 @@
     - ACLからmax_left, min_rightを除いたもの
 - dsu
     - ACLに準拠
+- trie
+- binary trie
 
 ## 文字列
 - suffix array
@@ -24,6 +26,7 @@
 
 ## 畳み込み
 - modint, convolution
+    - ACLに準拠
     - modは998244353を想定 
     - modintは簡単にmodを変えられる 
 
@@ -36,7 +39,7 @@
 
 
 ## 欲しいもの
-- trie, binary trie
+
 - xor基底, linear equation
 - mo, rollback mo
 - HLD, euler tour, link-cut tree, 重心分解

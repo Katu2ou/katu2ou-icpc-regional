@@ -1,0 +1,158 @@
+{
+  "pdf": "library-portrait.pdf",
+  "pages": 13,
+  "paper": "A4",
+  "orientation": "portrait",
+  "columns": 2,
+  "margin_mm": 10,
+  "column_gap_mm": 6,
+  "font_pt": 9.0,
+  "line_height_pt": 11.07,
+  "syntax_colors": {
+    "plain": {
+      "color": "#17212B",
+      "bold": false
+    },
+    "keyword": {
+      "color": "#174A91",
+      "bold": true
+    },
+    "type": {
+      "color": "#08656A",
+      "bold": true
+    },
+    "function": {
+      "color": "#225A80",
+      "bold": false
+    },
+    "number": {
+      "color": "#963D16",
+      "bold": false
+    },
+    "string": {
+      "color": "#8A2455",
+      "bold": false
+    },
+    "comment": {
+      "color": "#38683A",
+      "bold": false
+    },
+    "preprocessor": {
+      "color": "#703E89",
+      "bold": true
+    }
+  },
+  "printed_lines": 1628,
+  "visual_wraps": 40,
+  "total_source_lines": 1121,
+  "sources": [
+    {
+      "file": "template.cpp",
+      "lines": 16,
+      "printed_lines": 16,
+      "sha256": "6ecbca0273cfc4af934e3bdf62cd1287c02e4ad85cf2978a9f0d1fca9cf7cf52"
+    },
+    {
+      "file": "dsu.cpp",
+      "lines": 13,
+      "printed_lines": 23,
+      "sha256": "9bd6258609e9d5fafcf11a5a0a03d7be840bef81bb469ef587240bcec72ca6c9"
+    },
+    {
+      "file": "segtree.cpp",
+      "lines": 54,
+      "printed_lines": 86,
+      "sha256": "551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4"
+    },
+    {
+      "file": "lazy_segtree.cpp",
+      "lines": 131,
+      "printed_lines": 224,
+      "sha256": "1f7cf6812eb5ad3841c1506a26ad82374b257974d221dbaa11509af3839e2a55"
+    },
+    {
+      "file": "binarytrie.cpp",
+      "lines": 32,
+      "printed_lines": 44,
+      "sha256": "7a9500c29537d5654df8c46988c04405b8dce335c54a8471d95bfa1185045110"
+    },
+    {
+      "file": "trie.cpp",
+      "lines": 24,
+      "printed_lines": 29,
+      "sha256": "a1bd88d9bbc4c1f36dc7ddda90234447f8e9cce8a44de46aa2d240c998e2092c"
+    },
+    {
+      "file": "suffix_array.cpp",
+      "lines": 25,
+      "printed_lines": 46,
+      "sha256": "8f5f09d7155bd06123e9b61524c3e08f74f506eb2b12c634517f4a2b20accb95"
+    },
+    {
+      "file": "lcp_array.cpp",
+      "lines": 10,
+      "printed_lines": 19,
+      "sha256": "80307d9a7e20a8e172b0b66c5fa89a6b613536daeb111e85dbc6963810e1dd83"
+    },
+    {
+      "file": "z_algorithm.cpp",
+      "lines": 10,
+      "printed_lines": 17,
+      "sha256": "c1778879548e8f4dcfee817fa76584528c7b2792ce3f2024e901cce8ef83eb69"
+    },
+    {
+      "file": "rolling_hash.cpp",
+      "lines": 21,
+      "printed_lines": 31,
+      "sha256": "a930917443c03ab6b3e359237dda5c02e322e09e64a40318bd1ce0ad63f3cf85"
+    },
+    {
+      "file": "scc.cpp",
+      "lines": 36,
+      "printed_lines": 46,
+      "sha256": "04ef8d63ea4eca2d30becc10cf2cd7bf3e4762d4cfd9c0a5762ab88b8952e478"
+    },
+    {
+      "file": "twosat.cpp",
+      "lines": 35,
+      "printed_lines": 57,
+      "sha256": "f017d09f72050bbac8228d0d64ebef684855e940d07167fac88e231c2cc041bb"
+    },
+    {
+      "file": "rerooting.cpp",
+      "lines": 150,
+      "printed_lines": 177,
+      "sha256": "022c05d2313f4a72a9a7c544fb0815ceb14b35c355f1bc4ac1981dc46d1b9068"
+    },
+    {
+      "file": "maxflow.cpp",
+      "lines": 83,
+      "printed_lines": 115,
+      "sha256": "ce8402f77805182da0c9fe639700bd7442cd7c37baddb67d662245fa9222eb0b"
+    },
+    {
+      "file": "mincostflow.cpp",
+      "lines": 102,
+      "printed_lines": 133,
+      "sha256": "56de4e37599146e56d522e39c5486e71253b259ea6e71538c31ca4cd63cbe7a6"
+    },
+    {
+      "file": "math.cpp",
+      "lines": 59,
+      "printed_lines": 82,
+      "sha256": "f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0"
+    },
+    {
+      "file": "modint_convolution.cpp",
+      "lines": 53,
+      "printed_lines": 94,
+      "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+    },
+    {
+      "file": "geometry.cpp",
+      "lines": 267,
+      "printed_lines": 389,
+      "sha256": "7287865429bfa78946c03b68d21b4918349ce05950788ee2b4b91e34c9a81198"
+    }
+  ]
+}
