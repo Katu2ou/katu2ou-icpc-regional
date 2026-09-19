@@ -18,7 +18,7 @@
 - z algorithm
     - ACLに準拠
 - rolling_hash
-    - mod 2^{61-1}のやつ
+    - mod 2^{61}-1のやつ
 
 ## 数学
 - pow_mod, inv_mod, crt, floor_sum
@@ -36,6 +36,7 @@
 
 ## その他
 - template
+- 抽象化全方位木DP(rerooting)
 
 
 ## 欲しいもの
@@ -47,4 +48,3 @@
 - 2次元セグ木(BIT)
 - 幾何
 - 一般マッチング
-- 抽象化全方位木DP
