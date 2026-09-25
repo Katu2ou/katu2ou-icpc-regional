@@ -13,6 +13,7 @@
 - cartesian tree
 - convex hull trick
 - wavelet matrix
+- 2D segtree(疎なN^2(N~10^5)に対応)
 
 ## 文字列
 - suffix array
@@ -52,11 +53,7 @@
 - maxflow, mincostflow 
     - ACLに準拠, slopeを使わないなら30-40行程度
 
-## その他
-- template
-- two-sat
-    - ACLに準拠
-- 抽象化全方位木DP(rerooting)
-- mo
-- rollback mo
+## その他欲しいもの
+- lowlink
+- 区間をsetで管理するやつ
 
