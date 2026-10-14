@@ -40,6 +40,7 @@ template<class Cap,class Cost> struct mcf_graph{
         const Cost INF=numeric_limits<Cost>::max();
         vector<Cost>h(N),d(N);
         vector<int>pv(N),pe(N);
+        vector<char>done(N);
 
         Cap f=0;
         Cost c=0,last=-1;
@@ -48,6 +49,7 @@ template<class Cap,class Cost> struct mcf_graph{
         while(f<lim){
             fill(d.begin(),d.end(),INF);
             d[s]=0;
+            fill(done.begin(),done.end(),false);
 
             priority_queue<
                 pair<Cost,int>,
@@ -59,6 +61,8 @@ template<class Cap,class Cost> struct mcf_graph{
             while(q.size()){
                 auto [dv,v]=q.top();q.pop();
                 if(dv!=d[v])continue;
+                done[v]=true;
+                if(v==t)break;
 
                 for(int i=0;i<(int)g[v].size();i++){
                     E&e=g[v][i];
@@ -76,7 +80,7 @@ template<class Cap,class Cost> struct mcf_graph{
             if(d[t]==INF)break;
 
             for(int v=0;v<N;v++)
-                if(d[v]<INF)h[v]+=d[v];
+                if(done[v])h[v]+=d[v]-d[t];
 
             Cap x=lim-f;
             for(int v=t;v!=s;v=pv[v])

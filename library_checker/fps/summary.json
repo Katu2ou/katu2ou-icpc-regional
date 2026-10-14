@@ -1,0 +1,59 @@
+{
+  "function_count": 14,
+  "submissions": [
+    {
+      "key": "fps_multiply",
+      "status": "AC",
+      "url": "https://judge.yosupo.jp/submission/404682",
+      "case_status_counts": {
+        "AC": 53
+      },
+      "seconds": 0.263
+    },
+    {
+      "key": "fps_inv",
+      "status": "AC",
+      "url": "https://judge.yosupo.jp/submission/404683",
+      "case_status_counts": {
+        "AC": 25
+      },
+      "seconds": 0.529
+    },
+    {
+      "key": "fps_log",
+      "status": "AC",
+      "url": "https://judge.yosupo.jp/submission/404685",
+      "case_status_counts": {
+        "AC": 25
+      },
+      "seconds": 0.706
+    },
+    {
+      "key": "fps_exp",
+      "status": "AC",
+      "url": "https://judge.yosupo.jp/submission/404686",
+      "case_status_counts": {
+        "AC": 26
+      },
+      "seconds": 1.581
+    },
+    {
+      "key": "fps_pow",
+      "status": "AC",
+      "url": "https://judge.yosupo.jp/submission/404687",
+      "case_status_counts": {
+        "AC": 37
+      },
+      "seconds": 2.234
+    },
+    {
+      "key": "fps_helpers",
+      "status": "AC",
+      "url": "https://judge.yosupo.jp/submission/404688",
+      "case_status_counts": {
+        "AC": 53
+      },
+      "seconds": 0.526
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-21T16:31:30+09:00",
+  "library_sha256": "189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a",
+  "test_sha256": "ad0572d4746fd0586eb31dddccd2c5667e8d6a4302c0188316f93ea17570e89f",
+  "seeds": [
+    0,
+    1,
+    3735928559,
+    1311768467463790320,
+    18446744073709551615,
+    20260921
+  ],
+  "versions": {
+    "gcc": "g++ (Homebrew GCC 14.2.0) 14.2.0",
+    "sanitizer": "Apple clang version 17.0.0 (clang-1700.0.13.5)"
+  },
+  "commands": {
+    "gcc": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wconversion",
+      "/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/wavelet_less/check_less.cc",
+      "-o",
+      "/private/tmp/icpc-wavelet-less/check_gcc"
+    ],
+    "sanitizer": [
+      "clang++",
+      "-std=c++17",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/wavelet_less/check_less.cc",
+      "-o",
+      "/private/tmp/icpc-wavelet-less/check_sanitized"
+    ]
+  },
+  "per_phase": {
+    "exhaustive": {
+      "arrays": 21560,
+      "queries": 4120848,
+      "oracle_elements": 7052592
+    },
+    "special": {
+      "arrays": 12992,
+      "queries": 23176406,
+      "oracle_elements": 209294520
+    },
+    "random": {
+      "arrays": 108000,
+      "queries": 10368000,
+      "oracle_elements": 251623845
+    },
+    "large": {
+      "arrays": 2,
+      "queries": 1882,
+      "oracle_elements": 99754127
+    }
+  },
+  "total": {
+    "phase": "total",
+    "arrays": 142554,
+    "queries": 37667136,
+    "oracle_elements": 567725084,
+    "seconds": 2.93804,
+    "status": "PASS"
+  },
+  "configuration_count": 90,
+  "valid_domain": "Nonnegative A[i], A[i] < 2**LOG, 0 <= LOG <= unsigned type width, 0 <= l <= r <= n, threshold representable by T, n fits int",
+  "compilers": {
+    "gcc": {
+      "returncode": 0,
+      "wall_seconds": 3.270826207997743
+    },
+    "sanitizer": {
+      "returncode": 0,
+      "wall_seconds": 12.850833499978762
+    }
+  }
+}

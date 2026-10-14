@@ -1,0 +1,97 @@
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc: In function 'Circle circumCircle(Point, Point, Point)':
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:18: error: no match for 'operator/' (operand types are 'std::complex<long double>' and 'int')
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |             ~~~~~^~
+      |               |   |
+      |               |   int
+      |               std::complex<long double>
+In file included from /opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/ccomplex:39,
+                 from /opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/aarch64-apple-darwin24/bits/stdc++.h:127,
+                 from /Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:1:
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/complex:430:5: note: candidate: 'template<class _Tp> std::complex<_Tp> std::operator/(const complex<_Tp>&, const complex<_Tp>&)'
+  430 |     operator/(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/complex:430:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   mismatched types 'const std::complex<_Tp>' and 'int'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/complex:439:5: note: candidate: 'template<class _Tp> std::complex<_Tp> std::operator/(const complex<_Tp>&, const _Tp&)'
+  439 |     operator/(const complex<_Tp>& __x, const _Tp& __y)
+      |     ^~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/complex:439:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   deduced conflicting types for parameter 'const _Tp' ('long double' and 'int')
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/complex:448:5: note: candidate: 'template<class _Tp> std::complex<_Tp> std::operator/(const _Tp&, const complex<_Tp>&)'
+  448 |     operator/(const _Tp& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/complex:448:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   mismatched types 'const std::complex<_Tp>' and 'int'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+In file included from /opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:605,
+                 from /opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/aarch64-apple-darwin24/bits/stdc++.h:166:
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note: candidate: 'template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__divides, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__divides, typename _Dom1::value_type>::result_type> std::operator/(const _Expr<_Dom1, typename _Dom1::value_type>&, const _Expr<_Dom2, typename _Dom2::value_type>&)'
+  408 |     _DEFINE_EXPR_BINARY_OPERATOR(/, struct std::__divides)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   'std::complex<long double>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note: candidate: 'template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__divides, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__divides, typename _Dom1::value_type>::result_type> std::operator/(const _Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)'
+  408 |     _DEFINE_EXPR_BINARY_OPERATOR(/, struct std::__divides)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   'std::complex<long double>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note: candidate: 'template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__divides, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__divides, typename _Dom1::value_type>::result_type> std::operator/(const typename _Dom::value_type&, const _Expr<_Dom1, typename _Dom1::value_type>&)'
+  408 |     _DEFINE_EXPR_BINARY_OPERATOR(/, struct std::__divides)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   mismatched types 'const std::_Expr<_Dom1, typename _Dom1::value_type>' and 'int'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note: candidate: 'template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__divides, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__divides, typename _Dom1::value_type>::result_type> std::operator/(const _Expr<_Dom1, typename _Dom1::value_type>&, const valarray<typename _Dom::value_type>&)'
+  408 |     _DEFINE_EXPR_BINARY_OPERATOR(/, struct std::__divides)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   'std::complex<long double>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note: candidate: 'template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__divides, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__divides, typename _Dom1::value_type>::result_type> std::operator/(const valarray<typename _Dom::value_type>&, const _Expr<_Dom1, typename _Dom1::value_type>&)'
+  408 |     _DEFINE_EXPR_BINARY_OPERATOR(/, struct std::__divides)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/bits/valarray_after.h:408:5: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   mismatched types 'const std::_Expr<_Dom1, typename _Dom1::value_type>' and 'int'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:1199:1: note: candidate: 'template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__divides, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__divides, _Tp>::result_type> std::operator/(const valarray<_Tp>&, const valarray<_Tp>&)'
+ 1199 | _DEFINE_BINARY_OPERATOR(/, __divides)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:1199:1: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   'std::complex<long double>' is not derived from 'const std::valarray<_Tp>'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:1199:1: note: candidate: 'template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__divides, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__divides, _Tp>::result_type> std::operator/(const valarray<_Tp>&, const typename valarray<_Tp>::value_type&)'
+ 1199 | _DEFINE_BINARY_OPERATOR(/, __divides)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:1199:1: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   'std::complex<long double>' is not derived from 'const std::valarray<_Tp>'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:1199:1: note: candidate: 'template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__divides, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__divides, _Tp>::result_type> std::operator/(const typename valarray<_Tp>::value_type&, const valarray<_Tp>&)'
+ 1199 | _DEFINE_BINARY_OPERATOR(/, __divides)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/gcc@14/14.2.0/include/c++/14/valarray:1199:1: note:   template argument deduction/substitution failed:
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:65:19: note:   mismatched types 'const std::valarray<_Tp>' and 'int'
+   65 |     Point x=(a+b)/2,y=(a+c)/2;
+      |                   ^
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:67:13: error: 'y' was not declared in this scope
+   67 |     Line m={y,y+normalVector(c-a)};
+      |             ^
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/aoj/submissions/geo_circumcircle.cc:67:34: error: could not convert '{<expression error>, <expression error>}' from '<brace-enclosed initializer list>' to 'Line'
+   67 |     Line m={y,y+normalVector(c-a)};
+      |                                  ^
+      |                                  |
+      |                                  <brace-enclosed initializer list>

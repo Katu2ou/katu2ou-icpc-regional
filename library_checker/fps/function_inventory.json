@@ -1,0 +1,72 @@
+[
+  {
+    "function": "fps(vector<mint>)",
+    "line": 3,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "pre(int)",
+    "line": 5,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "operator+(fps,const fps&)",
+    "line": 9,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "operator-(fps,const fps&)",
+    "line": 14,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "operator*(const fps&,const fps&)",
+    "line": 19,
+    "primary_submission": "fps_multiply"
+  },
+  {
+    "function": "operator*=(mint)",
+    "line": 23,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "operator*(fps,mint)",
+    "line": 27,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "operator*(mint,fps)",
+    "line": 28,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "diff()",
+    "line": 30,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "integral()",
+    "line": 36,
+    "primary_submission": "fps_helpers"
+  },
+  {
+    "function": "inv(int=-1)",
+    "line": 48,
+    "primary_submission": "fps_inv"
+  },
+  {
+    "function": "log(int=-1)",
+    "line": 61,
+    "primary_submission": "fps_log"
+  },
+  {
+    "function": "exp(int=-1)",
+    "line": 70,
+    "primary_submission": "fps_exp"
+  },
+  {
+    "function": "pow(long long,int=-1)",
+    "line": 85,
+    "primary_submission": "fps_pow"
+  }
+]

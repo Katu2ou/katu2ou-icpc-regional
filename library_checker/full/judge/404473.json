@@ -1,0 +1,325 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 11894784,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 20779008,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 20525056,
+      "status": "AC",
+      "time": 0.089
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 16994304,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 15560704,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 11321344,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 29966336,
+      "status": "AC",
+      "time": 0.234
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 15519744,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 20807680,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 20803584,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 37007360,
+      "status": "AC",
+      "time": 0.25
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 38051840,
+      "status": "AC",
+      "time": 0.27
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 38256640,
+      "status": "AC",
+      "time": 0.249
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 38309888,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 38834176,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "kuhn_killer_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 35430400,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "many_smalls_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 32854016,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "many_smalls_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 32903168,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 40972288,
+      "status": "AC",
+      "time": 1.759
+    },
+    {
+      "case": "cycle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 40144896,
+      "status": "AC",
+      "time": 1.795
+    },
+    {
+      "case": "line_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 39882752,
+      "status": "AC",
+      "time": 1.758
+    },
+    {
+      "case": "line_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 44630016,
+      "status": "AC",
+      "time": 1.838
+    },
+    {
+      "case": "many_paths_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 40218624,
+      "status": "AC",
+      "time": 1.01
+    },
+    {
+      "case": "many_paths_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 39841792,
+      "status": "AC",
+      "time": 0.762
+    },
+    {
+      "case": "many_paths_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 39903232,
+      "status": "AC",
+      "time": 0.94
+    },
+    {
+      "case": "issue1124_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 27836416,
+      "status": "AC",
+      "time": 0.157
+    },
+    {
+      "case": "issue1124_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 23265280,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "issue1124_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 27054080,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "issue1068_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "issue1068_large_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 34938880,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "issue1068_large_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 30781440,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "issue1068_large_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 35962880,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "issue1068_large_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 32555008,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "issue1068_large_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 31281152,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "issue1068_large_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 31334400,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "unique_matching_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 40685568,
+      "status": "AC",
+      "time": 2.061
+    },
+    {
+      "case": "unique_matching_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 41750528,
+      "status": "AC",
+      "time": 1.753
+    },
+    {
+      "case": "unique_matching_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 41316352,
+      "status": "AC",
+      "time": 1.344
+    },
+    {
+      "case": "unique_matching_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 39624704,
+      "status": "AC",
+      "time": 0.725
+    },
+    {
+      "case": "unique_matching_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 40173568,
+      "status": "AC",
+      "time": 0.448
+    },
+    {
+      "case": "augmented_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 38780928,
+      "status": "AC",
+      "time": 2.134
+    },
+    {
+      "case": "augmented_cycle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 38600704,
+      "status": "AC",
+      "time": 1.289
+    },
+    {
+      "case": "augmented_cycle_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 38641664,
+      "status": "AC",
+      "time": 2.247
+    }
+  ],
+  "overview": {
+    "id": 404473,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 44630016,
+    "problem_name": "bipartitematching",
+    "problem_title": "Matching on Bipartite Graph",
+    "status": "AC",
+    "submission_time": "2026-09-21T07:08:26.144622Z",
+    "time": 2.247
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL maxflow.cpp SHA256 ce8402f77805182da0c9fe639700bd7442cd7c37baddb67d662245fa9222eb0b\ntemplate<class Cap> struct mf_graph{\n    struct E{int to,rev; Cap cap;};\n    struct edge{int from,to; Cap cap,flow;};\n    int N; vector<vector<E>>g; vector<pair<int,int>>pos;\n\n    mf_graph(int n=0):N(n),g(n){}\n\n    int add_edge(int s,int t,Cap c){\n        int a=g[s].size(),b=g[t].size()+(s==t);\n        pos.push_back({s,a});\n        g[s].push_back({t,b,c}); g[t].push_back({s,a,0});\n        return (int)pos.size()-1;\n    }\n\n    edge get_edge(int i){\n        auto [v,j]=pos[i]; auto &e=g[v][j],&r=g[e.to][e.rev];\n        return {v,e.to,e.cap+r.cap,r.cap};\n    }\n\n    vector<edge> edges(){\n        vector<edge>r;\n        for(int i=0;i<(int)pos.size();i++)r.push_back(get_edge(i));\n        return r;\n    }\n\n    void change_edge(int i,Cap c,Cap f){\n        auto [v,j]=pos[i]; auto &e=g[v][j],&r=g[e.to][e.rev];\n        e.cap=c-f; r.cap=f;\n    }\n\n    Cap flow(int s,int t){\n        return flow(s,t,numeric_limits<Cap>::max());\n    }\n\n    Cap flow(int s,int t,Cap lim){\n        Cap ans=0; vector<int>lv(N),it(N);\n        while(ans<lim){\n            fill(lv.begin(),lv.end(),-1);\n            queue<int>q; q.push(s); lv[s]=0;\n            while(q.size()){\n                int v=q.front();q.pop();\n                for(auto&e:g[v])\n                    if(e.cap&&lv[e.to]<0)\n                        lv[e.to]=lv[v]+1,q.push(e.to);\n            }\n            if(lv[t]<0)break;\n            fill(it.begin(),it.end(),0);\n\n            auto dfs=[&](auto&&self,int v,Cap f)->Cap{\n                if(v==t)return f;\n                for(int&i=it[v];i<(int)g[v].size();i++){\n                    E&e=g[v][i];\n                    if(e.cap&&lv[e.to]==lv[v]+1)\n                        if(Cap x=self(self,e.to,min(f,e.cap))){\n                            e.cap-=x;\n                            g[e.to][e.rev].cap+=x;\n                            return x;\n                        }\n                }\n                return 0;\n            };\n\n            while(ans<lim){\n                Cap x=dfs(dfs,s,lim-ans);\n                if(!x)break;\n                ans+=x;\n            }\n        }\n        return ans;\n    }\n\n    vector<bool> min_cut(int s){\n        vector<bool>z(N);\n        queue<int>q; q.push(s); z[s]=1;\n        while(q.size()){\n            int v=q.front();q.pop();\n            for(auto&e:g[v])\n                if(e.cap&&!z[e.to])\n                    z[e.to]=1,q.push(e.to);\n        }\n        return z;\n    }\n};\n// END ORIGINAL maxflow.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n{mf_graph<int>probe(2);int i=probe.add_edge(0,1,5);probe.change_edge(i,9,4);auto x=probe.get_edge(i);assert(x.cap==9&&x.flow==4);assert(probe.flow(0,1,3)==3);x=probe.get_edge(i);assert(x.cap==9&&x.flow==7);probe.change_edge(i,10,7);assert(probe.flow(0,1)==3);auto cut=probe.min_cut(0);assert(cut[0]&&!cut[1]);}\n\nint l,r,m;cin>>l>>r>>m;int s=l+r,t=s+1;mf_graph<int>g(t+1),empty;assert(empty.edges().empty());\nauto add=[&](int u,int v){int id=g.add_edge(u,v,0);g.change_edge(id,1,0);return id;};\nfor(int i=0;i<l;i++)add(s,i);for(int i=0;i<r;i++)add(l+i,t);\nvector<int>ids;for(int i=0,u,v;i<m;i++){cin>>u>>v;ids.push_back(add(u,l+v));}\nint f=g.flow(s,t,1);f+=g.flow(s,t);auto cut=g.min_cut(s);auto es=g.edges();int cap=0;vector<int>bal(t+1);\nfor(int i=0;i<(int)es.size();i++){auto e=es[i],z=g.get_edge(i);assert(e.from==z.from&&e.to==z.to&&e.cap==z.cap&&e.flow==z.flow);\nassert(0<=e.flow&&e.flow<=e.cap);bal[e.from]-=e.flow;bal[e.to]+=e.flow;if(cut[e.from]&&!cut[e.to])cap+=e.cap;}\nassert(cap==f&&bal[s]==-f&&bal[t]==f);for(int i=0;i<s;i++)assert(bal[i]==0);\ncout<<f<<'\\n';for(int id:ids){auto e=g.get_edge(id);if(e.flow)cout<<e.from<<' '<<e.to-l<<'\\n';}\n\n}\n"
+}

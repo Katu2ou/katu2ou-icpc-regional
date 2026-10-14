@@ -1,0 +1,3 @@
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/submissions/hld_short.cc:31:9: warning: #pragma once in main file
+   31 | #pragma once
+      |         ^~~~

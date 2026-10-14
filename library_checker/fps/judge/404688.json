@@ -1,0 +1,388 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjg3MTkzODIyNSIK",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 929792,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 909312,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 905216,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 913408,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 917504,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 909312,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_10",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.055
+    },
+    {
+      "case": "small_11",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_12",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 671744,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "small_13",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 905216,
+      "status": "AC",
+      "time": 0.055
+    },
+    {
+      "case": "small_14",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "small_15",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 909312,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTEyNzUgdG9rZW5zCg==",
+      "memory": 1368064,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzYwMCB0b2tlbnMK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgOTY5OCB0b2tlbnMK",
+      "memory": 1171456,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODAwNzM1IHRva2Vucwo=",
+      "memory": 22368256,
+      "status": "AC",
+      "time": 0.449
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgODc1OTUyIHRva2Vucwo=",
+      "memory": 30691328,
+      "status": "AC",
+      "time": 0.427
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDM1NjgyIHRva2Vucwo=",
+      "memory": 20623360,
+      "status": "AC",
+      "time": 0.264
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26132480,
+      "status": "AC",
+      "time": 0.522
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25608192,
+      "status": "AC",
+      "time": 0.521
+    },
+    {
+      "case": "fft_killer_00",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26083328,
+      "status": "AC",
+      "time": 0.523
+    },
+    {
+      "case": "fft_killer_01",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26112000,
+      "status": "AC",
+      "time": 0.526
+    },
+    {
+      "case": "fft_killer_02",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26144768,
+      "status": "AC",
+      "time": 0.521
+    },
+    {
+      "case": "fft_killer_03",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26075136,
+      "status": "AC",
+      "time": 0.521
+    },
+    {
+      "case": "fft_killer_04",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25464832,
+      "status": "AC",
+      "time": 0.523
+    },
+    {
+      "case": "fft_killer_05",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26066944,
+      "status": "AC",
+      "time": 0.522
+    },
+    {
+      "case": "fft_killer_06",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26107904,
+      "status": "AC",
+      "time": 0.522
+    },
+    {
+      "case": "fft_killer_07",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25829376,
+      "status": "AC",
+      "time": 0.521
+    },
+    {
+      "case": "fft_killer_08",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25501696,
+      "status": "AC",
+      "time": 0.521
+    },
+    {
+      "case": "fft_killer_09",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25890816,
+      "status": "AC",
+      "time": 0.522
+    },
+    {
+      "case": "medium_all_zero_00",
+      "checker_out": "b2sgMTEyNzUgdG9rZW5zCg==",
+      "memory": 1323008,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "medium_pre_suf_zero_00",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 925696,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "medium_pre_suf_zero_01",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "medium_pre_suf_zero_02",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "medium_pre_suf_zero_03",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "medium_pre_suf_zero_04",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 921600,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_ans_zero_00",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25743360,
+      "status": "AC",
+      "time": 0.524
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgNzUgdG9rZW5zCg==",
+      "memory": 921600,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgMzUgdG9rZW5zCg==",
+      "memory": 909312,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "small_and_large_00",
+      "checker_out": "b2sgNTI0Mzg3IHRva2Vucwo=",
+      "memory": 19648512,
+      "status": "AC",
+      "time": 0.375
+    },
+    {
+      "case": "small_and_large_01",
+      "checker_out": "b2sgNTI1Mjg3IHRva2Vucwo=",
+      "memory": 19697664,
+      "status": "AC",
+      "time": 0.375
+    },
+    {
+      "case": "small_and_large_02",
+      "checker_out": "b2sgNTI0Mzg3IHRva2Vucwo=",
+      "memory": 19828736,
+      "status": "AC",
+      "time": 0.402
+    },
+    {
+      "case": "small_and_large_03",
+      "checker_out": "b2sgNTI1Mjg3IHRva2Vucwo=",
+      "memory": 19574784,
+      "status": "AC",
+      "time": 0.403
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26116096,
+      "status": "AC",
+      "time": 0.498
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 26140672,
+      "status": "AC",
+      "time": 0.521
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25571328,
+      "status": "AC",
+      "time": 0.522
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgMTA0ODU3NSB0b2tlbnMK",
+      "memory": 25743360,
+      "status": "AC",
+      "time": 0.525
+    }
+  ],
+  "overview": {
+    "id": 404688,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 30691328,
+    "problem_name": "convolution_mod",
+    "problem_title": "Convolution",
+    "status": "AC",
+    "submission_time": "2026-09-21T14:25:52.968803Z",
+    "time": 0.526
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll=long long;\n\n// BEGIN UNCHANGED modint_convolution.cpp\nstruct mint{\n    static const int M=998244353;\n    int x;\n    mint(long long v=0):x((v%M+M)%M){}\n    int val()const{return x;}\n    static int mod(){return M;}\n    mint& operator+=(mint a){if((x+=a.x)>=M)x-=M;return *this;}\n    mint& operator-=(mint a){if((x-=a.x)<0)x+=M;return *this;}\n    mint& operator*=(mint a){x=(long long)x*a.x%M;return *this;}\n    mint pow(long long n)const{\n        mint a=*this,r=1;\n        for(;n;n>>=1,a*=a)if(n&1)r*=a;\n        return r;\n    }\n    mint inv()const{return pow(M-2);}\n    mint& operator/=(mint a){return *this*=a.inv();}\n    friend mint operator+(mint a,mint b){return a+=b;}\n    friend mint operator-(mint a,mint b){return a-=b;}\n    friend mint operator*(mint a,mint b){return a*=b;}\n    friend mint operator/(mint a,mint b){return a/=b;}\n};\nusing modint998244353=mint;\nvoid ntt(vector<mint>&a,bool inv=0){\n    int n=a.size();\n    for(int i=1,j=0;i<n;i++){\n        int b=n>>1; for(;j&b;b>>=1)j^=b; j^=b;\n        if(i<j)swap(a[i],a[j]);\n    }\n    for(int l=2;l<=n;l<<=1){\n        mint w=mint(3).pow((mint::M-1)/l);\n        if(inv)w=w.inv();\n        for(int i=0;i<n;i+=l){\n            mint z=1;\n            for(int j=0;j<l/2;j++){\n                mint x=a[i+j],y=a[i+j+l/2]*z;\n                a[i+j]=x+y; a[i+j+l/2]=x-y; z*=w;\n            }\n        }\n    }\n    if(inv){\n        mint z=mint(n).inv();\n        for(auto&x:a)x*=z;\n    }\n}\nvector<mint> convolution(vector<mint>a,vector<mint>b){\n    if(a.empty()||b.empty())return {};\n    int n=a.size()+b.size()-1,z=1;\n    while(z<n)z<<=1;\n    a.resize(z); b.resize(z); ntt(a); ntt(b);\n    for(int i=0;i<z;i++)a[i]*=b[i];\n    ntt(a,1); a.resize(n);\n    return a;\n}\n// END UNCHANGED modint_convolution.cpp\n\n// BEGIN UNCHANGED fps.cpp\nstruct fps:vector<mint>{\n    using vector<mint>::vector;\n    fps(vector<mint>a):vector<mint>(move(a)){}\n\n    fps pre(int n)const{\n        return fps(begin(),begin()+min(n,(int)size()));\n    }\n\n    friend fps operator+(fps a,const fps&b){\n        if(a.size()<b.size())a.resize(b.size());\n        for(int i=0;i<(int)b.size();i++)a[i]+=b[i];\n        return a;\n    }\n    friend fps operator-(fps a,const fps&b){\n        if(a.size()<b.size())a.resize(b.size());\n        for(int i=0;i<(int)b.size();i++)a[i]-=b[i];\n        return a;\n    }\n    friend fps operator*(const fps&a,const fps&b){\n        return convolution(a,b);\n    }\n\n    fps& operator*=(mint c){\n        for(auto&x:*this)x*=c;\n        return *this;\n    }\n    friend fps operator*(fps a,mint c){return a*=c;}\n    friend fps operator*(mint c,fps a){return a*=c;}\n\n    fps diff()const{\n        fps r(max(0,(int)size()-1));\n        for(int i=1;i<(int)size();i++)r[i-1]=(*this)[i]*i;\n        return r;\n    }\n\n    fps integral()const{\n        fps r(size()+1);\n        static vector<mint>iv{0,1};\n        while(iv.size()<=size()){\n            int i=iv.size();\n            iv.push_back(mint(mint::M-mint::M/i)*iv[mint::M%i]);\n        }\n        for(int i=0;i<(int)size();i++)r[i+1]=(*this)[i]*iv[i+1];\n        return r;\n    }\n\n    // f[0] != 0\n    fps inv(int n=-1)const{\n        if(n<0)n=size();\n        assert(!empty()&&(*this)[0].val());\n        fps g{(*this)[0].inv()};\n        for(int m=1;m<n;m<<=1){\n            int k=min(n,m<<1);\n            g=(g+g-g*g*pre(k)).pre(k);\n        }\n        g.resize(n);\n        return g;\n    }\n\n    // f[0] = 1\n    fps log(int n=-1)const{\n        if(n<0)n=size();\n        assert(!empty()&&(*this)[0].val()==1);\n        fps r=(diff()*inv(n)).pre(max(0,n-1)).integral();\n        r.resize(n);\n        return r;\n    }\n\n    // f[0] = 0\n    fps exp(int n=-1)const{\n        if(n<0)n=size();\n        assert(empty()||(*this)[0].val()==0);\n        if(!n)return {};\n        fps g{1};\n        for(int m=1;m<n;m<<=1){\n            int k=min(n,m<<1);\n            fps q=pre(k)-g.log(k);\n            q[0]+=1;\n            g=(g*q).pre(k);\n        }\n        return g;\n    }\n\n    // k >= 0\n    fps pow(long long k,int n=-1)const{\n        assert(k>=0);\n        if(n<0)n=size();\n        if(!n)return {};\n        if(!k){\n            fps r(n);\n            r[0]=1;\n            return r;\n        }\n\n        int s=0;\n        while(s<(int)size()&&!(*this)[s].val())s++;\n\n        if(s==(int)size()||s>(n-1)/k)return fps(n);\n\n        int sh=s*k;\n        mint c=(*this)[s];\n\n        fps f(begin()+s,end());\n        f*=c.inv();\n\n        f=(f.log(n-sh)*mint(k)).exp(n-sh);\n        f*=c.pow(k);\n\n        fps r(sh);\n        r.insert(r.end(),f.begin(),f.end());\n        r.resize(n);\n        return r;\n    }\n};\n// END UNCHANGED fps.cpp\n\n// Independent coefficient oracles. These checks remain active with NDEBUG.\nnamespace fps_verification {\nconstexpr int MOD=998244353;\nusing V=vector<int>;\nlong long checks=0;\nvoid require(bool ok,const char* what){\n    ++checks;\n    if(!ok){cerr<<\"FPS CHECK FAILED: \"<<what<<'\\n';abort();}\n}\nint add(int a,int b){int s=a+b;return s>=MOD?s-MOD:s;}\nint sub(int a,int b){int d=a-b;return d<0?d+MOD:d;}\nint mul(int a,int b){return (long long)a*b%MOD;}\nint power(int a,long long k){int r=1;while(k){if(k&1)r=mul(r,a);a=mul(a,a);k>>=1;}return r;}\nfps make(const V&a){vector<mint>v;for(int x:a)v.emplace_back(x);return fps(move(v));}\nV values(const fps&a){V v;for(auto x:a)v.push_back(x.val());return v;}\nvoid equal_to(const fps&a,const V&b,const char* what){require(values(a)==b,what);}\nV product(const V&a,const V&b,int n){\n    V c(n);for(int i=0;i<(int)a.size()&&i<n;i++)for(int j=0;j<(int)b.size()&&i+j<n;j++)c[i+j]=add(c[i+j],mul(a[i],b[j]));return c;\n}\nV inverse(const V&a,int n){\n    V b(n);if(!n)return b;b[0]=power(a[0],MOD-2);\n    for(int i=1;i<n;i++){int s=0;for(int j=1;j<=i&&j<(int)a.size();j++)s=add(s,mul(a[j],b[i-j]));b[i]=sub(0,mul(b[0],s));}return b;\n}\nV logarithm(const V&a,int n){\n    V b(n);if(!n)return b;V d;\n    for(int i=1;i<(int)a.size();i++)d.push_back(mul(a[i],i));\n    V q=product(d,inverse(a,n),n-1);\n    for(int i=1;i<n;i++)b[i]=mul(q[i-1],power(i,MOD-2));return b;\n}\nV exponential(const V&a,int n){\n    V b(n);if(!n)return b;b[0]=1;\n    for(int i=1;i<n;i++){int s=0;for(int j=1;j<=i&&j<(int)a.size();j++)s=add(s,mul(mul(j,a[j]),b[i-j]));b[i]=mul(s,power(i,MOD-2));}return b;\n}\nV polynomial_power(V a,long long k,int n){\n    V b(n);if(!n)return b;b[0]=1;a.resize(n);\n    while(k){if(k&1)b=product(b,a,n);a=product(a,a,n);k>>=1;}return b;\n}\nvoid helpers(const fps&a,const fps&b){\n    V av=values(a),bv=values(b);\n    equal_to(make(av),av,\"vector constructor\");\n    int n=a.size(),m=b.size();\n    for(int k:vector<int>{0,1,n/2,n,n+3,INT_MAX}){\n        V expected(av.begin(),av.begin()+min(k,n));\n        equal_to(a.pre(k),expected,\"pre\");\n    }\n    V sum(max(n,m)),difference(max(n,m));\n    for(int i=0;i<(int)sum.size();i++){\n        int x=i<n?av[i]:0,y=i<m?bv[i]:0;\n        sum[i]=add(x,y);difference[i]=sub(x,y);\n    }\n    equal_to(a+b,sum,\"operator+ unequal lengths\");\n    equal_to(a-b,difference,\"operator- unequal lengths\");\n    for(int k:vector<int>{0,1,MOD-1,123456789}){\n        V expected=av;for(int&x:expected)x=mul(x,k);\n        equal_to(a*mint(k),expected,\"fps * mint\");\n        equal_to(mint(k)*a,expected,\"mint * fps\");\n        fps copy=a;fps&ref=(copy*=mint(k));\n        require(&ref==&copy,\"operator*= reference\");\n        equal_to(copy,expected,\"operator*=\");\n    }\n    V derivative(max(0,n-1));for(int i=1;i<n;i++)derivative[i-1]=mul(av[i],i);\n    equal_to(a.diff(),derivative,\"diff\");\n    fps integrated=a.integral();\n    require((int)integrated.size()==n+1&&integrated[0].val()==0,\"integral size and constant\");\n    // Division by i is unique modulo MOD since 1 <= i < MOD.\n    for(int i=0;i<n;i++)require(mul(integrated[i+1].val(),i+1)==av[i],\"integral coefficient\");\n    equal_to(a,av,\"input a unchanged\");equal_to(b,bv,\"input b unchanged\");\n}\nvoid small_checks(){\n    vector<V> cases{{},{0},{1},{MOD-1},{0,0},{0,1},{0,0,1},{1,0,0,0},{MOD-1,MOD-1,MOD-1}};\n    for(int n:vector<int>{3,4,7,8,9,15,16,17,31,32,33,63,64,65}){\n        cases.emplace_back(n,0);cases.emplace_back(n,1);\n    }\n    mt19937_64 rng(20260921);\n    for(int t=0;t<64;t++){\n        V a(rng()%35);for(int&x:a)x=rng()%MOD;\n        if(t%3==0)for(int i=0;i<min((int)a.size(),t%8);i++)a[i]=0;\n        cases.push_back(move(a));\n    }\n    vector<long long> exponents{0,1,2,5,31,998244353LL,998244354LL,1000000000000000000LL,LLONG_MAX};\n    for(int t=0;t<(int)cases.size();t++){\n        const V&a=cases[t];V b=cases[(t*17+7)%cases.size()];fps f=make(a),g=make(b);\n        helpers(f,g);helpers(g,f);\n        int full=a.empty()||b.empty()?0:a.size()+b.size()-1;\n        equal_to(f*g,product(a,b,full),\"polynomial multiplication\");\n        V ai=a,al=a,ae=a;\n        if(ai.empty())ai.push_back(1);else if(!ai[0])ai[0]=1234567;\n        if(al.empty())al.push_back(1);else al[0]=1;\n        if(!ae.empty())ae[0]=0;\n        fps fi=make(ai),fl=make(al),fe=make(ae);\n        equal_to(fi.inv(),inverse(ai,ai.size()),\"inv default precision\");\n        equal_to(fl.log(),logarithm(al,al.size()),\"log default precision\");\n        equal_to(fe.exp(),exponential(ae,ae.size()),\"exp default precision\");\n        long long k=exponents[t%exponents.size()];\n        equal_to(f.pow(k),polynomial_power(a,k,a.size()),\"pow default precision\");\n        for(int n:vector<int>{0,1,(int)a.size()/2,(int)a.size()+3}){\n            equal_to(fi.inv(n),inverse(ai,n),\"inv explicit precision\");\n            equal_to(fl.log(n),logarithm(al,n),\"log explicit precision\");\n            equal_to(fe.exp(n),exponential(ae,n),\"exp explicit precision\");\n            equal_to(f.pow(k,n),polynomial_power(a,k,n),\"pow explicit precision\");\n            equal_to(f.pow(0,n),polynomial_power(a,0,n),\"pow exponent zero\");\n        }\n    }\n    // Exhaust all short binary polynomials, including zero and delayed terms.\n    for(int len=0;len<=5;len++)for(int mask=0;mask<(1<<len);mask++){\n        V a(len);for(int i=0;i<len;i++)a[i]=(mask>>i)&1;fps f=make(a);\n        for(long long k:vector<long long>{0,1,2,3,LLONG_MAX})\n            equal_to(f.pow(k,8),polynomial_power(a,k,8),\"pow exhaustive binary inputs\");\n    }\n}\n} // namespace fps_verification\n\n\nfps read_fps(int n){vector<mint>a(n);for(auto&x:a){long long y;cin>>y;x=mint(y);}return fps(move(a));}\nvoid print_fps(const fps&a){for(int i=0;i<(int)a.size();i++)cout<<a[i].val()<<(i+1==(int)a.size()?'\\n':' ');if(a.empty())cout<<'\\n';}\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\nfps_verification::small_checks();int n,m;cin>>n>>m;fps a=read_fps(n),b=read_fps(m);fps_verification::helpers(a,b);fps_verification::helpers(b,a);print_fps(a*b);\n}\n"
+}

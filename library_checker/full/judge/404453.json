@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 10014720,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 10899456,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 6565888,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 4595712,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 4464640,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12337152,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12353536,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12361728,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12365824,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12357632,
+      "status": "AC",
+      "time": 0.112
+    }
+  ],
+  "overview": {
+    "id": 404453,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 12365824,
+    "problem_name": "static_range_sum",
+    "problem_title": "Static Range Sum",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:54:51.865527Z",
+    "time": 0.122
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL binary_indexed_tree.cpp SHA256 cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354\n#pragma once\n#include <bits/stdc++.h>\nusing namespace std;\ntemplate<typename T>\nclass BIT {\n\tint size;\n\tvector<T>dat;\npublic:\n\tBIT() {}\n\tBIT(int n) { init(n); }\n\tvoid init(int n) { size = n; dat.assign(size + 1, 0); }\n\tvoid add(int i, T x) {\n\t\ti++;\n\t\twhile (i <= size) { dat[i] += x; i += i & -i; }\n\t}\n\t//[l,r)\n\tvoid add(int l, int r, T x) { add(l, x); add(r, -x); }\n\t//[0,i]\n\tT query(int i) {\n\t\ti++; T sum = 0;\n\t\twhile (i > 0) { sum += dat[i]; i -= i & -i; }\n\t\treturn sum;\n\t}\n\t//[l,r)\n\tT query(int l, int r) { return query(r - 1) - query(l - 1); }\n\t//[0,x] >= w\n\tint lower_bound(T w) {\n\t\tif (w <= 0) return 0;\n\t\tint x = 0, k = 1;\n\t\twhile ((k << 1) < size) k <<= 1;\n\t\tfor (; k > 0; k >>= 1) {\n\t\t\tif (x + k <= size && dat[x + k] < w) { w -= dat[x + k]; x += k; }\n\t\t}\n\t\treturn x;\n\t}\n};//size, 0-indexed\n\n// END ORIGINAL binary_indexed_tree.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint n,q;cin>>n>>q;BIT<ll>b(n);for(int i=0;i<n;i++){ll x;cin>>x;b.add(i,n,x);}\nwhile(q--){int l,r;cin>>l>>r;cout<<b.query(r-1)-b.query(l-1)<<'\\n';}\n\n}\n"
+}

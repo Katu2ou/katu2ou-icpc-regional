@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 794624,
+      "status": "WA",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 561152,
+      "status": "WA",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 565248,
+      "status": "WA",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 561152,
+      "status": "WA",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 794624,
+      "status": "WA",
+      "time": 0
+    },
+    {
+      "case": "random_03",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 835584,
+      "status": "WA",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 536576,
+      "status": "WA",
+      "time": 0
+    },
+    {
+      "case": "random_05",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 532480,
+      "status": "WA",
+      "time": 0
+    },
+    {
+      "case": "random_06",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 540672,
+      "status": "WA",
+      "time": 0
+    },
+    {
+      "case": "random_07",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 827392,
+      "status": "WA",
+      "time": 0.001
+    },
+    {
+      "case": "random_08",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 794624,
+      "status": "WA",
+      "time": 0.001
+    },
+    {
+      "case": "random_09",
+      "checker_out": "d3JvbmcgYW5zd2VyIFVuZXhwZWN0ZWQgRU9GIGluIHRoZSBwYXJ0aWNpcGFudHMgb3V0cHV0Cg==",
+      "memory": 806912,
+      "status": "WA",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 404462,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 835584,
+    "problem_name": "aplusb",
+    "problem_title": "A + B",
+    "status": "WA",
+    "submission_time": "2026-09-21T06:59:26.463279Z",
+    "time": 0.001
+  },
+  "source": "#include<bits/stdc++.h>\nusing namespace std;\n#define rep(i,n)\n#define all(a) begin(a), end(a)\nusing ll = long long;\nusing vi = vector<int>;\nusing vl = vector<ll>;\ntemplate<class T>bool chmax(T& a, const T& b) { if (a < b) { a = b; return 1; } return 0; }\ntemplate<class T>bool chmin(T& a, const T& b) { if (b < a) { a = b; return 1; } return 0; }\n\nvoid solve() {\n\n}\n\nsigned main(){\n\tcin.tie(0);\n\tios::sync_with_stdio(0);\n\tcout<<fixed<<setprecision(20);\n\tint TT; TT = 1; //cin >> TT;\n\tsolve();\n}"
+}

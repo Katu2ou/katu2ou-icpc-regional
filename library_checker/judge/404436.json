@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_hundreds_00",
+      "checker_out": "b2sgMjgwIHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "n_hundreds_01",
+      "checker_out": "b2sgMjk3IHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "typical_tree_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 50114560,
+      "status": "AC",
+      "time": 0.135
+    },
+    {
+      "case": "typical_tree_max_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 17039360,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "typical_tree_max_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 15474688,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "typical_tree_max_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 15728640,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "typical_tree_max_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 37380096,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "typical_tree_max_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 37130240,
+      "status": "AC",
+      "time": 0.104
+    },
+    {
+      "case": "typical_tree_max_06",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36179968,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "typical_tree_max_07",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 47198208,
+      "status": "AC",
+      "time": 0.131
+    },
+    {
+      "case": "typical_tree_max_08",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 15388672,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "typical_tree_max_09",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 16437248,
+      "status": "AC",
+      "time": 0.087
+    }
+  ],
+  "overview": {
+    "id": 404436,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 50114560,
+    "problem_name": "tree_path_composite_sum",
+    "problem_title": "Tree Path Composite Sum",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:38:50.32022Z",
+    "time": 0.135
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL modint_convolution.cpp SHA256 92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454\nstruct mint{\n    static const int M=998244353;\n    int x;\n    mint(long long v=0):x((v%M+M)%M){}\n    int val()const{return x;}\n    static int mod(){return M;}\n    mint& operator+=(mint a){if((x+=a.x)>=M)x-=M;return *this;}\n    mint& operator-=(mint a){if((x-=a.x)<0)x+=M;return *this;}\n    mint& operator*=(mint a){x=(long long)x*a.x%M;return *this;}\n    mint pow(long long n)const{\n        mint a=*this,r=1;\n        for(;n;n>>=1,a*=a)if(n&1)r*=a;\n        return r;\n    }\n    mint inv()const{return pow(M-2);}\n    mint& operator/=(mint a){return *this*=a.inv();}\n    friend mint operator+(mint a,mint b){return a+=b;}\n    friend mint operator-(mint a,mint b){return a-=b;}\n    friend mint operator*(mint a,mint b){return a*=b;}\n    friend mint operator/(mint a,mint b){return a/=b;}\n};\nusing modint998244353=mint;\nvoid ntt(vector<mint>&a,bool inv=0){\n    int n=a.size();\n    for(int i=1,j=0;i<n;i++){\n        int b=n>>1; for(;j&b;b>>=1)j^=b; j^=b;\n        if(i<j)swap(a[i],a[j]);\n    }\n    for(int l=2;l<=n;l<<=1){\n        mint w=mint(3).pow((mint::M-1)/l);\n        if(inv)w=w.inv();\n        for(int i=0;i<n;i+=l){\n            mint z=1;\n            for(int j=0;j<l/2;j++){\n                mint x=a[i+j],y=a[i+j+l/2]*z;\n                a[i+j]=x+y; a[i+j+l/2]=x-y; z*=w;\n            }\n        }\n    }\n    if(inv){\n        mint z=mint(n).inv();\n        for(auto&x:a)x*=z;\n    }\n}\nvector<mint> convolution(vector<mint>a,vector<mint>b){\n    if(a.empty()||b.empty())return {};\n    int n=a.size()+b.size()-1,z=1;\n    while(z<n)z<<=1;\n    a.resize(z); b.resize(z); ntt(a); ntt(b);\n    for(int i=0;i<z;i++)a[i]*=b[i];\n    ntt(a,1); a.resize(n);\n    return a;\n}\n// END ORIGINAL modint_convolution.cpp\n\n// BEGIN ORIGINAL rerooting.cpp SHA256 d958e31409808929a8223c1b55c36aa66c8688f8f392b58b5db67662e7b28aed\n/*\n    - n頂点の木Tが与えられている\n\n    - RerootingDP<E,V,merge,e,put_edge,put_vertex> g(n) : コンストラクタ O(n)\n        E : 親のdpの計算をする際に用いる値の型\n        V : 頂点のdpの値の型\n        E put_edge (V v, int i) : 頂点vを根とする部分木のdpの値に辺iを追加した時に得られる値\n        E merge(E e1, E e2) :  2つの子について求めたput_edgeの値を結合する\n            mergeは可換モノイドによる結合を要求される\n        E e() : mergeの単位元を返す関数\n        V put_vertex(E e, int u) : 全ての子についてmergeした値から，頂点uのdp[u]を計算する\n    - void add_edge(int u, int v, int idx, int xdi) : 頂点u->vの辺番号idxの辺と\n        頂点v->uの辺番号xdiの辺を追加する (ちょうどn-1回呼ぶ．ならしO(1))\n    - V bulid(int v): 頂点vを根とした時の，dp[v]の値を返す (1回までしか呼べない O(n))\n    - vector<V> reroot(): 長さnの配列(i番目には，頂点iを根とした時の，dp[i]の値)を返す\n        (先にbuildをちょうど1回呼んでいる必要あり O(n))\n*/\n\ntemplate <class E, class V, E (*merge)(E, E), E (*e)(), E (*put_edge)(V, int), V (*put_vertex)(E, int)>\nstruct RerootingDP {\n    struct edge {\n        int to, idx, xdi;\n    };\n    RerootingDP(int n_ = 0) : n(n_), inner_edge_id(0) {\n        es.resize(2*n-2);\n        start.resize(2*n-2);\n        if (n == 1) es_build();\n    }\n    void add_edge(int u, int v, int idx, int xdi){\n        start[inner_edge_id] = u;\n        es[inner_edge_id] = {v,idx,xdi};\n        inner_edge_id++;\n        start[inner_edge_id] = v;\n        es[inner_edge_id] = {u,xdi,idx};\n        inner_edge_id++;\n        if (inner_edge_id == 2*n-2){\n            es_build();\n        }\n    }\n    vector<V> build(int root_ = 0){\n        root = root_;\n        vector<V> subdp(n); subdp[0] = put_vertex(e(),0);\n        outs.resize(n);\n        vector<int> geta(n+1,0);\n        for (int i = 0; i < n; i++) geta[i+1] = start[i+1] - start[i] - 1;\n        geta[root+1]++;\n        for (int i = 0; i < n; i++) geta[i+1] += geta[i];\n        auto dfs = [&](auto sfs, int v, int f) -> void {\n            E val = e();\n            for (int i = start[v]; i < start[v+1]; i++){\n                if (es[i].to == f){\n                    swap(es[start[v+1]-1],es[i]);\n                }\n                if (es[i].to == f) continue;\n                sfs(sfs,es[i].to,v);\n                E nval = put_edge(subdp[es[i].to],es[i].idx);\n                outs[geta[v]++] = nval;\n                val = merge(val,nval);\n            }\n            subdp[v] = put_vertex(val, v);\n        };\n        dfs(dfs,root,-1);\n        return subdp;\n    }\n    vector<V> reroot(){\n        vector<E> reverse_edge(n);\n        reverse_edge[root] = e();\n        vector<V> answers(n);\n        auto dfs = [&](auto sfs, int v) -> void {\n            int le = outs_start(v);\n            int ri = outs_start(v+1);\n            int siz = ri - le;\n            vector<E> rui(siz+1);\n            rui[siz] = e();\n            for (int i = siz-1; i >= 0; i--){\n                rui[i] = merge(outs[le+i],rui[i+1]);\n            }\n            answers[v] = put_vertex(merge(rui[0],reverse_edge[v]),v);\n            E lui = e();\n            for (int i = 0; i < siz; i++){\n                V rdp = put_vertex(merge(merge(lui,rui[i+1]),reverse_edge[v]),v);\n                reverse_edge[es[start[v]+i].to] = put_edge(rdp,es[start[v]+i].xdi);\n                lui = merge(lui,outs[le+i]);\n                sfs(sfs,es[start[v]+i].to);\n            }\n        };\n        dfs(dfs,root);\n        return answers;\n    }\n    private:\n    int n, root, inner_edge_id;\n    vector<E> outs;\n    vector<edge> es;\n    vector<int> start;\n    int outs_start(int v){\n        int res = start[v] - v;\n        if (root < v) res++;\n        return res;\n    }\n    void es_build(){\n        vector<edge> nes(2*n-2);\n        vector<int> nstart(n+2,0);\n        for (int i = 0; i < 2*n-2; i++) nstart[start[i]+2]++;\n        for (int i = 0; i < n; i++) nstart[i+1] += nstart[i];\n        for (int i = 0; i < 2*n-2; i++) nes[nstart[start[i]+1]++] = es[i];\n        swap(es,nes);\n        swap(start,nstart);\n    }\n};\n\n// END ORIGINAL rerooting.cpp\n\n\nstruct D{mint sum,count;};vector<mint>vertex_value,edge_a,edge_b;\nD merge_dp(D a,D b){return {a.sum+b.sum,a.count+b.count};}\nD empty_dp(){return {0,0};}\nD put_edge_dp(D a,int i){return {a.sum*edge_a[i]+a.count*edge_b[i],a.count};}\nD put_vertex_dp(D a,int i){return {a.sum+vertex_value[i],a.count+mint(1)};}\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n;cin>>n;vertex_value.resize(n);for(auto&v:vertex_value){int x;cin>>x;v=x;}\nedge_a.resize(n-1);edge_b.resize(n-1);RerootingDP<D,D,merge_dp,empty_dp,put_edge_dp,put_vertex_dp> dp(n);\nfor(int i=0,u,v,b,c;i<n-1;i++){cin>>u>>v>>b>>c;edge_a[i]=b;edge_b[i]=c;dp.add_edge(u,v,i,i);}\ndp.build();auto ans=dp.reroot();for(auto x:ans)cout<<x.sum.val()<<' ';cout<<'\\n';\n\n}\n"
+}

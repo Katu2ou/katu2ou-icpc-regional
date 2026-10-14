@@ -1,0 +1,460 @@
+[
+  {
+    "key": "wavelet_all",
+    "problem": "range_kth_smallest",
+    "libraries": [
+      {
+        "file": "wavelet_matrix.cpp",
+        "sha256": "189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a"
+      }
+    ],
+    "source": "submissions/wavelet_all.cc",
+    "lang": "cpp17",
+    "source_sha256": "5e5498316779525f204c4f645f896646cbe41606455a82e69e3e87ce975ffca9",
+    "functions": [
+      "WaveletMatrix(vector)",
+      "access",
+      "rank(x,l,r)",
+      "rank(x,r)",
+      "kth",
+      "kth_largest",
+      "less",
+      "range_freq",
+      "prev_value",
+      "next_value"
+    ],
+    "note": "Official kth answers plus boundary and independent sorted-vector checks of every query method."
+  },
+  {
+    "key": "wavelet_frequency",
+    "problem": "static_range_frequency",
+    "libraries": [
+      {
+        "file": "wavelet_matrix.cpp",
+        "sha256": "189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a"
+      }
+    ],
+    "source": "submissions/wavelet_frequency.cc",
+    "lang": "cpp17",
+    "source_sha256": "76d7b3ae23f03bb13a93892a8dec74e2f88965fc92ef31112888772b8ded8867",
+    "functions": [
+      "rank(x,r)",
+      "less",
+      "range_freq"
+    ],
+    "note": ""
+  },
+  {
+    "key": "segtree_search",
+    "problem": "predecessor_problem",
+    "libraries": [
+      {
+        "file": "segtree.cpp",
+        "sha256": "551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4"
+      }
+    ],
+    "source": "submissions/segtree_search.cc",
+    "lang": "cpp17",
+    "source_sha256": "dc5a854ba376f0d4074e0a9a6cb55ab9e0b7d1104624e8e19c43f074c79761a7",
+    "functions": [
+      "segtree(int)",
+      "set",
+      "get",
+      "prod",
+      "all_prod",
+      "max_right",
+      "mr",
+      "min_left",
+      "ml"
+    ],
+    "note": ""
+  },
+  {
+    "key": "lazy_segtree_search",
+    "problem": "predecessor_problem",
+    "libraries": [
+      {
+        "file": "lazy_segtree.cpp",
+        "sha256": "f05867c65f1b7a1dc5048a9ec0915c1ca693c6db979db25739f5ba8fe1ad5e75"
+      }
+    ],
+    "source": "submissions/lazy_segtree_search.cc",
+    "lang": "cpp17",
+    "source_sha256": "9d1687bbbf0327685f8685c5eba6346a685777f1f160bdfbb86f8b30ce36f9c2",
+    "functions": [
+      "lazy_segtree(int)",
+      "lazy_segtree(vector)",
+      "set(public/recursive)",
+      "get",
+      "prod(public/recursive)",
+      "all_prod",
+      "apply(point/range/recursive)",
+      "all",
+      "push",
+      "max_right",
+      "mr",
+      "min_left",
+      "ml"
+    ],
+    "note": ""
+  },
+  {
+    "key": "lazy_segtree_range_search",
+    "problem": "range_affine_range_sum",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "lazy_segtree.cpp",
+        "sha256": "f05867c65f1b7a1dc5048a9ec0915c1ca693c6db979db25739f5ba8fe1ad5e75"
+      }
+    ],
+    "source": "submissions/lazy_segtree_range_search.cc",
+    "lang": "cpp17",
+    "source_sha256": "c8db56ca8b6e9f101126dfde53944515514c91f67ab19d43e3c34c1e09ca8870",
+    "functions": [
+      "max_right",
+      "min_left",
+      "mr",
+      "ml",
+      "apply(range)",
+      "push"
+    ],
+    "note": "Search by accumulated length; accepted search prefixes/suffixes supply the actual range sum, including after lazy affine updates."
+  },
+  {
+    "key": "binarytrie_max",
+    "problem": "set_xor_min",
+    "libraries": [
+      {
+        "file": "binarytrie.cpp",
+        "sha256": "f892b995b96238701dac104c32f904e20e5d828a02b6d2b9db3cf10c6aadd380"
+      }
+    ],
+    "source": "submissions/binarytrie_max.cc",
+    "lang": "cpp17",
+    "source_sha256": "5b72b29c93c5d99ea5e42b9db9b1265eecb8de9e6f799849c981d1ff7f9f2de7",
+    "functions": [
+      "add",
+      "max_xor"
+    ],
+    "note": "Complementing all 30 query bits turns max-XOR into the official min-XOR query."
+  },
+  {
+    "key": "bit_lower_bound",
+    "problem": "predecessor_problem",
+    "libraries": [
+      {
+        "file": "binary_indexed_tree.cpp",
+        "sha256": "cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354"
+      }
+    ],
+    "source": "submissions/bit_lower_bound.cc",
+    "lang": "cpp17",
+    "source_sha256": "5b406363bdad3d6271df2178b7068d6d585839de0b43b5eaae269ff5f8a7bd35",
+    "functions": [
+      "BIT()",
+      "init",
+      "lower_bound"
+    ],
+    "note": "Rank/select implements predecessor and successor; out-of-total targets are guarded for this problem."
+  },
+  {
+    "key": "dsu_size",
+    "problem": "unionfind",
+    "libraries": [
+      {
+        "file": "dsu.cpp",
+        "sha256": "9bd6258609e9d5fafcf11a5a0a03d7be840bef81bb469ef587240bcec72ca6c9"
+      }
+    ],
+    "source": "submissions/dsu_size.cc",
+    "lang": "cpp17",
+    "source_sha256": "c8c3275aaa21dccfc80f9455e2ec69533ebf23002897d4731cb6b7262e08f581",
+    "functions": [
+      "size",
+      "leader",
+      "merge"
+    ],
+    "note": ""
+  },
+  {
+    "key": "suffix_array_integer",
+    "problem": "suffixarray",
+    "libraries": [
+      {
+        "file": "suffix_array.cpp",
+        "sha256": "8f5f09d7155bd06123e9b61524c3e08f74f506eb2b12c634517f4a2b20accb95"
+      }
+    ],
+    "source": "submissions/suffix_array_integer.cc",
+    "lang": "cpp17",
+    "source_sha256": "38682c18966af22a83563c860251cbd33cd3ba7e9a26a982b50c589f8fc3a3ae",
+    "functions": [
+      "suffix_array(vector<int>,int)",
+      "suffix_array<T>(vector<T>)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "bit_range_add",
+    "problem": "static_range_sum",
+    "libraries": [
+      {
+        "file": "binary_indexed_tree.cpp",
+        "sha256": "cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354"
+      }
+    ],
+    "source": "submissions/bit_range_add.cc",
+    "lang": "cpp17",
+    "source_sha256": "41739b4a0423b9e3701b2ca1c3b2a6cc1b1fa4830ced33b9c5d5049f6b289062",
+    "functions": [
+      "add(l,r,x)",
+      "query(i)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "hld_jump",
+    "problem": "jump_on_tree",
+    "libraries": [
+      {
+        "file": "hld.cpp",
+        "sha256": "35d59446461568951b4ce0ad275e03b08660a023647fc3f9286285f3ad5be528"
+      }
+    ],
+    "source": "submissions/hld_jump.cc",
+    "lang": "cpp17",
+    "source_sha256": "c1f217e5e8dcde416f78a2075eb4c6d1b3c50820963dd1c334bf74787a98d941",
+    "functions": [
+      "level_ancestor",
+      "dist",
+      "get_edge",
+      "lca"
+    ],
+    "note": ""
+  },
+  {
+    "key": "maxflow_helpers",
+    "problem": "bipartitematching",
+    "libraries": [
+      {
+        "file": "maxflow.cpp",
+        "sha256": "ce8402f77805182da0c9fe639700bd7442cd7c37baddb67d662245fa9222eb0b"
+      }
+    ],
+    "source": "submissions/maxflow_helpers.cc",
+    "lang": "cpp17",
+    "source_sha256": "958937771f1aa0070410b1a2e4333045427d0f5466bdc6e61c35e42188196b44",
+    "functions": [
+      "mf_graph()",
+      "edges",
+      "get_edge",
+      "change_edge",
+      "flow(s,t,limit)",
+      "flow(s,t)",
+      "min_cut"
+    ],
+    "note": ""
+  },
+  {
+    "key": "bmbm_wrapper",
+    "problem": "find_linear_recurrence",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "bmbm.cpp",
+        "sha256": "4170242b4c6a6adfe8738ea2ba31b896a5a00a6a146cec56dba204e16c6447ad"
+      }
+    ],
+    "source": "submissions/bmbm_wrapper.cc",
+    "lang": "cpp17",
+    "source_sha256": "e49970b74878eb7e55318c3bed325100a552d0197c3f3c99dbf69d42d0e8e709",
+    "functions": [
+      "BMBM"
+    ],
+    "note": "The recurrence is judged officially; BMBM predictions beyond the supplied prefix are checked against direct recurrence evaluation."
+  },
+  {
+    "key": "dynamic_all_prod",
+    "problem": "point_set_range_composite",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "dynamic_segtree.cpp",
+        "sha256": "7e11fd649e9dedc3643a14954010547bb9b96337125fe496202538928f139025"
+      }
+    ],
+    "source": "submissions/dynamic_all_prod.cc",
+    "lang": "cpp17",
+    "source_sha256": "9c2c451e77efc7026d689a97adc12174b2fbac672cad0aa3d94725aa41dc5a48",
+    "functions": [
+      "dynamic_segtree()",
+      "all_prod",
+      "get(public/recursive)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "mint_all",
+    "problem": "convolution_mod",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      }
+    ],
+    "source": "submissions/mint_all.cc",
+    "lang": "cpp17",
+    "source_sha256": "e8081074919328157a402b1e1dca07509dc0c115bd4824b491496bb39d0aa181",
+    "functions": [
+      "mint",
+      "val",
+      "mod",
+      "operator+=",
+      "operator-=",
+      "operator*=",
+      "operator/=",
+      "operator+",
+      "operator-",
+      "operator*",
+      "operator/",
+      "pow",
+      "inv",
+      "ntt",
+      "convolution"
+    ],
+    "note": "Convolution is judged officially; all modular operations also have fixed-seed differential checks against ACL."
+  },
+  {
+    "key": "cartesian_all",
+    "problem": "cartesian_tree",
+    "libraries": [
+      {
+        "file": "cartesiantree.cpp",
+        "sha256": "3feb3f7a2361dbca6ac98f6264df277b79b8390069f015b58dbb7e4bfb25d6b9"
+      }
+    ],
+    "source": "submissions/cartesian_all.cc",
+    "lang": "cpp17",
+    "source_sha256": "9245f53bf7804038031182ceb7ed6ba2dd9b9e5b1718e51eaf80a3ccbb657ce9",
+    "functions": [
+      "CartesianTree()",
+      "CartesianTree(vector)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "mo_directional",
+    "problem": "static_range_count_distinct",
+    "libraries": [
+      {
+        "file": "mo.cpp",
+        "sha256": "d151507fa0fa4187fd55e9c3f3572018ab55707bd59e59930556ca1c05538421"
+      }
+    ],
+    "source": "submissions/mo_directional.cc",
+    "lang": "cpp17",
+    "source_sha256": "49a720f251bde053b17f8a3cd2bb21764ab2ed815681a357d29eb851866163d6",
+    "functions": [
+      "Mo",
+      "add",
+      "build(AL,AR,EL,ER,out)",
+      "build(add,erase,out)"
+    ],
+    "note": "Direction-sensitive callbacks are independently checked by counting inversions on fixed-seed small cases; distinct-count answers use official input."
+  },
+  {
+    "key": "rerooting_nonzero_root",
+    "problem": "tree_path_composite_sum",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "rerooting.cpp",
+        "sha256": "d958e31409808929a8223c1b55c36aa66c8688f8f392b58b5db67662e7b28aed"
+      }
+    ],
+    "source": "submissions/rerooting_nonzero_root.cc",
+    "lang": "cpp17",
+    "source_sha256": "37d1d2fa03346a5f0719ab81285f37afd28da73c2b21e0532856dcfb2a14a3d3",
+    "note": "The adapter chooses n-1 as the build root; the original rerooting implementation is unchanged.",
+    "functions": [
+      "build(nonzero_root)",
+      "reroot",
+      "es_build",
+      "outs_start"
+    ]
+  },
+  {
+    "key": "maxflow_nonzero_change",
+    "problem": "bipartitematching",
+    "libraries": [
+      {
+        "file": "maxflow.cpp",
+        "sha256": "ce8402f77805182da0c9fe639700bd7442cd7c37baddb67d662245fa9222eb0b"
+      }
+    ],
+    "source": "submissions/maxflow_nonzero_change.cc",
+    "lang": "cpp17",
+    "source_sha256": "c5607572022f46c048661b007f6ac2b37c698af5ecbaaaf7fa4e319cd0ae0680",
+    "functions": [
+      "change_edge(nonzero_flow)",
+      "flow(repeated)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "template_entry",
+    "problem": "aplusb",
+    "libraries": [
+      {
+        "file": "template.cpp",
+        "sha256": "c8101c0f16a17523ba4d8b00917b91632527cbf6504cae13e031c952daeac82a"
+      }
+    ],
+    "source": "submissions/template_entry.cc",
+    "lang": "cpp17",
+    "source_sha256": "c8101c0f16a17523ba4d8b00917b91632527cbf6504cae13e031c952daeac82a",
+    "functions": [
+      "main",
+      "solve"
+    ],
+    "note": "Original entry point unchanged. Empty solve() is expected to produce WA for A+B; this is a template placeholder, not an implemented solver."
+  },
+  {
+    "key": "mincost_slope_assignment",
+    "problem": "assignment",
+    "libraries": [
+      {
+        "file": "mincostflow.cpp",
+        "sha256": "56de4e37599146e56d522e39c5486e71253b259ea6e71538c31ca4cd63cbe7a6"
+      }
+    ],
+    "source": "submissions/mincost_slope_assignment.cc",
+    "lang": "cpp17",
+    "source_sha256": "d9bec118827ea2cef37b5bd092c14ae68df7693b9392e09629f71c7da1f17934",
+    "functions": [
+      "mcf_graph",
+      "add_edge",
+      "get_edge",
+      "edges",
+      "flow(s,t)",
+      "flow(s,t,limit)",
+      "slope(s,t)",
+      "slope(s,t,limit)"
+    ],
+    "judge": "library_checker",
+    "note": "Each row minimum is subtracted so initial costs are nonnegative. The original slope implementation supplies the judged assignment; an exhaustive small-graph oracle checks every curve segment and all flow/slope overloads."
+  }
+]

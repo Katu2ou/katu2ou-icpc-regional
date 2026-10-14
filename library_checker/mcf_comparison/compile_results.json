@@ -1,0 +1,42 @@
+[
+  {
+    "source": "library_checker/mcf_comparison/submissions/early_exit_row.cc",
+    "compile": "PASS",
+    "small_graph_oracle": null
+  },
+  {
+    "source": "library_checker/mcf_comparison/submissions/acl_row.cc",
+    "compile": "PASS",
+    "small_graph_oracle": null
+  },
+  {
+    "source": "library_checker/mcf_comparison/submissions/acl_global.cc",
+    "compile": "PASS",
+    "small_graph_oracle": null
+  },
+  {
+    "source": "library_checker/mcf_comparison/submissions/original_global.cc",
+    "compile": "PASS",
+    "small_graph_oracle": null
+  },
+  {
+    "source": "library_checker/mcf_comparison/submissions/original_row.cc",
+    "compile": "PASS",
+    "small_graph_oracle": null
+  },
+  {
+    "source": "library_checker/mcf_comparison/checks/acl.cc",
+    "compile": "PASS",
+    "small_graph_oracle": "PASS"
+  },
+  {
+    "source": "library_checker/mcf_comparison/checks/early_exit.cc",
+    "compile": "PASS",
+    "small_graph_oracle": "PASS"
+  },
+  {
+    "source": "library_checker/mcf_comparison/checks/original.cc",
+    "compile": "PASS",
+    "small_graph_oracle": "PASS"
+  }
+]

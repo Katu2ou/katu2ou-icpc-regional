@@ -1,0 +1,136 @@
+[
+  {
+    "key": "fps_multiply",
+    "problem": "convolution_mod",
+    "lang": "cpp17",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "fps.cpp",
+        "sha256": "3a4c07d903d9da3ccdc25f8d873ed281f9e68d7d7663a22d872dc70683af70f4"
+      }
+    ],
+    "source": "submissions/fps_multiply.cc",
+    "source_sha256": "9daf6dcb3048ac9f90b52da743f1714b4c575550773aa02b259b23ea582b187b",
+    "functions": [
+      "operator*(const fps&,const fps&)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "fps_inv",
+    "problem": "inv_of_formal_power_series",
+    "lang": "cpp17",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "fps.cpp",
+        "sha256": "3a4c07d903d9da3ccdc25f8d873ed281f9e68d7d7663a22d872dc70683af70f4"
+      }
+    ],
+    "source": "submissions/fps_inv.cc",
+    "source_sha256": "f545bad01371fd07bccdaff0d57e68680a6bb1229c34c547cb9b7b046cd976e2",
+    "functions": [
+      "inv(int=-1)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "fps_log",
+    "problem": "log_of_formal_power_series",
+    "lang": "cpp17",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "fps.cpp",
+        "sha256": "3a4c07d903d9da3ccdc25f8d873ed281f9e68d7d7663a22d872dc70683af70f4"
+      }
+    ],
+    "source": "submissions/fps_log.cc",
+    "source_sha256": "070d910f0ed080e44095f4a42a9af114c96c37d7db478a2cac870b3ec3c74c21",
+    "functions": [
+      "log(int=-1)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "fps_exp",
+    "problem": "exp_of_formal_power_series",
+    "lang": "cpp17",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "fps.cpp",
+        "sha256": "3a4c07d903d9da3ccdc25f8d873ed281f9e68d7d7663a22d872dc70683af70f4"
+      }
+    ],
+    "source": "submissions/fps_exp.cc",
+    "source_sha256": "a3663fe84acfb9a1f8e69f0ab6c7f917ca74d175ac6c1fb618323f6a43a8223a",
+    "functions": [
+      "exp(int=-1)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "fps_pow",
+    "problem": "pow_of_formal_power_series",
+    "lang": "cpp17",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "fps.cpp",
+        "sha256": "3a4c07d903d9da3ccdc25f8d873ed281f9e68d7d7663a22d872dc70683af70f4"
+      }
+    ],
+    "source": "submissions/fps_pow.cc",
+    "source_sha256": "7c68f56ea9fbdf16469ffec3bcbf4e801b7b8d1c69bc24267aeecf0b7d401a52",
+    "functions": [
+      "pow(long long,int=-1)"
+    ],
+    "note": ""
+  },
+  {
+    "key": "fps_helpers",
+    "problem": "convolution_mod",
+    "lang": "cpp17",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "fps.cpp",
+        "sha256": "3a4c07d903d9da3ccdc25f8d873ed281f9e68d7d7663a22d872dc70683af70f4"
+      }
+    ],
+    "source": "submissions/fps_helpers.cc",
+    "source_sha256": "ec0bd46f34dcff31aab7fdf87eefd43802e6903426d20914378c09c619a8dc9d",
+    "functions": [
+      "fps(vector<mint>)",
+      "pre(int)",
+      "operator+(fps,const fps&)",
+      "operator-(fps,const fps&)",
+      "operator*=(mint)",
+      "operator*(fps,mint)",
+      "operator*(mint,fps)",
+      "diff()",
+      "integral()"
+    ],
+    "note": "Every helper is compared against an independent coefficient oracle on official input arrays; fixed random and exhaustive small inputs additionally exercise all 14 functions, explicit/default precision, empty inputs, and large exponents. The checks abort on failure even with NDEBUG."
+  }
+]

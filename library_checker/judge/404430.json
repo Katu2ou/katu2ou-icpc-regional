@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjY5MTIiCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjIwMDAwMDAwMDAiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjM0ODkyNzk2NiIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjM4NTcwMzM0MyIK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjExMzM5NDYzMzciCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjExMzIzOTI4NzgiCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjExNDQ4OTY4MzEiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjM5MzkzMzg5MyIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgIjg5OTg0NjI3MiIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgIjUwNzYxODA5MiIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgIjM0MDcyMzM5NyIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgIjExOTgzMDAyNDkiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 404430,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 835584,
+    "problem_name": "aplusb",
+    "problem_title": "A + B",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:35:33.35174Z",
+    "time": 0.01
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL template.cpp SHA256 c8101c0f16a17523ba4d8b00917b91632527cbf6504cae13e031c952daeac82a\nnamespace original_template {\n#include<bits/stdc++.h>\nusing namespace std;\n#define rep(i,n)\n#define all(a) begin(a), end(a)\nusing ll = long long;\nusing vi = vector<int>;\nusing vl = vector<ll>;\ntemplate<class T>bool chmax(T& a, const T& b) { if (a < b) { a = b; return 1; } return 0; }\ntemplate<class T>bool chmin(T& a, const T& b) { if (b < a) { a = b; return 1; } return 0; }\n\nvoid solve() {\n\n}\n\nsigned main(){\n\tcin.tie(0);\n\tios::sync_with_stdio(0);\n\tcout<<fixed<<setprecision(20);\n\tint TT; TT = 1; //cin >> TT;\n\tsolve();\n}\n}\n\n// END ORIGINAL template.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nll a,b;cin>>a>>b;ll lo=a,hi=a;original_template::chmin(lo,b);original_template::chmax(hi,b);cout<<lo+hi<<'\\n';\n\n}\n"
+}

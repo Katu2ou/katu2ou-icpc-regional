@@ -1,0 +1,269 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjE4MSIK",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjE5OCIK",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjg4Igo=",
+      "memory": 1363968,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjE5MyIK",
+      "memory": 1892352,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjIwIgo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjIyMSIK",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "lowrank_00",
+      "checker_out": "b2sgIjQ1Igo=",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "lowrank_01",
+      "checker_out": "b2sgIjIxIgo=",
+      "memory": 1851392,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "lowrank_02",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "lowrank_03",
+      "checker_out": "b2sgIjgyIgo=",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "lowrank_04",
+      "checker_out": "b2sgIjE5Igo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "lowrank_05",
+      "checker_out": "b2sgIjE3NSIK",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "hack_of_system_of_linear_00",
+      "checker_out": "b2sgIjI5Igo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "hack_of_system_of_linear_01",
+      "checker_out": "b2sgIjMwIgo=",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "hack_of_system_of_linear_02",
+      "checker_out": "b2sgIjg4Igo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "hack_of_system_of_linear_03",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack_of_system_of_linear_04",
+      "checker_out": "b2sgIjE5Igo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hack_of_system_of_linear_05",
+      "checker_out": "b2sgIjc0Igo=",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 2863104,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 1867776,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 2109440,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgIjQ5OSIK",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgIjUwMCIK",
+      "memory": 1875968,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "max_05",
+      "checker_out": "b2sgIjQ5OSIK",
+      "memory": 1875968,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "max_06",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 5541888,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "max_07",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 7639040,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_08",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 14725120,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "zero_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "zero_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1200128,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "zero_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "zero_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6860800,
+      "status": "AC",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 404413,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 14725120,
+    "problem_name": "matrix_rank",
+    "problem_title": "Rank of Matrix",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:27:59.501105Z",
+    "time": 0.088
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n#include <atcoder/modint>\nusing Fp=atcoder::modint998244353;\n\n\n// BEGIN ORIGINAL linear_equation.cpp SHA256 7bffbcf79b034790cf3f83626b926aed1cf233af384605021e324063b362bd8d\n// 行列aをガウス消去する\n// 返り値 : {rank, det}\n//   rank : pivot_end列目までを係数部分としたときのrank\n//   det  : 消去中のpivotの積×行交換の符号\n//          正方行列aに対して全列をpivot対象にした場合は det(a)\n// diagonalize=trueなら簡約行階段形にする\ntemplate<class T>\npair<int,T> GaussElimination(vector<vector<T>>&a,int pe=-1,bool diag=false){\n    if(a.empty())return {0,T(1)};\n    int h=a.size(),w=a[0].size(),r=0;\n    if(pe<0)pe=w;\n    T det=1;\n    for(int j=0;j<pe;j++){\n        int p=r;\n        while(p<h&&a[p][j]==T(0))p++;\n        if(p==h){det=0;continue;}\n        if(p!=r)swap(a[p],a[r]),det=-det;\n        det*=a[r][j];\n        if(diag){\n            T x=T(1)/a[r][j];\n            for(int k=j;k<w;k++)a[r][k]*=x;\n        }\n        for(int i=diag?0:r+1;i<h;i++)if(i!=r&&a[i][j]!=T(0)){\n            T x=a[i][j]/a[r][j];\n            for(int k=j;k<w;k++)a[i][k]-=a[r][k]*x;\n        }\n        r++;\n    }\n    return {r,det};\n}\n// 線形方程式 Ax=b を解く\n// 返り値 : 解なしなら {}\n//          解ありなら {v,w1,...,wk}\n//          ただし全ての解は\n//              x = v + c1*w1 + ... + ck*wk\n//          と表される\n//   v       : 特殊解の1つ\n//   w1..wk  : Ker(A)の基底（自由変数に対応）\n//   k       : W-rank(A) = 解空間の次元\ntemplate<class T>\nvector<vector<T>> LinearEquation(vector<vector<T>>a,vector<T>b){\n    int h=a.size(),w=a[0].size();\n    for(int i=0;i<h;i++)a[i].push_back(b[i]);\n    int r=GaussElimination(a,w,true).first;\n    for(int i=r;i<h;i++)if(a[i][w]!=T(0))return {};\n\n    vector<vector<T>>res(1,vector<T>(w));\n    vector<int>p(w,-1);\n    for(int i=0,j=0;i<r;i++){\n        while(a[i][j]==T(0))j++;\n        p[j]=i; res[0][j]=a[i][w];\n    }\n    for(int j=0;j<w;j++)if(p[j]<0){\n        vector<T>x(w); x[j]=1;\n        for(int k=0;k<j;k++)if(p[k]>=0)x[k]=-a[p[k]][j];\n        res.push_back(x);\n    }\n    return res;\n}\n// END ORIGINAL linear_equation.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,m;cin>>n>>m;vector<vector<Fp>>a(n,vector<Fp>(m));for(auto&row:a)for(auto&v:row){int x;cin>>x;v=x;}\ncout<<GaussElimination(a).first<<'\\n';\n\n}\n"
+}

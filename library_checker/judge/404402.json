@@ -1,0 +1,164 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTA0IHRva2Vucwo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDkyIHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTA4IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNDk5IHRva2Vucwo=",
+      "memory": 663552,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTAzIHRva2Vucwo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNTAwIHRva2Vucwo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDg1IHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNTE2IHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1OTQ4IHRva2Vucwo=",
+      "memory": 22552576,
+      "status": "AC",
+      "time": 0.262
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2NTY5IHRva2Vucwo=",
+      "memory": 26255360,
+      "status": "AC",
+      "time": 0.278
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkwOTc2IHRva2Vucwo=",
+      "memory": 6066176,
+      "status": "AC",
+      "time": 0.151
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI5OTEgdG9rZW5zCg==",
+      "memory": 21626880,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDkyMDMgdG9rZW5zCg==",
+      "memory": 14696448,
+      "status": "AC",
+      "time": 0.089
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwMTIwIHRva2Vucwo=",
+      "memory": 28663808,
+      "status": "AC",
+      "time": 0.331
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMTk1IHRva2Vucwo=",
+      "memory": 28585984,
+      "status": "AC",
+      "time": 0.329
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMzg2IHRva2Vucwo=",
+      "memory": 28635136,
+      "status": "AC",
+      "time": 0.33
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjQ5NjE1IHRva2Vucwo=",
+      "memory": 28610560,
+      "status": "AC",
+      "time": 0.327
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMzU1IHRva2Vucwo=",
+      "memory": 28712960,
+      "status": "AC",
+      "time": 0.341
+    }
+  ],
+  "overview": {
+    "id": 404402,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 28712960,
+    "problem_name": "point_add_range_sum",
+    "problem_title": "Point Add Range Sum",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:23:54.678824Z",
+    "time": 0.341
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL dynamic_segtree.cpp SHA256 7e11fd649e9dedc3643a14954010547bb9b96337125fe496202538928f139025\ntemplate <class S, auto op, auto e> class dynamic_segtree {\n\tprivate:\n\tstruct node;\n\tusing node_ptr=unique_ptr<node>;\n\tstruct node{\n\t\tlong long idx;\n\t\tS value,product;\n\t\tnode_ptr left,right;\n\t\tnode(long long idx,S value)\n\t\t\t: idx(idx),\n\t\t\tvalue(value),\n\t\t\tproduct(value),\n\t\t\tleft(nullptr),\n\t\t\tright(nullptr) {}\n\n\t\tvoid update(){\n\t\t\tproduct=op(op(left?left->product:e(),value),right?right->product:e());\n\t\t}\n\t};\n\tconst long long n;\n\tnode_ptr root;\n\n  \tpublic:\n    dynamic_segtree() : dynamic_segtree(0) {}\n\tdynamic_segtree(long long n):n(n),root(nullptr){}\n\n\tvoid set(long long p,S x){\n\t\tassert(0<=p&&p<n);\n\t\tset(root,0,n,p,x);\n\t}\n\tvoid set(node_ptr& t,long long a,long long b,long long p,S x){\n\t\tif(!t){\n\t\t\tt=make_unique<node>(p,x);\n\t\t\treturn;\n\t\t}\n\t\tif(t->idx==p){\n\t\t\tt->value=x;\n\t\t\tt->update();\n\t\t\treturn;\n\t\t}\n\t\tlong long c=(a+b)/2;\n\t\tif(p<c){\n\t\t\tif(t->idx<p)swap(t->idx,p),swap(t->value,x);\n\t\t\tset(t->left,a,c,p,x);\n\t\t}\n\t\telse{\n\t\t\tif(p<t->idx)swap(p,t->idx),swap(x,t->value);\n\t\t\tset(t->right,c,b,p,x);\n\t\t}\n\t\tt->update();\n\t}\n\n\tS get(long long p) const{\n\t\tassert(0<=p&&p<n);\n\t\treturn get(root,0,n,p);\n\t}\n\n\tS get(const node_ptr& t,long long a,long long b,long long p) const{\n\t\tif(!t)return e();\n\t\tif(t->idx==p)return t->value;\n\t\tlong long c=(a+b)/2;\n\t\tif(p<c)return get(t->left,a,c,p);\n\t\telse return get(t->right,c,b,p);\n\t}\n\n\tS prod(long long l,long long r){\n\t\tassert(0<=l&&l<=r&&r<=n);\n\t\treturn prod(root,0,n,l,r);\n\t}\n\n\tS prod(const node_ptr& t,long long a,long long b,long long l,long long r) const{\n\t\tif(!t||b<=l||r<=a)return e();\n\t\tif(l<=a&&b<=r)return t->product;\n\t\tlong long c=(a+b)/2;\n\t\tS result=prod(t->left,a,c,l,r);\n\t\tif(l<=t->idx&&t->idx<r)result=op(result,t->value);\n\t\treturn op(result,prod(t->right,c,b,l,r));\n\t}\n\n\tS all_prod() const{\n\t\treturn root?root->product:e();\n\t}\n\n};\n// END ORIGINAL dynamic_segtree.cpp\n\nll op(ll a,ll b){return a+b;} ll e(){return 0;}\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;dynamic_segtree<ll,op,e> seg(n);\nfor(int i=0;i<n;i++){ll x;cin>>x;seg.set(i,x);}\nwhile(q--){int t,l;ll r;cin>>t>>l>>r;if(t==0)seg.set(l,seg.get(l)+r);else cout<<seg.prod(l,r)<<'\\n';}\n\n}\n"
+}

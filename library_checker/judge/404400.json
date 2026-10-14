@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIi02MzAzODQxMDY3NDA3OTgyNDUiCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ2ODYgdG9rZW5zCg==",
+      "memory": 14336000,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQyODEgdG9rZW5zCg==",
+      "memory": 14594048,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTk4NzQgdG9rZW5zCg==",
+      "memory": 10899456,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDIwIHRva2Vucwo=",
+      "memory": 19607552,
+      "status": "AC",
+      "time": 0.104
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk2NTMgdG9rZW5zCg==",
+      "memory": 19357696,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk5NDEgdG9rZW5zCg==",
+      "memory": 19578880,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "parabola_random_00",
+      "checker_out": "b2sgMTAwMzI2IHRva2Vucwo=",
+      "memory": 19357696,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "parabola_random_01",
+      "checker_out": "b2sgOTk4NTIgdG9rZW5zCg==",
+      "memory": 19312640,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "parabola_random_02",
+      "checker_out": "b2sgOTk3NTAgdG9rZW5zCg==",
+      "memory": 19312640,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "hand_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 28729344,
+      "status": "AC",
+      "time": 0.155
+    },
+    {
+      "case": "half_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 11673600,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "no_output_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 9293824,
+      "status": "AC",
+      "time": 0.063
+    }
+  ],
+  "overview": {
+    "id": 404400,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 28729344,
+    "problem_name": "line_add_get_min",
+    "problem_title": "Line Add Get Min",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:23:09.388765Z",
+    "time": 0.155
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL convex_hull_trick.cpp SHA256 02bc0eda4b2ce72142a20cf5086495a05f2f30e94affb840638baefff69b31d9\ntemplate<class T,const T id> struct convex_hull_trick{\n    struct L{\n        T a=0,b=id;\n        T f(T x)const{return a*x+b;} // 直線ax+bのxでの値\n    };\n\n    int n;\n    vector<T>x;\n    vector<L>t;\n    vector<char>u;\n\n    convex_hull_trick(const vector<T>&X) // 使用するx座標を渡して構築\n        :n(X.size()),x(X),t(4*n),u(4*n){}\n\n    void insert(T a,T b){ // 直線 ax+b を追加\n        add(1,0,n-1,{a,b});\n    }\n\n    T get(T X)const{ // x=Xでの追加済み直線の最大値\n        int p=lower_bound(x.begin(),x.end(),X)-x.begin();\n        assert(p<n&&x[p]==X);\n        return qry(1,0,n-1,p);\n    }\n\nprivate:\n    void add(int k,int l,int r,L z){ // Li Chao Treeに直線zを追加\n        if(!u[k]){t[k]=z;u[k]=1;return;}\n        int m=(l+r)/2;\n        bool a=z.f(x[l])>t[k].f(x[l]);\n        bool b=z.f(x[m])>t[k].f(x[m]);\n        if(b)swap(z,t[k]);\n        if(l==r)return;\n        if(a!=b)add(2*k,l,m,z);\n        else add(2*k+1,m+1,r,z);\n    }\n\n    T qry(int k,int l,int r,int p)const{ // x[p]での最大値を求める\n        if(!u[k])return id;\n        T y=t[k].f(x[p]);\n        if(l==r)return y;\n        int m=(l+r)/2;\n        return max(y,p<=m?qry(2*k,l,m,p)\n                         :qry(2*k+1,m+1,r,p));\n    }\n};\n// END ORIGINAL convex_hull_trick.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<pair<ll,ll>> lines(n);for(auto&[a,b]:lines)cin>>a>>b;\nstruct Q{int t;ll a,b;};vector<Q> queries;vector<ll> xs;\nfor(int i=0;i<q;i++){int t;ll a,b=0;cin>>t>>a;if(t==0)cin>>b;else xs.push_back(a);queries.push_back({t,a,b});}\nsort(xs.begin(),xs.end());xs.erase(unique(xs.begin(),xs.end()),xs.end());if(xs.empty())return 0;\nconvex_hull_trick<ll,LLONG_MIN> tr(xs);for(auto[a,b]:lines)tr.insert(-a,-b);\nfor(auto query:queries)if(query.t==0)tr.insert(-query.a,-query.b);else cout<<-tr.get(query.a)<<'\\n';\n\n}\n"
+}

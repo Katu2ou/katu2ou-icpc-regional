@@ -1,5 +1,14 @@
 # ライブラリ一覧
 
+公開先: https://github.com/Katu2ou/katu2ou-icpc-regional
+
+関連ライブラリ: https://github.com/Katu2ou/Katu2ou-Cpro-Library
+
+`template.cpp` の先頭に、両リポジトリのトップページURLを記載しています。
+[AtCoder生成AI対策ルール](https://info.atcoder.jp/entry/llm-rules-ja)に従い、
+事前作成したコードを使用するときは、その使用版をコンテスト開始前にWebで公開し、
+コピーして提出するコードに参照URLを残してください。
+
 ## データ構造
 - segtree
     - ACLからmax_left, min_rightを除いたもの

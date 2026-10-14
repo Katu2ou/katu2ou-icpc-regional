@@ -1,0 +1,65 @@
+[
+  {
+    "repository": "atcoder/ac-library",
+    "commit": "864245a00b00dd008d1abfdc239618fdb7d139da",
+    "path": "atcoder/mincostflow.hpp",
+    "url": "https://raw.githubusercontent.com/atcoder/ac-library/864245a00b00dd008d1abfdc239618fdb7d139da/atcoder/mincostflow.hpp",
+    "sha256": "88396cd7cae7274db2a1f9a0ffdfe8673ac508f7b3e6972a96d5b75e4b6bfe88"
+  },
+  {
+    "repository": "atcoder/ac-library",
+    "commit": "864245a00b00dd008d1abfdc239618fdb7d139da",
+    "path": "atcoder/internal_csr.hpp",
+    "url": "https://raw.githubusercontent.com/atcoder/ac-library/864245a00b00dd008d1abfdc239618fdb7d139da/atcoder/internal_csr.hpp",
+    "sha256": "1e55f89eb899552a60ae5c7603b2fb4adbaf8ac2217e8069eec834c5938454be"
+  },
+  {
+    "repository": "atcoder/ac-library",
+    "commit": "864245a00b00dd008d1abfdc239618fdb7d139da",
+    "path": "atcoder/internal_queue.hpp",
+    "url": "https://raw.githubusercontent.com/atcoder/ac-library/864245a00b00dd008d1abfdc239618fdb7d139da/atcoder/internal_queue.hpp",
+    "sha256": "028a31d5f4070d7b5b7d43b00e124bcd59cf3ca0674d0f12cd6b52c1604fd713"
+  },
+  {
+    "repository": "atcoder/ac-library",
+    "commit": "864245a00b00dd008d1abfdc239618fdb7d139da",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/atcoder/ac-library/864245a00b00dd008d1abfdc239618fdb7d139da/LICENSE",
+    "sha256": "5537d4d10b76b81b6e8dfd8b644480a4b1efa332fbb0cdb61126c5be781ef7b4"
+  },
+  {
+    "repository": "yosupo06/library-checker-problems",
+    "commit": "1814c4e5205517e368bb57a8d1127eb961cfeaae",
+    "path": "graph/assignment/gen/hand_minus.cpp",
+    "url": "https://raw.githubusercontent.com/yosupo06/library-checker-problems/1814c4e5205517e368bb57a8d1127eb961cfeaae/graph/assignment/gen/hand_minus.cpp",
+    "sha256": "6f815d8712da2427dcf7f46c5862455b9cb1bea55ebd0d723ef34d60500e35c1"
+  },
+  {
+    "repository": "yosupo06/library-checker-problems",
+    "commit": "1814c4e5205517e368bb57a8d1127eb961cfeaae",
+    "path": "graph/assignment/gen/hand_plus.cpp",
+    "url": "https://raw.githubusercontent.com/yosupo06/library-checker-problems/1814c4e5205517e368bb57a8d1127eb961cfeaae/graph/assignment/gen/hand_plus.cpp",
+    "sha256": "802cd93737835546b0065fe9c1f5d477430106302d8406d2d6762949bfc239b3"
+  },
+  {
+    "repository": "yosupo06/library-checker-problems",
+    "commit": "1814c4e5205517e368bb57a8d1127eb961cfeaae",
+    "path": "graph/assignment/gen/multiplication_table.cpp",
+    "url": "https://raw.githubusercontent.com/yosupo06/library-checker-problems/1814c4e5205517e368bb57a8d1127eb961cfeaae/graph/assignment/gen/multiplication_table.cpp",
+    "sha256": "faeaab1a9c305f4768080b8ddc23fcb27946212478bc296c07c926bb5022544f"
+  },
+  {
+    "repository": "yosupo06/library-checker-problems",
+    "commit": "1814c4e5205517e368bb57a8d1127eb961cfeaae",
+    "path": "graph/assignment/info.toml",
+    "url": "https://raw.githubusercontent.com/yosupo06/library-checker-problems/1814c4e5205517e368bb57a8d1127eb961cfeaae/graph/assignment/info.toml",
+    "sha256": "1f49b7ed92086fe5d98b7af11065b7d5aba0a25dcd24403c7e9b1266d249e6f0"
+  },
+  {
+    "repository": "yosupo06/library-checker-problems",
+    "commit": "1814c4e5205517e368bb57a8d1127eb961cfeaae",
+    "path": "graph/assignment/sol/correct.cpp",
+    "url": "https://raw.githubusercontent.com/yosupo06/library-checker-problems/1814c4e5205517e368bb57a8d1127eb961cfeaae/graph/assignment/sol/correct.cpp",
+    "sha256": "5ff8623f50767f0dde27f323ed8e9ff44908d602071ff98aefaa8529dff4713f"
+  }
+]

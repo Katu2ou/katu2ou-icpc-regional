@@ -1,0 +1,83 @@
+[
+  {
+    "key": "acl_global",
+    "problem": "assignment",
+    "lang": "cpp17",
+    "source": "submissions/acl_global.cc",
+    "source_sha256": "6f5f467fa6ad3a0cffdca6a9ab1d4618739392bbed0d9babc1bd3bc5d32436a4",
+    "libraries": [],
+    "note": "Isolated comparison; original mincostflow.cpp is unchanged. See upstream.json and build.py for provenance.",
+    "started_at": "2026-09-21T08:29:03.704267+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404495,
+    "url": "https://judge.yosupo.jp/submission/404495",
+    "source_verified": true,
+    "overview": {
+      "id": 404495,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 40050688,
+      "problem_name": "assignment",
+      "problem_title": "Assignment Problem",
+      "status": "AC",
+      "submission_time": "2026-09-21T08:29:03.976408Z",
+      "time": 1.078
+    },
+    "checked_at": "2026-09-21T08:29:24.328546+00:00"
+  },
+  {
+    "key": "acl_row",
+    "problem": "assignment",
+    "lang": "cpp17",
+    "source": "submissions/acl_row.cc",
+    "source_sha256": "232849ddd9e27ee1860479554d070cd1598fc4b1eeb5ecda60692f6ec9a0129b",
+    "libraries": [],
+    "note": "Isolated comparison; original mincostflow.cpp is unchanged. See upstream.json and build.py for provenance.",
+    "started_at": "2026-09-21T08:29:05.062233+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404496,
+    "url": "https://judge.yosupo.jp/submission/404496",
+    "source_verified": true,
+    "overview": {
+      "id": 404496,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 40112128,
+      "problem_name": "assignment",
+      "problem_title": "Assignment Problem",
+      "status": "AC",
+      "submission_time": "2026-09-21T08:29:05.278943Z",
+      "time": 1.052
+    },
+    "checked_at": "2026-09-21T08:29:42.626175+00:00"
+  },
+  {
+    "key": "early_exit_row",
+    "problem": "assignment",
+    "lang": "cpp17",
+    "source": "submissions/early_exit_row.cc",
+    "source_sha256": "6596f563315cb37e04ff96eb25cd0fdf3fbb5111dcd78283efed51c977f9ddcd",
+    "libraries": [],
+    "note": "Isolated comparison; original mincostflow.cpp is unchanged. See upstream.json and build.py for provenance.",
+    "started_at": "2026-09-21T08:29:32.592134+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404498,
+    "url": "https://judge.yosupo.jp/submission/404498",
+    "source_verified": true,
+    "overview": {
+      "id": 404498,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 22470656,
+      "problem_name": "assignment",
+      "problem_title": "Assignment Problem",
+      "status": "AC",
+      "submission_time": "2026-09-21T08:29:32.785862Z",
+      "time": 1.762
+    },
+    "checked_at": "2026-09-21T08:30:32.475544+00:00"
+  }
+]

@@ -1,0 +1,705 @@
+[
+  {
+    "key": "binary_indexed_tree",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "15\n7\n25\n6\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "binarytrie",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2\n1\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "bmbm_recurrence",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2\n3 998244351 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "4\n3 998244351 3 998244349 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5\n0 0 0 0 1 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "bmbm_kth",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "cartesiantree",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 1 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 3 1 3 10 6 4 8 6 8 3 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "convex_hull_trick",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n1\n-1\n-3\n-10\n-10\n-10\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "dsu",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n1\n0\n1\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "dynamic_segtree",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "15\n7\n25\n6\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "eulertour",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n0\n0\n2\n2\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "geometry",
+    "compile": 1,
+    "samples": []
+  },
+  {
+    "key": "hld_path_sum",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1111\n10110\n101110\n1100\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "hld_short",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "11110\n11100\n111111\n1000\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "lazy_segtree",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "15\n404\n41511\n4317767\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "lcp_array",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "21\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "53\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "33\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "linear_equation",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1\n998244351 26 0 \n1 998244351 1 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "linear_equation_det",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "998244263\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "998244352\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "linear_equation_rank",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "linear_equation_bitset",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1\n010\n111\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "-1\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2\n100\n110\n101\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "manacher",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 0 1 0 3 0 7 0 3 0 1 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 0 1 0 1 4 1 0 7 0 1 4 1 0 1 0 1 4 1 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 0 3 0 5 0 3 0 1 0 3 0 5 0 3 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 2 3 4 5 4 3 2 1 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "math",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "3\n13\n0\n314095480\n499999999500000000\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "maxflow",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "3\n1 1\n2 2\n0 0\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "mincostflow",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "9\n2 0 1 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "mo",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "3\n0\n4\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "modint_convolution",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5 16 34 60 70 70 59 36 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "871938225 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "rollback_mo",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "3\n0\n4\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "rolling_hash",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "7 0 0 0 0 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "11 0 0 0 0 0 0 0 0 0 0 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "9 0 3 0 1 0 1 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5 4 3 2 1 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "scc",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "4\n1 5\n2 1 4\n1 2\n2 0 3\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "segtree",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "14005\n470\n8275\n5500\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "suffix_array",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "6 0 5 3 1 4 2 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "10 7 4 1 0 9 8 6 3 5 2 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "8 0 2 6 4 1 3 7 5 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "4 3 2 1 0 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "template",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "6912\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2000000000\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "trie",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2\n0\n2\n3\n1\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "twosat",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "s SATISFIABLE\nv -1 2 -3 4 5 0\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "s UNSATISFIABLE\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "wavelet_matrix_kth",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1\n4\n1\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "wavelet_matrix_rank",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "2\n0\n1\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "z_algorithm",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "7 0 0 0 0 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "11 0 0 0 0 0 0 0 0 0 0 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "9 0 3 0 1 0 1 0 1 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_03.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5 4 3 2 1 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "rerooting",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "9287 89589 895590 92471 92375 5131 42598 425185 \n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "881938226 1855747 27566470 \n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "dynamic_segtree_composite",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "14005\n470\n8275\n5500\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "hld_composite",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1555\n604\n6571\n222\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "411\n2199\n607\n3471\n2199\n6034\n",
+        "stderr": ""
+      }
+    ]
+  }
+]

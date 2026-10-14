@@ -1,0 +1,1527 @@
+[
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "BIT()",
+    "tests": [
+      "lc/bit_lower_bound"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "BIT(n)",
+    "tests": [
+      "previous/binary_indexed_tree"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "add(i,x)",
+    "tests": [
+      "previous/binary_indexed_tree"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "add(l,r,x)",
+    "tests": [
+      "lc/bit_range_add"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "init",
+    "tests": [
+      "lc/bit_lower_bound"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "lower_bound",
+    "tests": [
+      "lc/bit_lower_bound"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "query(i)",
+    "tests": [
+      "previous/binary_indexed_tree"
+    ]
+  },
+  {
+    "file": "binary_indexed_tree.cpp",
+    "function": "query(l,r)",
+    "tests": [
+      "previous/binary_indexed_tree"
+    ]
+  },
+  {
+    "file": "binarytrie.cpp",
+    "function": "add",
+    "tests": [
+      "previous/binarytrie"
+    ]
+  },
+  {
+    "file": "binarytrie.cpp",
+    "function": "erase",
+    "tests": [
+      "previous/binarytrie"
+    ]
+  },
+  {
+    "file": "binarytrie.cpp",
+    "function": "insert",
+    "tests": [
+      "previous/binarytrie"
+    ]
+  },
+  {
+    "file": "binarytrie.cpp",
+    "function": "max_xor",
+    "tests": [
+      "lc/binarytrie_max"
+    ]
+  },
+  {
+    "file": "binarytrie.cpp",
+    "function": "min_xor",
+    "tests": [
+      "previous/binarytrie"
+    ]
+  },
+  {
+    "file": "bmbm.cpp",
+    "function": "BMBM",
+    "tests": [
+      "lc/bmbm_wrapper"
+    ]
+  },
+  {
+    "file": "bmbm.cpp",
+    "function": "BerlekampMassey",
+    "tests": [
+      "previous/bmbm_recurrence"
+    ]
+  },
+  {
+    "file": "bmbm.cpp",
+    "function": "BostanMori",
+    "tests": [
+      "previous/bmbm_kth"
+    ]
+  },
+  {
+    "file": "cartesiantree.cpp",
+    "function": "CartesianTree()",
+    "tests": [
+      "lc/cartesian_all"
+    ]
+  },
+  {
+    "file": "cartesiantree.cpp",
+    "function": "CartesianTree(vector)",
+    "tests": [
+      "lc/cartesian_all"
+    ]
+  },
+  {
+    "file": "convex_hull_trick.cpp",
+    "function": "L::f",
+    "tests": [
+      "previous/convex_hull_trick"
+    ]
+  },
+  {
+    "file": "convex_hull_trick.cpp",
+    "function": "add",
+    "tests": [
+      "previous/convex_hull_trick"
+    ]
+  },
+  {
+    "file": "convex_hull_trick.cpp",
+    "function": "convex_hull_trick",
+    "tests": [
+      "previous/convex_hull_trick"
+    ]
+  },
+  {
+    "file": "convex_hull_trick.cpp",
+    "function": "get",
+    "tests": [
+      "previous/convex_hull_trick"
+    ]
+  },
+  {
+    "file": "convex_hull_trick.cpp",
+    "function": "insert",
+    "tests": [
+      "previous/convex_hull_trick"
+    ]
+  },
+  {
+    "file": "convex_hull_trick.cpp",
+    "function": "qry",
+    "tests": [
+      "previous/convex_hull_trick"
+    ]
+  },
+  {
+    "file": "dsu.cpp",
+    "function": "dsu",
+    "tests": [
+      "previous/dsu"
+    ]
+  },
+  {
+    "file": "dsu.cpp",
+    "function": "leader",
+    "tests": [
+      "previous/dsu"
+    ]
+  },
+  {
+    "file": "dsu.cpp",
+    "function": "merge",
+    "tests": [
+      "previous/dsu"
+    ]
+  },
+  {
+    "file": "dsu.cpp",
+    "function": "same",
+    "tests": [
+      "previous/dsu"
+    ]
+  },
+  {
+    "file": "dsu.cpp",
+    "function": "size",
+    "tests": [
+      "lc/dsu_size"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "all_prod",
+    "tests": [
+      "lc/dynamic_all_prod"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "dynamic_segtree()",
+    "tests": [
+      "lc/dynamic_all_prod"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "dynamic_segtree(n)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "get(node,a,b,p)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "get(p)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "node::node",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "node::update",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "prod(l,r)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "prod(node,a,b,l,r)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "set(node,a,b,p,x)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "dynamic_segtree.cpp",
+    "function": "set(p,x)",
+    "tests": [
+      "previous/dynamic_segtree",
+      "previous/dynamic_segtree_composite"
+    ]
+  },
+  {
+    "file": "eulertour.cpp",
+    "function": "EulerTour",
+    "tests": [
+      "previous/eulertour"
+    ]
+  },
+  {
+    "file": "eulertour.cpp",
+    "function": "dfs",
+    "tests": [
+      "previous/eulertour"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "Circle()",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "Circle(Point,r)",
+    "tests": [
+      "aoj/geo_circle_relation"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "ConvexHull",
+    "tests": [
+      "geometry/geo_hull",
+      "aoj/geo_hull_boundary"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "Line()",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "Line(A,B,C)",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "Line(Point,Point)",
+    "tests": [
+      "aoj/geo_projection"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "PolygonArea",
+    "tests": [
+      "aoj/geo_area"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "SignedPolygonArea",
+    "tests": [
+      "aoj/geo_area"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "ccw",
+    "tests": [
+      "aoj/geo_orientation"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "circumCircle",
+    "tests": [
+      "aoj/geo_circumcircle"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "cross",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "crossPoint(Circle,Circle)",
+    "tests": [
+      "aoj/geo_circle_cross"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "crossPoint(Circle,Line)",
+    "tests": [
+      "aoj/geo_circle_line"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "crossPoint(Line,Line)",
+    "tests": [
+      "aoj/geo_line_cross"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "degreeToRadian",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "distanceBetweenLineAndPoint",
+    "tests": [
+      "aoj/geo_incircle"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "distanceBetweenSegmentAndPoint",
+    "tests": [
+      "aoj/geo_distance"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "distanceBetweenSegments",
+    "tests": [
+      "aoj/geo_distance"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "dot",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "equal",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "inCircle",
+    "tests": [
+      "aoj/geo_incircle"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "isContained",
+    "tests": [
+      "aoj/geo_contained"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "isConvex",
+    "tests": [
+      "aoj/geo_convex"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "isIntersect(Circle,Circle)",
+    "tests": [
+      "aoj/geo_circle_relation"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "isIntersect(Line,Line)",
+    "tests": [
+      "aoj/geo_segments_intersect"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "isOrthogonal",
+    "tests": [
+      "aoj/geo_parallel"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "isParallel",
+    "tests": [
+      "aoj/geo_parallel"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "normalVector",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "onLine",
+    "tests": [
+      "aoj/geo_orientation"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "onSegment",
+    "tests": [
+      "aoj/geo_orientation"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "projection",
+    "tests": [
+      "aoj/geo_projection"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "radianToDegree",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "reflection",
+    "tests": [
+      "aoj/geo_reflection"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "rotate",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "sgn",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "tangent",
+    "tests": [
+      "aoj/geo_tangents"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "tangentToCircle",
+    "tests": [
+      "aoj/geo_tangent_point"
+    ]
+  },
+  {
+    "file": "geometry.cpp",
+    "function": "unitVector",
+    "tests": [
+      "geometry/geo_hull"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "HeavyLightDecomposition",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "ascend",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "descend",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "dfs_hld",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "dfs_sz",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "dist",
+    "tests": [
+      "lc/hld_jump"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "get_edge",
+    "tests": [
+      "lc/hld_jump"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "lca",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "level_ancestor",
+    "tests": [
+      "lc/hld_jump"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "path_noncommutative_query",
+    "tests": [
+      "previous/hld_composite"
+    ]
+  },
+  {
+    "file": "hld.cpp",
+    "function": "path_query",
+    "tests": [
+      "previous/hld_path_sum"
+    ]
+  },
+  {
+    "file": "hld_short.cpp",
+    "function": "dfs_hld",
+    "tests": [
+      "previous/hld_short"
+    ]
+  },
+  {
+    "file": "hld_short.cpp",
+    "function": "dfs_sz",
+    "tests": [
+      "previous/hld_short"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "all",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "all_prod",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "apply(a,b,f)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "apply(a,b,f,k,l,r)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "apply(p,f)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "get",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "lazy_segtree(n)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "lazy_segtree(vector)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "max_right",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "lc/lazy_segtree_range_search"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "min_left",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "lc/lazy_segtree_range_search"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "ml",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "lc/lazy_segtree_range_search"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "mr",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "lc/lazy_segtree_range_search"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "prod(a,b)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "prod(a,b,k,l,r)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "push",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "set(p,x)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lazy_segtree.cpp",
+    "function": "set(p,x,k,l,r)",
+    "tests": [
+      "lc/lazy_segtree_search",
+      "previous/lazy_segtree"
+    ]
+  },
+  {
+    "file": "lcp_array.cpp",
+    "function": "lcp_array",
+    "tests": [
+      "previous/lcp_array"
+    ]
+  },
+  {
+    "file": "linear_equation.cpp",
+    "function": "GaussElimination",
+    "tests": [
+      "previous/linear_equation_det",
+      "previous/linear_equation_rank",
+      "previous/linear_equation"
+    ]
+  },
+  {
+    "file": "linear_equation.cpp",
+    "function": "LinearEquation",
+    "tests": [
+      "previous/linear_equation"
+    ]
+  },
+  {
+    "file": "linear_equation_bitset.cpp",
+    "function": "LinearEquation<MAX>",
+    "tests": [
+      "previous/linear_equation_bitset"
+    ]
+  },
+  {
+    "file": "manacher.cpp",
+    "function": "manacher",
+    "tests": [
+      "previous/manacher"
+    ]
+  },
+  {
+    "file": "math.cpp",
+    "function": "crt",
+    "tests": [
+      "aoj/math_crt",
+      "aoj/math_power"
+    ]
+  },
+  {
+    "file": "math.cpp",
+    "function": "floor_sum",
+    "tests": [
+      "previous/math",
+      "aoj/math_power"
+    ]
+  },
+  {
+    "file": "math.cpp",
+    "function": "igcd",
+    "tests": [
+      "aoj/math_bezout",
+      "aoj/math_power"
+    ]
+  },
+  {
+    "file": "math.cpp",
+    "function": "inv_mod",
+    "tests": [
+      "aoj/math_bezout",
+      "aoj/math_power"
+    ]
+  },
+  {
+    "file": "math.cpp",
+    "function": "pow_mod",
+    "tests": [
+      "aoj/math_power"
+    ]
+  },
+  {
+    "file": "math.cpp",
+    "function": "smod",
+    "tests": [
+      "aoj/math_power"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "add_edge",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "change_edge",
+    "tests": [
+      "lc/maxflow_helpers",
+      "lc/maxflow_nonzero_change"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "edges",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "flow(s,t)",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "flow(s,t,limit)",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "get_edge",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "mf_graph",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "maxflow.cpp",
+    "function": "min_cut",
+    "tests": [
+      "lc/maxflow_helpers"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "add_edge",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "edges",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "flow(s,t)",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "flow(s,t,limit)",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "get_edge",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "mcf_graph",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "slope(s,t)",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mincostflow.cpp",
+    "function": "slope(s,t,limit)",
+    "tests": [
+      "lc/mincost_slope_assignment",
+      "aoj/mincost_slope",
+      "aoj/mincost_slope_unlimited"
+    ]
+  },
+  {
+    "file": "mo.cpp",
+    "function": "Mo",
+    "tests": [
+      "previous/mo",
+      "lc/mo_directional"
+    ]
+  },
+  {
+    "file": "mo.cpp",
+    "function": "add",
+    "tests": [
+      "previous/mo",
+      "lc/mo_directional"
+    ]
+  },
+  {
+    "file": "mo.cpp",
+    "function": "build(AL,AR,EL,ER,out)",
+    "tests": [
+      "previous/mo",
+      "lc/mo_directional"
+    ]
+  },
+  {
+    "file": "mo.cpp",
+    "function": "build(add,erase,out)",
+    "tests": [
+      "previous/mo",
+      "lc/mo_directional"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "convolution",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "inv",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "mint",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "mod",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "ntt",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator*",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator*=",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator+",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator+=",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator-",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator-=",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator/",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "operator/=",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "pow",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "modint_convolution.cpp",
+    "function": "val",
+    "tests": [
+      "lc/mint_all"
+    ]
+  },
+  {
+    "file": "rerooting.cpp",
+    "function": "RerootingDP",
+    "tests": [
+      "previous/rerooting",
+      "lc/rerooting_nonzero_root"
+    ]
+  },
+  {
+    "file": "rerooting.cpp",
+    "function": "add_edge",
+    "tests": [
+      "previous/rerooting",
+      "lc/rerooting_nonzero_root"
+    ]
+  },
+  {
+    "file": "rerooting.cpp",
+    "function": "build",
+    "tests": [
+      "previous/rerooting",
+      "lc/rerooting_nonzero_root"
+    ]
+  },
+  {
+    "file": "rerooting.cpp",
+    "function": "es_build",
+    "tests": [
+      "previous/rerooting",
+      "lc/rerooting_nonzero_root"
+    ]
+  },
+  {
+    "file": "rerooting.cpp",
+    "function": "outs_start",
+    "tests": [
+      "previous/rerooting",
+      "lc/rerooting_nonzero_root"
+    ]
+  },
+  {
+    "file": "rerooting.cpp",
+    "function": "reroot",
+    "tests": [
+      "previous/rerooting",
+      "lc/rerooting_nonzero_root"
+    ]
+  },
+  {
+    "file": "rollback_mo.cpp",
+    "function": "MoRollBack",
+    "tests": [
+      "previous/rollback_mo"
+    ]
+  },
+  {
+    "file": "rollback_mo.cpp",
+    "function": "add",
+    "tests": [
+      "previous/rollback_mo"
+    ]
+  },
+  {
+    "file": "rollback_mo.cpp",
+    "function": "run",
+    "tests": [
+      "previous/rollback_mo"
+    ]
+  },
+  {
+    "file": "rolling_hash.cpp",
+    "function": "get",
+    "tests": [
+      "previous/rolling_hash"
+    ]
+  },
+  {
+    "file": "rolling_hash.cpp",
+    "function": "mul",
+    "tests": [
+      "previous/rolling_hash"
+    ]
+  },
+  {
+    "file": "rolling_hash.cpp",
+    "function": "rolling_hash",
+    "tests": [
+      "previous/rolling_hash"
+    ]
+  },
+  {
+    "file": "scc.cpp",
+    "function": "add_edge",
+    "tests": [
+      "previous/scc"
+    ]
+  },
+  {
+    "file": "scc.cpp",
+    "function": "scc",
+    "tests": [
+      "previous/scc"
+    ]
+  },
+  {
+    "file": "scc.cpp",
+    "function": "scc_graph",
+    "tests": [
+      "previous/scc"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "all_prod",
+    "tests": [
+      "previous/segtree",
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "get",
+    "tests": [
+      "previous/segtree",
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "max_right",
+    "tests": [
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "min_left",
+    "tests": [
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "ml",
+    "tests": [
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "mr",
+    "tests": [
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "prod",
+    "tests": [
+      "previous/segtree",
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "segtree(n)",
+    "tests": [
+      "previous/segtree",
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "segtree(vector)",
+    "tests": [
+      "previous/segtree",
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "segtree.cpp",
+    "function": "set",
+    "tests": [
+      "previous/segtree",
+      "lc/segtree_search"
+    ]
+  },
+  {
+    "file": "suffix_array.cpp",
+    "function": "suffix_array(string)",
+    "tests": [
+      "previous/suffix_array"
+    ]
+  },
+  {
+    "file": "suffix_array.cpp",
+    "function": "suffix_array(vector<int>,upper)",
+    "tests": [
+      "lc/suffix_array_integer"
+    ]
+  },
+  {
+    "file": "suffix_array.cpp",
+    "function": "suffix_array<T>(vector<T>)",
+    "tests": [
+      "previous/suffix_array"
+    ]
+  },
+  {
+    "file": "template.cpp",
+    "function": "chmax",
+    "tests": [
+      "previous/template"
+    ]
+  },
+  {
+    "file": "template.cpp",
+    "function": "chmin",
+    "tests": [
+      "previous/template"
+    ]
+  },
+  {
+    "file": "template.cpp",
+    "function": "main",
+    "tests": [
+      "lc/template_entry"
+    ]
+  },
+  {
+    "file": "template.cpp",
+    "function": "solve",
+    "tests": [
+      "lc/template_entry"
+    ]
+  },
+  {
+    "file": "trie.cpp",
+    "function": "N::N",
+    "tests": [
+      "previous/trie"
+    ]
+  },
+  {
+    "file": "trie.cpp",
+    "function": "find",
+    "tests": [
+      "previous/trie"
+    ]
+  },
+  {
+    "file": "trie.cpp",
+    "function": "insert",
+    "tests": [
+      "previous/trie"
+    ]
+  },
+  {
+    "file": "twosat.cpp",
+    "function": "add",
+    "tests": [
+      "previous/twosat"
+    ]
+  },
+  {
+    "file": "twosat.cpp",
+    "function": "add_clause",
+    "tests": [
+      "previous/twosat"
+    ]
+  },
+  {
+    "file": "twosat.cpp",
+    "function": "answer",
+    "tests": [
+      "previous/twosat"
+    ]
+  },
+  {
+    "file": "twosat.cpp",
+    "function": "satisfiable",
+    "tests": [
+      "previous/twosat"
+    ]
+  },
+  {
+    "file": "twosat.cpp",
+    "function": "two_sat",
+    "tests": [
+      "previous/twosat"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "WaveletMatrix",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "access",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "kth",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "kth_largest",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "less",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "next_value",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "prev_value",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "range_freq",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "rank(x,l,r)",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "wavelet_matrix.cpp",
+    "function": "rank(x,r)",
+    "tests": [
+      "lc/wavelet_all",
+      "lc/wavelet_frequency"
+    ]
+  },
+  {
+    "file": "z_algorithm.cpp",
+    "function": "z_algorithm",
+    "tests": [
+      "previous/z_algorithm"
+    ]
+  }
+]

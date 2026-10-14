@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTc3MDcgdG9rZW5zCg==",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjk4MzAgdG9rZW5zCg==",
+      "memory": 1871872,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 1617920,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzYwMzMgdG9rZW5zCg==",
+      "memory": 1314816,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTQ4NjggdG9rZW5zCg==",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTc3MDcgdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjk4MzAgdG9rZW5zCg==",
+      "memory": 1114112,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMzYwMzMgdG9rZW5zCg==",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMTQ4NjggdG9rZW5zCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.004
+    }
+  ],
+  "overview": {
+    "id": 404416,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 1871872,
+    "problem_name": "sum_of_floor_of_linear",
+    "problem_title": "Sum of Floor of Linear",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:29:46.037194Z",
+    "time": 0.026
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL math.cpp SHA256 f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0\nusing ll=long long;\nusing ull=unsigned long long;\n\nll smod(ll x,ll m){return (x%=m)<0?x+m:x;}\n\npair<ll,ll> igcd(ll a,ll b){\n    a=smod(a,b); if(!a)return {b,0};\n    ll s=b,t=a,x=0,y=1;\n    while(t){\n        ll q=s/t;\n        s-=t*q; x-=y*q;\n        swap(s,t); swap(x,y);\n    }\n    if(x<0)x+=b/s;\n    return {s,x};\n}\n\nll pow_mod(ll x,ll n,int m){\n    ll r=1%m; x=smod(x,m);\n    for(;n;n>>=1,x=x*x%m)\n        if(n&1)r=r*x%m;\n    return r;\n}\n\nll inv_mod(ll x,ll m){\n    return igcd(x,m).second;\n}\n\npair<ll,ll> crt(const vector<ll>&r,const vector<ll>&m){\n    ll R=0,M=1;\n    for(int i=0;i<(int)r.size();i++){\n        ll x=smod(r[i],m[i]);\n        auto [g,im]=igcd(M,m[i]);\n        ll u=m[i]/g;\n        if((x-R)%g)return {0,0};\n        ll t=(__int128)smod((x-R)/g,u)*im%u;\n        R+=M*t; M*=u; R=smod(R,M);\n    }\n    return {R,M};\n}\n\nll floor_sum(ll n,ll m,ll a,ll b){\n    ull z=0;\n    if(a<0){\n        ull x=smod(a,m);\n        z-=1ULL*n*(n-1)/2*((x-a)/m); a=x;\n    }\n    if(b<0){\n        ull x=smod(b,m);\n        z-=1ULL*n*((x-b)/m); b=x;\n    }\n    for(;;){\n        if(a>=m)z+=1ULL*n*(n-1)/2*(a/m),a%=m;\n        if(b>=m)z+=1ULL*n*(b/m),b%=m;\n        ull y=(ull)a*n+b;\n        if(y<(ull)m)return (ll)z;\n        n=y/m; b=y%m; swap(a,m);\n    }\n}\n// END ORIGINAL math.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint t;cin>>t;while(t--){ll n,m,a,b;cin>>n>>m>>a>>b;cout<<floor_sum(n,m,a,b)<<'\\n';}\n\n}\n"
+}

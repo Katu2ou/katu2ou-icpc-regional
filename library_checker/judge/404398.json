@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjU2ODA2OTY3NiIK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ4MjQzNDIxMCIK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjMwODMyMjgxOCIK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQ2MzM5Njg5MyIK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjc2OTY0NzM5NSIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgIjE4OTMwNTAxMCIK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgIjg4MzgxNDg1NiIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgIjI0MzkyNzAzNSIK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgIjI2ODE5NjY2MiIK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgIjM3MDYyMDUwNCIK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjE0MTc2MjU1MiIK",
+      "memory": 8941568,
+      "status": "AC",
+      "time": 4.532
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjQxMTU1ODc3NyIK",
+      "memory": 8880128,
+      "status": "AC",
+      "time": 4.524
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjYxODYwOTAyNSIK",
+      "memory": 8908800,
+      "status": "AC",
+      "time": 4.523
+    },
+    {
+      "case": "near_65536_00",
+      "checker_out": "b2sgIjMxODYwMjE3OSIK",
+      "memory": 5099520,
+      "status": "AC",
+      "time": 2.159
+    },
+    {
+      "case": "near_65536_01",
+      "checker_out": "b2sgIjY1NzI2NTc5NiIK",
+      "memory": 7204864,
+      "status": "AC",
+      "time": 3.254
+    },
+    {
+      "case": "near_65536_02",
+      "checker_out": "b2sgIjE1OTEwOTEyMiIK",
+      "memory": 7884800,
+      "status": "AC",
+      "time": 4.504
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjY4OTMyMDY1MyIK",
+      "memory": 2326528,
+      "status": "AC",
+      "time": 0.999
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjI5NTUxNzIzMyIK",
+      "memory": 8318976,
+      "status": "AC",
+      "time": 4.432
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjEwNTczOTI3MiIK",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 2.134
+    }
+  ],
+  "overview": {
+    "id": 404398,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 8941568,
+    "problem_name": "kth_term_of_linearly_recurrent_sequence",
+    "problem_title": "Kth term of Linearly Recurrent Sequence",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:21:58.540559Z",
+    "time": 4.532
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL modint_convolution.cpp SHA256 92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454\nstruct mint{\n    static const int M=998244353;\n    int x;\n    mint(long long v=0):x((v%M+M)%M){}\n    int val()const{return x;}\n    static int mod(){return M;}\n    mint& operator+=(mint a){if((x+=a.x)>=M)x-=M;return *this;}\n    mint& operator-=(mint a){if((x-=a.x)<0)x+=M;return *this;}\n    mint& operator*=(mint a){x=(long long)x*a.x%M;return *this;}\n    mint pow(long long n)const{\n        mint a=*this,r=1;\n        for(;n;n>>=1,a*=a)if(n&1)r*=a;\n        return r;\n    }\n    mint inv()const{return pow(M-2);}\n    mint& operator/=(mint a){return *this*=a.inv();}\n    friend mint operator+(mint a,mint b){return a+=b;}\n    friend mint operator-(mint a,mint b){return a-=b;}\n    friend mint operator*(mint a,mint b){return a*=b;}\n    friend mint operator/(mint a,mint b){return a/=b;}\n};\nusing modint998244353=mint;\nvoid ntt(vector<mint>&a,bool inv=0){\n    int n=a.size();\n    for(int i=1,j=0;i<n;i++){\n        int b=n>>1; for(;j&b;b>>=1)j^=b; j^=b;\n        if(i<j)swap(a[i],a[j]);\n    }\n    for(int l=2;l<=n;l<<=1){\n        mint w=mint(3).pow((mint::M-1)/l);\n        if(inv)w=w.inv();\n        for(int i=0;i<n;i+=l){\n            mint z=1;\n            for(int j=0;j<l/2;j++){\n                mint x=a[i+j],y=a[i+j+l/2]*z;\n                a[i+j]=x+y; a[i+j+l/2]=x-y; z*=w;\n            }\n        }\n    }\n    if(inv){\n        mint z=mint(n).inv();\n        for(auto&x:a)x*=z;\n    }\n}\nvector<mint> convolution(vector<mint>a,vector<mint>b){\n    if(a.empty()||b.empty())return {};\n    int n=a.size()+b.size()-1,z=1;\n    while(z<n)z<<=1;\n    a.resize(z); b.resize(z); ntt(a); ntt(b);\n    for(int i=0;i<z;i++)a[i]*=b[i];\n    ntt(a,1); a.resize(n);\n    return a;\n}\n// END ORIGINAL modint_convolution.cpp\n\n// BEGIN ORIGINAL bmbm.cpp SHA256 4170242b4c6a6adfe8738ea2ba31b896a5a00a6a146cec56dba204e16c6447ad\n// modint-convolutionが前提\n// 数列sから最短の線形漸化式\n// s[n]=c[0]s[n-1]+...+c[d-1]s[n-d] を求める\nvector<mint> BerlekampMassey(const vector<mint>&s){\n    vector<mint>c{1},b{1}; int l=0,m=1; mint d0=1;\n    for(int n=0;n<(int)s.size();n++){\n        mint d=s[n];\n        for(int i=1;i<=l;i++)d+=c[i]*s[n-i];\n        if(!d.val()){m++;continue;}\n        auto t=c; mint z=d/d0;\n        if(c.size()<b.size()+m)c.resize(b.size()+m);\n        for(int i=0;i<(int)b.size();i++)c[i+m]-=z*b[i];\n        if(2*l<=n)l=n+1-l,b=t,d0=d,m=1;\n        else m++;\n    }\n    c.erase(c.begin());\n    for(auto&x:c)x=mint()-x;\n    return c;\n}\n// 初項aと漸化式cから第n項をO(M(d)log n)で求める\nmint BostanMori(vector<mint>a,vector<mint>c,long long n){\n    if(n<(long long)a.size())return a[n];\n    int d=c.size(); if(!d)return 0;\n    a.resize(d);\n    vector<mint>q(d+1); q[0]=1;\n    for(int i=0;i<d;i++)q[i+1]=mint()-c[i];\n    auto p=convolution(a,q); p.resize(d);\n    while(n){\n        auto qm=q;\n        for(int i=1;i<(int)qm.size();i+=2)qm[i]=mint()-qm[i];\n        auto x=convolution(p,qm),y=convolution(q,qm);\n        vector<mint>np,nq;\n        for(int i=n&1;i<(int)x.size();i+=2)np.push_back(x[i]);\n        for(int i=0;i<(int)y.size();i+=2)nq.push_back(y[i]);\n        p.swap(np); q.swap(nq); n>>=1;\n    }\n    return p[0]/q[0];\n}\n// 数列の先頭部分sから漸化式を推定し、第n項を求める\nmint BMBM(const vector<mint>&s,long long n){\n    if(n<(long long)s.size())return s[n];\n    return BostanMori(s,BerlekampMassey(s),n);\n}\n// END ORIGINAL bmbm.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint d;ll k;cin>>d>>k;vector<mint>a(d),c(d);\nfor(auto&v:a){int x;cin>>x;v=x;}for(auto&v:c){int x;cin>>x;v=x;}\ncout<<BostanMori(a,c,k).val()<<'\\n';\n\n}\n"
+}

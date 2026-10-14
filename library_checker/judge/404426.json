@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 60968960,
+      "status": "AC",
+      "time": 0.261
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 70602752,
+      "status": "AC",
+      "time": 0.295
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 11440128,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 50896896,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 41566208,
+      "status": "AC",
+      "time": 0.119
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 77623296,
+      "status": "AC",
+      "time": 0.341
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 77524992,
+      "status": "AC",
+      "time": 0.336
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 77660160,
+      "status": "AC",
+      "time": 0.336
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 77627392,
+      "status": "AC",
+      "time": 0.335
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 77606912,
+      "status": "AC",
+      "time": 0.341
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 50892800,
+      "status": "AC",
+      "time": 0.168
+    }
+  ],
+  "overview": {
+    "id": 404426,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 77660160,
+    "problem_name": "scc",
+    "problem_title": "Strongly Connected Components",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:34:12.900679Z",
+    "time": 0.341
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL scc.cpp SHA256 04ef8d63ea4eca2d30becc10cf2cd7bf3e4762d4cfd9c0a5762ab88b8952e478\nstruct scc_graph{\n    int n;\n    vector<vector<int>>g,rg;\n    scc_graph(int n):n(n),g(n),rg(n){}\n    void add_edge(int a,int b){\n        g[a].push_back(b); rg[b].push_back(a);\n    }\n    vector<vector<int>> scc(){\n        vector<int>vis(n),ord;\n        for(int s=0;s<n;s++)if(!vis[s]){\n            stack<pair<int,int>>q;\n            q.push({s,0}); vis[s]=1;\n            while(q.size()){\n                auto &[v,i]=q.top();\n                if(i<(int)g[v].size()){\n                    int u=g[v][i++];\n                    if(!vis[u])vis[u]=1,q.push({u,0});\n                }else ord.push_back(v),q.pop();\n            }\n        }\n        fill(vis.begin(),vis.end(),0);\n        reverse(ord.begin(),ord.end());\n        vector<vector<int>>res;\n        for(int s:ord)if(!vis[s]){\n            res.push_back({});\n            stack<int>q; q.push(s); vis[s]=1;\n            while(q.size()){\n                int v=q.top();q.pop();\n                res.back().push_back(v);\n                for(int u:rg[v])\n                    if(!vis[u])vis[u]=1,q.push(u);\n            }\n        }\n        return res;\n    }\n};\n// END ORIGINAL scc.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,m;cin>>n>>m;scc_graph g(n);for(int i=0,u,v;i<m;i++){cin>>u>>v;g.add_edge(u,v);}auto components=g.scc();cout<<components.size()<<'\\n';for(auto&c:components){cout<<c.size();for(int v:c)cout<<' '<<v;cout<<'\\n';}\n\n}\n"
+}

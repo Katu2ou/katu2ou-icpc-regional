@@ -1,0 +1,668 @@
+[
+  {
+    "key": "geo_projection",
+    "problem": "CGL_1_A",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_projection.cc",
+    "lang": "C++17",
+    "source_sha256": "012738aa3a13c8442ed88b04e5272b14023692761a37bf1df668b1c4a22692a2",
+    "functions": [
+      "Line()",
+      "Line(Point,Point)",
+      "Line(A,B,C)",
+      "projection",
+      "equal",
+      "dot",
+      "unitVector",
+      "normalVector",
+      "cross",
+      "rotate",
+      "sgn",
+      "degreeToRadian",
+      "radianToDegree",
+      "Circle()"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_reflection",
+    "problem": "CGL_1_B",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_reflection.cc",
+    "lang": "C++17",
+    "source_sha256": "0cf73256cdf00c6f7f6b2afdabef90c32e83a81bcdcbb6fc1a13b39c9e1fbe37",
+    "functions": [
+      "reflection"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_orientation",
+    "problem": "CGL_1_C",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_orientation.cc",
+    "lang": "C++17",
+    "source_sha256": "d5bbc6975d12d29ff570220877af1da4acf8dafc740d5f871c1ea5e523733e09",
+    "functions": [
+      "ccw",
+      "onLine",
+      "onSegment"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_parallel",
+    "problem": "CGL_2_A",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_parallel.cc",
+    "lang": "C++17",
+    "source_sha256": "156c5557a6b50b04cedf3491ffd47d29baf04c4c856fcb2bcf4daed75eeed076",
+    "functions": [
+      "isParallel",
+      "isOrthogonal"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_segments_intersect",
+    "problem": "CGL_2_B",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_segments_intersect.cc",
+    "lang": "C++17",
+    "source_sha256": "d3f0429f70c271948660267ad0a7d0992e7b7a99c334034535ce983f50ef51d7",
+    "functions": [
+      "isIntersect(Line,Line)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_line_cross",
+    "problem": "CGL_2_C",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_line_cross.cc",
+    "lang": "C++17",
+    "source_sha256": "68db23ae106e46241e38893521d69e3c82142b03d00f8216ca9a6fddecf9738d",
+    "functions": [
+      "crossPoint(Line,Line)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_distance",
+    "problem": "CGL_2_D",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_distance.cc",
+    "lang": "C++17",
+    "source_sha256": "89d444c8eb990e9f193e2cab57f75206b5ad5e60cc049c0e11996b6f0c2c44c3",
+    "functions": [
+      "distanceBetweenSegments",
+      "distanceBetweenSegmentAndPoint"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_area",
+    "problem": "CGL_3_A",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_area.cc",
+    "lang": "C++17",
+    "source_sha256": "315f5cd0facd2ff6fd65204bfd3d862fd71a9da7a9030971838fa992dfbbef4f",
+    "functions": [
+      "SignedPolygonArea",
+      "PolygonArea"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_convex",
+    "problem": "CGL_3_B",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_convex.cc",
+    "lang": "C++17",
+    "source_sha256": "9782fd0c010889da4ad9a8aa9fac3b7fbce2d516f8fa996386b61ad88092356a",
+    "functions": [
+      "isConvex"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_contained",
+    "problem": "CGL_3_C",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_contained.cc",
+    "lang": "C++17",
+    "source_sha256": "6cfba7b5529decf3872fbf0f3bef3b5493dd80e7ce39c0bb5dad6bbe643508c7",
+    "functions": [
+      "isContained"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_hull_boundary",
+    "problem": "CGL_4_A",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_hull_boundary.cc",
+    "lang": "C++17",
+    "source_sha256": "2c9ada3e12ec3dd72eee9a3141875bbc0e61f74cddc7b71b69e89f2734e220ba",
+    "functions": [
+      "ConvexHull(col=true)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_circle_relation",
+    "problem": "CGL_7_A",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_circle_relation.cc",
+    "lang": "C++17",
+    "source_sha256": "2aabd0eb85d1ebf9fc57830a6114eeb10196c17f06cfe5d4950ad6da8373a406",
+    "functions": [
+      "Circle(Point,r)",
+      "isIntersect(Circle,Circle)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_incircle",
+    "problem": "CGL_7_B",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_incircle.cc",
+    "lang": "C++17",
+    "source_sha256": "519a5c77c5a20673b382e8cafc712e74b0c8119e11fc90add9e29864449a67ec",
+    "functions": [
+      "inCircle",
+      "distanceBetweenLineAndPoint"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_circumcircle",
+    "problem": "CGL_7_C",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d"
+      }
+    ],
+    "source": "submissions/geo_circumcircle.cc",
+    "lang": "C++17",
+    "source_sha256": "2027e2075add06a04f60f1eeeefda04e5448595c76e8f6110c1f170124963740",
+    "functions": [
+      "circumCircle"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_circle_line",
+    "problem": "CGL_7_D",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_circle_line.cc",
+    "lang": "C++17",
+    "source_sha256": "c81752b5bba54eeff8464747ee8c4344993fa6a45e375c183413c7aaa1d9d0f7",
+    "functions": [
+      "crossPoint(Circle,Line)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_circle_cross",
+    "problem": "CGL_7_E",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_circle_cross.cc",
+    "lang": "C++17",
+    "source_sha256": "f77c825692fd49ebd8d04dcb862d49c3fd614c840d56902e7cd873ff1a6a4824",
+    "functions": [
+      "crossPoint(Circle,Circle)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_tangent_point",
+    "problem": "CGL_7_F",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_tangent_point.cc",
+    "lang": "C++17",
+    "source_sha256": "9afe234d08766310a06035c80d32fccc625687d0cd81eb52cb902b1e47a53479",
+    "functions": [
+      "tangentToCircle"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_tangents",
+    "problem": "CGL_7_G",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_tangents.cc",
+    "lang": "C++17",
+    "source_sha256": "4ff5c46a3cc30d760399c6ff4fdd54f5027dfa363cc9fda6cdc6ed7706887465",
+    "functions": [
+      "tangent"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "geo_angles",
+    "problem": "ITP1_10_B",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d",
+        "parts": [
+          {
+            "start": 0,
+            "end": 1537,
+            "sha256": "70e1f67a78fb58598e50d454d924edb0453defdc27f06bb42474a0751a9e6007"
+          },
+          {
+            "start": 1809,
+            "end": 7941,
+            "sha256": "1893a6b0ba27ff027c668e293f0e28261214efddc056f9335ef8a588564d9448"
+          }
+        ]
+      }
+    ],
+    "source": "submissions/geo_angles.cc",
+    "lang": "C++17",
+    "source_sha256": "94fe244bbd139fc4501d6376756046ba0cc62b7ab0e5bfe7812333e538b1508a",
+    "functions": [
+      "rotate",
+      "degreeToRadian",
+      "radianToDegree"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "math_power",
+    "problem": "NTL_1_B",
+    "libraries": [
+      {
+        "file": "math.cpp",
+        "sha256": "f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0"
+      }
+    ],
+    "source": "submissions/math_power.cc",
+    "lang": "C++17",
+    "source_sha256": "f13d99921a00f9c0df68424dd2c86d5b6c4e91dd35a4191747cadf01f3dab6bb",
+    "functions": [
+      "smod",
+      "igcd",
+      "pow_mod",
+      "inv_mod",
+      "crt",
+      "floor_sum"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "math_bezout",
+    "problem": "NTL_1_E",
+    "libraries": [
+      {
+        "file": "math.cpp",
+        "sha256": "f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0"
+      }
+    ],
+    "source": "submissions/math_bezout.cc",
+    "lang": "C++17",
+    "source_sha256": "7b1ab6c249c137282ea24d8331a58af21e78be5195b65e560c319a231dd4ad55",
+    "functions": [
+      "igcd",
+      "inv_mod"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "math_crt",
+    "problem": "NTL_1_E",
+    "libraries": [
+      {
+        "file": "math.cpp",
+        "sha256": "f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0"
+      }
+    ],
+    "source": "submissions/math_crt.cc",
+    "lang": "C++17",
+    "source_sha256": "5c701630a7434d5e11f26d16712d47570733a8c8207d8888e1e5e3755fdd3d81",
+    "functions": [
+      "crt"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "mincost_slope",
+    "problem": "GRL_6_B",
+    "libraries": [
+      {
+        "file": "mincostflow.cpp",
+        "sha256": "56de4e37599146e56d522e39c5486e71253b259ea6e71538c31ca4cd63cbe7a6"
+      }
+    ],
+    "source": "submissions/mincost_slope.cc",
+    "lang": "C++17",
+    "source_sha256": "3fb6d730e4f78ba6c33b090f1d9441ce1f80b5bf695b53b275c0d5db8ecefb7a",
+    "functions": [
+      "mcf_graph",
+      "add_edge",
+      "get_edge",
+      "edges",
+      "flow(s,t)",
+      "flow(s,t,limit)",
+      "slope(s,t)",
+      "slope(s,t,limit)"
+    ],
+    "judge": "aoj"
+  },
+  {
+    "key": "mincost_slope_unlimited",
+    "problem": "GRL_6_B",
+    "libraries": [
+      {
+        "file": "mincostflow.cpp",
+        "sha256": "56de4e37599146e56d522e39c5486e71253b259ea6e71538c31ca4cd63cbe7a6"
+      }
+    ],
+    "source": "submissions/mincost_slope_unlimited.cc",
+    "lang": "C++17",
+    "source_sha256": "22013a63b5bfbe1bfd8aa3022d8b7291d21edc853f45599ea8569f0d41062825",
+    "functions": [
+      "mcf_graph",
+      "add_edge",
+      "get_edge",
+      "edges",
+      "flow(s,t)",
+      "flow(s,t,limit)",
+      "slope(s,t)",
+      "slope(s,t,limit)"
+    ],
+    "judge": "aoj"
+  }
+]

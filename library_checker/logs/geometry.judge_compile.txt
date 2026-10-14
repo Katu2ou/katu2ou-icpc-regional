@@ -1,0 +1,20 @@
+main.cpp: In function 'bool onSegment(const Line&, const Point&)':
+main.cpp:61:12: error: 'ccw' was not declared in this scope
+   61 |     return ccw(l.a,l.b,p)==0;
+      |            ^~~
+main.cpp: In function 'Circle circumCircle(Point, Point, Point)':
+main.cpp:66:18: error: no match for 'operator/' (operand types are 'std::complex<long double>' and 'int')
+   66 |     Point x=(a+b)/2,y=(a+c)/2;
+      |             ~~~~~^~
+      |               |   |
+      |               |   int
+      |               std::complex<long double>
+main.cpp:66:18: note: there are 11 candidates
+   66 |     Point x=(a+b)/2,y=(a+c)/2;
+      |             ~~~~~^~
+In file included from /usr/local/include/c++/15.2.0/x86_64-linux-gnu/bits/stdc++.h:141,
+                 from main.cpp:1:
+/usr/local/include/c++/15.2.0/complex:464:5: note: candidate 1: 'template<class _Tp> std::complex<_Tp> std::operator/(const complex<_Tp>&, const complex<_Tp>&)'
+  464 |     operator/(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/u

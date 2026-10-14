@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjIxIgo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjUzIgo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjMzIgo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjc1OTc1OTk2OTgxIgo=",
+      "memory": 11161600,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjEwNzIwNDQ3ODE3NyIK",
+      "memory": 11706368,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjE0MjIyNDU0MTQiCg==",
+      "memory": 2129920,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjkyMTI2MTM4MzExIgo=",
+      "memory": 11677696,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjM4MzY3MDc3MjEyIgo=",
+      "memory": 7254016,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjEyMDY5NzI0Mjg4MSIK",
+      "memory": 12238848,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjEyMjE2MTM2NDM1OCIK",
+      "memory": 13815808,
+      "status": "AC",
+      "time": 0.125
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjEyMjEwNjk5ODU5MyIK",
+      "memory": 13737984,
+      "status": "AC",
+      "time": 0.124
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjEyMTY1MzI3MDEzNiIK",
+      "memory": 14073856,
+      "status": "AC",
+      "time": 0.128
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjEyMDQ0NjgwMDcwNiIK",
+      "memory": 12238848,
+      "status": "AC",
+      "time": 0.12
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgIjQ5MTMyMiIK",
+      "memory": 14225408,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgIjQ5NDI5MyIK",
+      "memory": 12320768,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgIjQ5NDE4MyIK",
+      "memory": 12468224,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgIjQ5MzI2NCIK",
+      "memory": 12361728,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgIjQ5MDgxMiIK",
+      "memory": 14049280,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgIjU4MTk5NzA5MDE5Igo=",
+      "memory": 12742656,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgIjMxMzEwMTgzMjM1Igo=",
+      "memory": 10702848,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgIjI4MzM4NDc0MjQxIgo=",
+      "memory": 10395648,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgIjIzODQ0MzU5NTIyIgo=",
+      "memory": 8298496,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgIjU1NjYyMTc3MDI1Igo=",
+      "memory": 13938688,
+      "status": "AC",
+      "time": 0.122
+    }
+  ],
+  "overview": {
+    "id": 404409,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 14225408,
+    "problem_name": "number_of_substrings",
+    "problem_title": "Number of Substrings",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:26:47.23225Z",
+    "time": 0.128
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL suffix_array.cpp SHA256 8f5f09d7155bd06123e9b61524c3e08f74f506eb2b12c634517f4a2b20accb95\ntemplate<class T> vector<int> suffix_array(vector<T>s){\n    int n=s.size(); if(!n)return {};\n    int N=n+1; vector<int>p(N),c(N),q(N),nc(N),cnt(N);\n    p[0]=n; iota(p.begin()+1,p.end(),0);\n    sort(p.begin()+1,p.end(),[&](int i,int j){return s[i]<s[j];});\n    for(int i=1;i<N;i++)c[p[i]]=i==1?1:c[p[i-1]]+(s[p[i-1]]!=s[p[i]]);\n    for(int k=1;k<N;k*=2){\n        for(int i=0;i<N;i++)q[i]=(p[i]-k+N)%N;\n        fill(cnt.begin(),cnt.end(),0);\n        for(int x:q)cnt[c[x]]++;\n        for(int i=1;i<N;i++)cnt[i]+=cnt[i-1];\n        for(int i=N-1;i>=0;i--)p[--cnt[c[q[i]]]]=q[i];\n        nc[p[0]]=0;\n        for(int i=1;i<N;i++)nc[p[i]]=nc[p[i-1]]+\n            (c[p[i-1]]!=c[p[i]]||c[(p[i-1]+k)%N]!=c[(p[i]+k)%N]);\n        c.swap(nc);\n    }\n    return {p.begin()+1,p.end()};\n}\nvector<int> suffix_array(string s){\n    return suffix_array(vector<unsigned char>(s.begin(),s.end()));\n}\nvector<int> suffix_array(vector<int>s,int){\n    return suffix_array<int>(move(s));\n}\n// END ORIGINAL suffix_array.cpp\n\n// BEGIN ORIGINAL lcp_array.cpp SHA256 80307d9a7e20a8e172b0b66c5fa89a6b613536daeb111e85dbc6963810e1dd83\ntemplate<class T> vector<int> lcp_array(const T&s,const vector<int>&sa){\n    int n=s.size(),h=0; vector<int>r(n),l(n-1);\n    for(int i=0;i<n;i++)r[sa[i]]=i;\n    for(int i=0;i<n;i++)if(r[i]){\n        int j=sa[r[i]-1];\n        while(max(i,j)+h<n&&s[i+h]==s[j+h])h++;\n        l[r[i]-1]=h; if(h)h--;\n    }\n    return l;\n}\n// END ORIGINAL lcp_array.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nstring s;cin>>s;auto sa=suffix_array(s);auto lcp=lcp_array(s,sa);ll ans=ll(s.size())*(s.size()+1)/2;for(int x:lcp)ans-=x;cout<<ans<<'\\n';\n\n}\n"
+}

@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgMTIyOTEgdG9rZW5zCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjAwMjk3IHRva2Vucwo=",
+      "memory": 148860928,
+      "status": "AC",
+      "time": 0.756
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjAwODk2IHRva2Vucwo=",
+      "memory": 149073920,
+      "status": "AC",
+      "time": 0.753
+    },
+    {
+      "case": "max_sparse_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 152797184,
+      "status": "AC",
+      "time": 0.844
+    },
+    {
+      "case": "max_sparse_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 152522752,
+      "status": "AC",
+      "time": 0.844
+    },
+    {
+      "case": "max_all0_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 148041728,
+      "status": "AC",
+      "time": 0.782
+    },
+    {
+      "case": "max_all0_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 148029440,
+      "status": "AC",
+      "time": 0.76
+    },
+    {
+      "case": "max_all1_00",
+      "checker_out": "b2sgNzUwMjcyIHRva2Vucwo=",
+      "memory": 149897216,
+      "status": "AC",
+      "time": 0.735
+    },
+    {
+      "case": "max_all1_01",
+      "checker_out": "b2sgNzUwMjMyIHRva2Vucwo=",
+      "memory": 149979136,
+      "status": "AC",
+      "time": 0.738
+    },
+    {
+      "case": "max_query0_1_2_00",
+      "checker_out": "b2sgMzM0MjM1IHRva2Vucwo=",
+      "memory": 145977344,
+      "status": "AC",
+      "time": 0.703
+    },
+    {
+      "case": "max_query0_1_2_01",
+      "checker_out": "b2sgMzMzNjYxIHRva2Vucwo=",
+      "memory": 145965056,
+      "status": "AC",
+      "time": 0.713
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjAxMDggdG9rZW5zCg==",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTk4MjQgdG9rZW5zCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNjAwOTAgdG9rZW5zCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjAxMTIgdG9rZW5zCg==",
+      "memory": 950272,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTk5ODYgdG9rZW5zCg==",
+      "memory": 1048576,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgNjAwNTcgdG9rZW5zCg==",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNTk4NzYgdG9rZW5zCg==",
+      "memory": 995328,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgNjAwODMgdG9rZW5zCg==",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNjAwNjggdG9rZW5zCg==",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgNTk5MjAgdG9rZW5zCg==",
+      "memory": 1011712,
+      "status": "AC",
+      "time": 0.013
+    }
+  ],
+  "overview": {
+    "id": 404443,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 152797184,
+    "problem_name": "predecessor_problem",
+    "problem_title": "Predecessor Problem",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:48:46.160243Z",
+    "time": 0.844
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL segtree.cpp SHA256 551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4\ntemplate<class S,S op(S,S),S e()>\nstruct segtree{\n    int n,sz; vector<S>d;\n    segtree(int m=0):n(1),sz(m){\n        while(n<m)n*=2;\n        d.assign(2*n,e());\n    }\n    segtree(vector<S>a):segtree(a.size()){\n        copy(a.begin(),a.end(),d.begin()+n);\n        for(int i=n-1;i;i--)d[i]=op(d[2*i],d[2*i+1]);\n    }\n    void set(int p,S x){\n        for(d[p+=n]=x;p/=2;)d[p]=op(d[2*p],d[2*p+1]);\n    }\n    S get(int p){return d[p+n];}\n    S prod(int l,int r){\n        S x=e(),y=e();\n        for(l+=n,r+=n;l<r;l/=2,r/=2){\n            if(l&1)x=op(x,d[l++]);\n            if(r&1)y=op(d[--r],y);\n        }\n        return op(x,y);\n    }\n    S all_prod(){return d[1];}\n\n    template<class G> int max_right(int l,G g){\n        assert(g(e())); S x=e();\n        int r=mr(l,g,x,1,0,n); return r<0?sz:r;\n    }\n    template<class G> int mr(int a,G&g,S&x,int k,int l,int r){\n        if(r<=a||sz<=l)return -1;\n        if(a<=l&&r<=sz){\n            S y=op(x,d[k]);\n            if(g(y)){x=y;return -1;}\n            if(r-l==1)return l;\n        }\n        int m=(l+r)/2,q=mr(a,g,x,2*k,l,m);\n        return q<0?mr(a,g,x,2*k+1,m,r):q;\n    }\n    template<class G> int min_left(int r,G g){\n        assert(g(e())); S x=e();\n        int l=ml(r,g,x,1,0,n); return l<0?0:l;\n    }\n    template<class G> int ml(int b,G&g,S&x,int k,int l,int r){\n        if(b<=l)return -1;\n        if(r<=b){\n            S y=op(d[k],x);\n            if(g(y)){x=y;return -1;}\n            if(r-l==1)return r;\n        }\n        int m=(l+r)/2,q=ml(b,g,x,2*k+1,m,r);\n        return q<0?ml(b,g,x,2*k,l,m):q;\n    }\n};\n// END ORIGINAL segtree.cpp\n\nint op(int a,int b){return a+b;}int e(){return 0;}\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint n,q;string s;cin>>n>>q>>s;segtree<int,op,e>seg(n);segtree<int,op,e>empty;assert(empty.all_prod()==0);\nfor(int i=0;i<n;i++)seg.set(i,s[i]-'0');\nwhile(q--){int t,k;cin>>t>>k;if(t<2)seg.set(k,t==0);else if(t==2)cout<<seg.get(k)<<'\\n';\nelse if(t==3){int r=seg.max_right(k,[](int x){return x==0;});cout<<(r==n?-1:r)<<'\\n';}\nelse cout<<seg.min_left(k+1,[](int x){return x==0;})-1<<'\\n';}\nassert(seg.all_prod()==seg.prod(0,n));\n\n}\n"
+}

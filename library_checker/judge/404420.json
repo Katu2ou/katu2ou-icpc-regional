@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9777152,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9850880,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9859072,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 4726784,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 11194368,
+      "status": "AC",
+      "time": 0.553
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 12738560,
+      "status": "AC",
+      "time": 0.599
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 9609216,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13783040,
+      "status": "AC",
+      "time": 0.757
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14802944,
+      "status": "AC",
+      "time": 0.724
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16891904,
+      "status": "AC",
+      "time": 0.891
+    }
+  ],
+  "overview": {
+    "id": 404420,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 16891904,
+    "problem_name": "static_range_count_distinct",
+    "problem_title": "Static Range Count Distinct",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:31:24.262792Z",
+    "time": 0.891
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL mo.cpp SHA256 d151507fa0fa4187fd55e9c3f3572018ab55707bd59e59930556ca1c05538421\nstruct Mo{\n    int n,l=0,r=0; // 現在の区間[l,r)\n    vector<pair<int,int>>lr; //[l,r) addやeraseでは更新後のl,rを参照できる\n    Mo(int N):n(N){} //i番目の答えが入る\n    void add(int l,int r){ // [l,r) のクエリを追加\n        lr.emplace_back(l,r);\n    }\n    template<class AL,class AR,class EL,class ER,class O>\n    void build(const AL&al,const AR&ar,const EL&el,const ER&er,const O&out){\n        int Q=lr.size(); if(!Q)return;\n        int B=max(1,n/(int)sqrt(Q));\n        vector<int>o(Q); iota(o.begin(),o.end(),0);\n        sort(o.begin(),o.end(),[&](int a,int b){\n            int x=lr[a].first/B,y=lr[b].first/B;\n            return x!=y?x<y:\n                (x&1?lr[a].second>lr[b].second:lr[a].second<lr[b].second);\n        });\n        l=r=0;\n        for(int i:o){\n            auto [L,R]=lr[i];\n            while(l>L)al(--l);\n            while(r<R)ar(r++);\n            while(l<L)el(l++);\n            while(r>R)er(--r);\n            out(i);\n        }\n    }\n    template<class A,class E,class O>\n    void build(const A&add,const E&erase,const O&out){ //add(i):\n        build(add,add,erase,erase,out);\n    }\n};\n// auto add_left = [&](int i){}; 左側のi番目の要素を加える\n// auto erase = [&](int i){};\n// auto out = [&](int q){}; 現在のクエリ(q番目)の答えを求める\n\n// END ORIGINAL mo.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<int>a(n);for(auto&x:a)cin>>x;auto vals=a;sort(vals.begin(),vals.end());vals.erase(unique(vals.begin(),vals.end()),vals.end());\nfor(auto&x:a)x=lower_bound(vals.begin(),vals.end(),x)-vals.begin();Mo mo(n);for(int i=0,l,r;i<q;i++){cin>>l>>r;mo.add(l,r);}\nvector<int>cnt(vals.size()),ans(q);int distinct=0;auto add=[&](int i){if(cnt[a[i]]++==0)distinct++;};auto erase=[&](int i){if(--cnt[a[i]]==0)distinct--;};\nmo.build(add,erase,[&](int i){ans[i]=distinct;});for(int x:ans)cout<<x<<'\\n';\n\n}\n"
+}

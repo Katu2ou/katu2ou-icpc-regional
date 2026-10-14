@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 85233664,
+      "status": "AC",
+      "time": 0.283
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 98054144,
+      "status": "AC",
+      "time": 0.311
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 12165120,
+      "status": "AC",
+      "time": 0.119
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 92282880,
+      "status": "AC",
+      "time": 0.172
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 65732608,
+      "status": "AC",
+      "time": 0.132
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 101490688,
+      "status": "AC",
+      "time": 0.209
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 117198848,
+      "status": "AC",
+      "time": 0.229
+    },
+    {
+      "case": "line_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 15712256,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "line_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 109830144,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "line_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 77066240,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "max_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 125083648,
+      "status": "AC",
+      "time": 0.264
+    },
+    {
+      "case": "max_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 125231104,
+      "status": "AC",
+      "time": 0.264
+    },
+    {
+      "case": "max_line_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 125050880,
+      "status": "AC",
+      "time": 0.272
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 104374272,
+      "status": "AC",
+      "time": 0.375
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 104349696,
+      "status": "AC",
+      "time": 0.362
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 104505344,
+      "status": "AC",
+      "time": 0.359
+    },
+    {
+      "case": "binary_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 103800832,
+      "status": "AC",
+      "time": 0.329
+    },
+    {
+      "case": "binary_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 103837696,
+      "status": "AC",
+      "time": 0.334
+    },
+    {
+      "case": "binary_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 103809024,
+      "status": "AC",
+      "time": 0.329
+    },
+    {
+      "case": "path_graph_root_centroid_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 114348032,
+      "status": "AC",
+      "time": 0.259
+    },
+    {
+      "case": "path_graph_root_centroid_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 114335744,
+      "status": "AC",
+      "time": 0.257
+    },
+    {
+      "case": "path_graph_root_centroid_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 114573312,
+      "status": "AC",
+      "time": 0.259
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 114606080,
+      "status": "AC",
+      "time": 0.291
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 114569216,
+      "status": "AC",
+      "time": 0.283
+    }
+  ],
+  "overview": {
+    "id": 404404,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 125231104,
+    "problem_name": "lca",
+    "problem_title": "Lowest Common Ancestor",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:24:13.203203Z",
+    "time": 0.375
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL eulertour.cpp SHA256 5e273cfd2b94f79a448e1fad990e91d7674a0f0bfdc960e4a1436d34ea438067\nstruct EulerTour{\n    int N;\n    vector<int>vs,depth,id,id_depth,id_rev;\n    vector<vector<int>> G;\n    EulerTour(int n,vector<vector<int>>&g){\n        N=n; G=g;\n        vs.resize(2*N-1);//DFSでの訪問順\n        depth.resize(2*N-1);// 訪問順での根からの深さ\n        id.resize(N); //id[i]:iが初めて現れるindex\n        id_depth.resize(N);//頂点iの深さ\n\t\tid_rev.resize(N); //iが最後に現れるindex\n        int k=0; dfs(0,-1,0,k);\n    }\n    void dfs(int now,int par,int d,int& k){\n        id[now]=k;\n\t\tid_rev[now]=k;\n        id_depth[now]=d;\n        vs[k]=now;\n        depth[k++]=d;\n        for(auto e:G[now]){\n            if(e==par)continue;\n            dfs(e,now,d+1,k);\n\t\t\tid_rev[now]=k;\n            vs[k]=now;\n            depth[k++]=d;\n        }\n    }\n};\n//int lca(int u,int v){ return vs[seg.prod(min(id[u],id[v]),max(id[u],id[v])+1).idx];}\n// END ORIGINAL eulertour.cpp\n\n// BEGIN ORIGINAL segtree.cpp SHA256 551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4\ntemplate<class S,S op(S,S),S e()>\nstruct segtree{\n    int n,sz; vector<S>d;\n    segtree(int m=0):n(1),sz(m){\n        while(n<m)n*=2;\n        d.assign(2*n,e());\n    }\n    segtree(vector<S>a):segtree(a.size()){\n        copy(a.begin(),a.end(),d.begin()+n);\n        for(int i=n-1;i;i--)d[i]=op(d[2*i],d[2*i+1]);\n    }\n    void set(int p,S x){\n        for(d[p+=n]=x;p/=2;)d[p]=op(d[2*p],d[2*p+1]);\n    }\n    S get(int p){return d[p+n];}\n    S prod(int l,int r){\n        S x=e(),y=e();\n        for(l+=n,r+=n;l<r;l/=2,r/=2){\n            if(l&1)x=op(x,d[l++]);\n            if(r&1)y=op(d[--r],y);\n        }\n        return op(x,y);\n    }\n    S all_prod(){return d[1];}\n\n    template<class G> int max_right(int l,G g){\n        assert(g(e())); S x=e();\n        int r=mr(l,g,x,1,0,n); return r<0?sz:r;\n    }\n    template<class G> int mr(int a,G&g,S&x,int k,int l,int r){\n        if(r<=a||sz<=l)return -1;\n        if(a<=l&&r<=sz){\n            S y=op(x,d[k]);\n            if(g(y)){x=y;return -1;}\n            if(r-l==1)return l;\n        }\n        int m=(l+r)/2,q=mr(a,g,x,2*k,l,m);\n        return q<0?mr(a,g,x,2*k+1,m,r):q;\n    }\n    template<class G> int min_left(int r,G g){\n        assert(g(e())); S x=e();\n        int l=ml(r,g,x,1,0,n); return l<0?0:l;\n    }\n    template<class G> int ml(int b,G&g,S&x,int k,int l,int r){\n        if(b<=l)return -1;\n        if(r<=b){\n            S y=op(d[k],x);\n            if(g(y)){x=y;return -1;}\n            if(r-l==1)return r;\n        }\n        int m=(l+r)/2,q=ml(b,g,x,2*k+1,m,r);\n        return q<0?ml(b,g,x,2*k,l,m):q;\n    }\n};\n// END ORIGINAL segtree.cpp\n\nusing S=pair<int,int>; S op(S a,S b){return min(a,b);} S e(){return {INT_MAX,INT_MAX};}\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<vector<int>>g(n);\nfor(int i=1,p;i<n;i++){cin>>p;g[p].push_back(i);g[i].push_back(p);}\nEulerTour tour(n,g);vector<S>a(2*n-1);for(int i=0;i<2*n-1;i++)a[i]={tour.depth[i],tour.vs[i]};segtree<S,op,e> seg(a);\nwhile(q--){int u,v;cin>>u>>v;int l=tour.id[u],r=tour.id[v];if(l>r)swap(l,r);cout<<seg.prod(l,r+1).second<<'\\n';}\n\n}\n"
+}

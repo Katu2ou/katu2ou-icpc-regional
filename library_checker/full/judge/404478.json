@@ -1,0 +1,114 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDkK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IC0xNzc3ODY5OTY0NTkK",
+      "memory": 3715072,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IC0xOTQ1Njk4OTg1MTQK",
+      "memory": 4227072,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IC04NDQ1NzQ4MTczNwo=",
+      "memory": 1597440,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IC0xODk3NzY0NTQzNzYK",
+      "memory": 4091904,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IC0xNzU4MjQ2NjUzNgo=",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IC00OTY3MDQzNzUxOTAK",
+      "memory": 18513920,
+      "status": "AC",
+      "time": 0.595
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IC00OTY4MTM4MTk5MjAK",
+      "memory": 18509824,
+      "status": "AC",
+      "time": 0.591
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IC00OTY3MDU4ODM3MzUK",
+      "memory": 18518016,
+      "status": "AC",
+      "time": 0.594
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0s6IC00OTY3MjA0MDE0OTYK",
+      "memory": 18501632,
+      "status": "AC",
+      "time": 0.595
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0s6IC00OTY3MzA3MjU4ODEK",
+      "memory": 18481152,
+      "status": "AC",
+      "time": 0.595
+    },
+    {
+      "case": "hand_plus_00",
+      "checker_out": "b2sgT0s6IDgzMzMzMDAwCg==",
+      "memory": 18485248,
+      "status": "AC",
+      "time": 0.449
+    },
+    {
+      "case": "hand_minus_00",
+      "checker_out": "b2sgT0s6IC04MzMzMzAwMAo=",
+      "memory": 18509824,
+      "status": "AC",
+      "time": 0.46
+    },
+    {
+      "case": "multiplication_table_00",
+      "memory": 22495232,
+      "status": "TLE",
+      "time": 5
+    }
+  ],
+  "overview": {
+    "id": 404478,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 22495232,
+    "problem_name": "assignment",
+    "problem_title": "Assignment Problem",
+    "status": "TLE",
+    "submission_time": "2026-09-21T07:11:52.563424Z",
+    "time": 5
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\ntemplate<class Cap,class Cost> struct mcf_graph{\n    struct E{int to,rev; Cap cap; Cost cost;};\n    struct edge{int from,to; Cap cap,flow; Cost cost;};\n    int N; vector<vector<E>>g; vector<pair<int,int>>pos;\n\n    mcf_graph(int n=0):N(n),g(n){}\n\n    int add_edge(int s,int t,Cap c,Cost w){\n        int a=g[s].size(),b=g[t].size()+(s==t);\n        pos.push_back({s,a});\n        g[s].push_back({t,b,c,w});\n        g[t].push_back({s,a,0,-w});\n        return (int)pos.size()-1;\n    }\n\n    edge get_edge(int i){\n        auto [v,j]=pos[i]; auto &e=g[v][j],&r=g[e.to][e.rev];\n        return {v,e.to,e.cap+r.cap,r.cap,e.cost};\n    }\n\n    vector<edge> edges(){\n        vector<edge>r;\n        for(int i=0;i<(int)pos.size();i++)r.push_back(get_edge(i));\n        return r;\n    }\n\n    pair<Cap,Cost> flow(int s,int t){\n        return flow(s,t,numeric_limits<Cap>::max());\n    }\n\n    pair<Cap,Cost> flow(int s,int t,Cap lim){\n        return slope(s,t,lim).back();\n    }\n\n    vector<pair<Cap,Cost>> slope(int s,int t){\n        return slope(s,t,numeric_limits<Cap>::max());\n    }\n\n    vector<pair<Cap,Cost>> slope(int s,int t,Cap lim){\n        const Cost INF=numeric_limits<Cost>::max();\n        vector<Cost>h(N),d(N);\n        vector<int>pv(N),pe(N);\n\n        Cap f=0;\n        Cost c=0,last=-1;\n        vector<pair<Cap,Cost>>res{{0,0}};\n\n        while(f<lim){\n            fill(d.begin(),d.end(),INF);\n            d[s]=0;\n\n            priority_queue<\n                pair<Cost,int>,\n                vector<pair<Cost,int>>,\n                greater<pair<Cost,int>>\n            >q;\n            q.push({0,s});\n\n            while(q.size()){\n                auto [dv,v]=q.top();q.pop();\n                if(dv!=d[v])continue;\n\n                for(int i=0;i<(int)g[v].size();i++){\n                    E&e=g[v][i];\n                    if(!e.cap)continue;\n\n                    __int128 nd=(__int128)dv+e.cost+h[v]-h[e.to];\n                    if(nd<d[e.to]){\n                        d[e.to]=(Cost)nd;\n                        pv[e.to]=v; pe[e.to]=i;\n                        q.push({(Cost)nd,e.to});\n                    }\n                }\n            }\n\n            if(d[t]==INF)break;\n\n            for(int v=0;v<N;v++)\n                if(d[v]<INF)h[v]+=d[v];\n\n            Cap x=lim-f;\n            for(int v=t;v!=s;v=pv[v])\n                x=min(x,g[pv[v]][pe[v]].cap);\n\n            for(int v=t;v!=s;v=pv[v]){\n                E&e=g[pv[v]][pe[v]];\n                e.cap-=x;\n                g[v][e.rev].cap+=x;\n            }\n\n            Cost w=h[t]-h[s];\n            f+=x;\n            c+=x*w;\n\n            if(last==w)res.pop_back();\n            res.push_back({f,c});\n            last=w;\n        }\n\n        return res;\n    }\n};\n\nstruct InputEdge{int u,v,cap,cost;};\nll at_flow(const vector<pair<int,ll>>&s,int f){\nif(f>s.back().first)return -1;for(int i=1;i<(int)s.size();i++)if(f<=s[i].first){auto[a,b]=s[i-1];auto[c,d]=s[i];return b+(d-b)/(c-a)*(f-a);}return 0;\n}\nvoid flow_checks(){\nmt19937 rng(41982);mcf_graph<int,ll>empty;assert(empty.edges().empty());\nfor(int tt=0;tt<150;tt++){int n=2+rng()%4,m=1+rng()%7;vector<InputEdge>es; mcf_graph<int,ll>g(n);\nfor(int i=0;i<m;i++){int u=rng()%n,v=rng()%n,c=rng()%3,w=rng()%5;es.push_back({u,v,c,w});assert(g.add_edge(u,v,c,w)==i);}\nmap<int,ll>best;vector<int>balance(n);auto enumerate=[&](auto&&self,int i,ll cost)->void{\nif(i==m){for(int v=1;v<n-1;v++)if(balance[v])return;int f=-balance[0];if(f<0||balance[n-1]!=f)return;auto it=best.find(f);if(it==best.end()||cost<it->second)best[f]=cost;return;}\nauto e=es[i];for(int f=0;f<=e.cap;f++){balance[e.u]-=f;balance[e.v]+=f;self(self,i+1,cost+ll(f)*e.cost);balance[e.u]+=f;balance[e.v]-=f;}};\nenumerate(enumerate,0,0);auto copy=g;auto s=copy.slope(0,n-1);assert(s.front()==make_pair(0,0LL));assert(s.back().first==best.rbegin()->first);\nll prev=-1;for(int i=1;i<(int)s.size();i++){int df=s[i].first-s[i-1].first;ll dc=s[i].second-s[i-1].second;assert(df>0&&dc%df==0&&dc/df>prev);prev=dc/df;}\nfor(auto[f,c]:best)assert(at_flow(s,f)==c);\nauto flowed=copy.edges();ll cost=0;vector<int>bal(n);for(int i=0;i<m;i++){auto e=flowed[i],z=copy.get_edge(i);assert(e.from==es[i].u&&e.to==es[i].v&&e.cap==es[i].cap&&e.cost==es[i].cost&&e.flow==z.flow);assert(e.flow>=0&&e.flow<=e.cap);cost+=e.cost*e.flow;bal[e.from]-=e.flow;bal[e.to]+=e.flow;}\nassert(cost==s.back().second&&bal[0]==-s.back().first&&bal[n-1]==s.back().first);for(int i=1;i<n-1;i++)assert(bal[i]==0);\nint lim=rng()%8;copy=g;auto limited=copy.slope(0,n-1,lim);assert(limited.back().first==min(lim,s.back().first));for(int f=0;f<=limited.back().first;f++)assert(at_flow(limited,f)==best[f]);\ncopy=g;assert(copy.flow(0,n-1)==s.back());copy=g;assert(copy.flow(0,n-1,lim)==limited.back());\n}}\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);flow_checks();\nint n;cin>>n;vector<vector<ll>>a(n,vector<ll>(n));vector<ll>low(n);ll offset=0;\nfor(int i=0;i<n;i++){for(auto&x:a[i])cin>>x;low[i]=*min_element(a[i].begin(),a[i].end());offset+=low[i];}\nint s=2*n,t=s+1;mcf_graph<int,ll>g(t+1);for(int i=0;i<n;i++){g.add_edge(s,i,1,0);g.add_edge(n+i,t,1,0);}\nvector<vector<int>>ids(n,vector<int>(n));for(int i=0;i<n;i++)for(int j=0;j<n;j++)ids[i][j]=g.add_edge(i,n+j,1,a[i][j]-low[i]);\nauto curve=g.slope(s,t);assert(curve.back().first==n);cout<<at_flow(curve,n)+offset<<'\\n';\nfor(int i=0;i<n;i++)for(int j=0;j<n;j++)if(g.get_edge(ids[i][j]).flow)cout<<j<<' ';cout<<'\\n';\n}\n"
+}

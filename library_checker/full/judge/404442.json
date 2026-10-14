@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 1880064,
+      "status": "AC",
+      "time": 0.278
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 1875968,
+      "status": "AC",
+      "time": 0.18
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 1867776,
+      "status": "AC",
+      "time": 0.179
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 66834432,
+      "status": "AC",
+      "time": 0.091
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 51949568,
+      "status": "AC",
+      "time": 0.702
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 61997056,
+      "status": "AC",
+      "time": 1.232
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 8269824,
+      "status": "AC",
+      "time": 0.371
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 66904064,
+      "status": "AC",
+      "time": 0.979
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 66899968,
+      "status": "AC",
+      "time": 1.533
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 66863104,
+      "status": "AC",
+      "time": 1.462
+    }
+  ],
+  "overview": {
+    "id": 404442,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 66904064,
+    "problem_name": "static_range_frequency",
+    "problem_title": "Static Range Frequency",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:48:10.015193Z",
+    "time": 1.533
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL wavelet_matrix.cpp SHA256 189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a\ntemplate<class T,int LOG=numeric_limits<make_unsigned_t<T>>::digits> //LOGは log_2 A_i より大きい値を選択 \nstruct WaveletMatrix{ //WaveletMatrix<int,10> など\n    using U=make_unsigned_t<T>;\n    int n; array<int,LOG>mid{}; array<vector<int>,LOG>s;\n    WaveletMatrix(const vector<T>&A):n(A.size()){ // 非負整数列Aから構築\n        vector<U>a(n),b(n);\n        for(int i=0;i<n;i++){\n            if constexpr(is_signed_v<T>) assert(A[i]>=0);\n            a[i]=(U)A[i];\n        }\n        for(int h=LOG-1;h>=0;h--){\n            s[h].assign(n+1,0);\n            for(int i=0;i<n;i++)s[h][i+1]=s[h][i]+(a[i]>>h&1);\n            mid[h]=n-s[h][n];\n            int p=0,q=mid[h];\n            for(U x:a)((x>>h&1)?b[q++]:b[p++])=x;\n            a.swap(b);\n        }\n    }\n    T access(int k)const{ // 元配列のA[k]を返す\n        U x=0;\n        for(int h=LOG-1;h>=0;h--){\n            int o=s[h][k],b=s[h][k+1]-o;\n            if(b)x|=U(1)<<h,k=mid[h]+o;\n            else k-=o;\n        }\n        return (T)x;\n    }\n    int rank(T x,int l,int r)const{ // [l,r)にあるxの個数\n        if constexpr(is_signed_v<T>)if(x<0)return 0;\n        U y=(U)x;\n        if constexpr(LOG<numeric_limits<U>::digits)if(y>>LOG)return 0;\n        for(int h=LOG-1;h>=0;h--){\n            int L=s[h][l],R=s[h][r];\n            if(y>>h&1)l=mid[h]+L,r=mid[h]+R;\n            else l-=L,r-=R;\n        }\n        return r-l;\n    }\n    int rank(T x,int r)const{ // [0,r)にあるxの個数\n        return rank(x,0,r);\n    }\n    T kth(int l,int r,int k)const{ // [l,r)のk番目に小さい値 (0-indexed)\n        U x=0;\n        for(int h=LOG-1;h>=0;h--){\n            int L=s[h][l],R=s[h][r],z=r-l-(R-L);\n            if(k<z)l-=L,r-=R;\n            else x|=U(1)<<h,k-=z,l=mid[h]+L,r=mid[h]+R;\n        }\n        return (T)x;\n    }\n    T kth_largest(int l,int r,int k)const{ // [l,r)のk番目に大きい値\n        return kth(l,r,r-l-1-k);\n    }\n    int less(int l,int r,T x)const{ // [l,r)にあるx未満の値の個数\n        if constexpr(is_signed_v<T>)if(x<=0)return 0;\n        U y=(U)x;\n        if constexpr(LOG<numeric_limits<U>::digits)if(y>>LOG)return r-l;\n        int c=0;\n        for(int h=LOG-1;h>=0;h--){\n            int L=s[h][l],R=s[h][r],z=r-l-(R-L);\n            if(y>>h&1)c+=z,l=mid[h]+L,r=mid[h]+R;\n            else l-=L,r-=R;\n        }\n        return c;\n    }\n    int range_freq(int l,int r,T lo,T hi)const{ // [l,r)でlo<=A[i]<hiの個数\n        return less(l,r,hi)-less(l,r,lo);\n    }\n    optional<T> prev_value(int l,int r,T x)const{ // [l,r)のx未満の最大値\n        int k=less(l,r,x);\n        if(!k)return nullopt;\n        return kth(l,r,k-1);\n    }\n    optional<T> next_value(int l,int r,T x)const{ // [l,r)のx以上の最小値\n        int k=less(l,r,x);\n        if(k==r-l)return nullopt;\n        return kth(l,r,k);\n    }\n};\n// END ORIGINAL wavelet_matrix.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<int>a(n);for(auto&x:a)cin>>x;WaveletMatrix<int,30>w(a);\nwhile(q--){int l,r,x;cin>>l>>r>>x;int ans=w.range_freq(l,r,x,x+1);assert(ans==w.rank(x,r)-w.rank(x,l));cout<<ans<<'\\n';}\n\n}\n"
+}

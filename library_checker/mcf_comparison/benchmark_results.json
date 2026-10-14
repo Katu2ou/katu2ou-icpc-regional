@@ -1,0 +1,92 @@
+[
+  {
+    "case": "hand_minus_00",
+    "variant": "original_global",
+    "n": 500,
+    "input_sha256": "09130df5862aab3e35dd8d0e1cf4f60e00c10fd0a841a0c55ec982045712f647",
+    "seconds": 7.6940537500195205,
+    "status": "PASS",
+    "cost": -83333000
+  },
+  {
+    "case": "hand_minus_00",
+    "variant": "acl_global",
+    "n": 500,
+    "input_sha256": "09130df5862aab3e35dd8d0e1cf4f60e00c10fd0a841a0c55ec982045712f647",
+    "seconds": 0.7563737080199644,
+    "status": "PASS",
+    "cost": -83333000
+  },
+  {
+    "case": "hand_minus_00",
+    "variant": "original_row",
+    "n": 500,
+    "input_sha256": "09130df5862aab3e35dd8d0e1cf4f60e00c10fd0a841a0c55ec982045712f647",
+    "seconds": 0.8533168329740874,
+    "status": "PASS",
+    "cost": -83333000
+  },
+  {
+    "case": "hand_minus_00",
+    "variant": "early_exit_row",
+    "n": 500,
+    "input_sha256": "09130df5862aab3e35dd8d0e1cf4f60e00c10fd0a841a0c55ec982045712f647",
+    "seconds": 0.734879334049765,
+    "status": "PASS",
+    "cost": -83333000
+  },
+  {
+    "case": "hand_minus_00",
+    "variant": "acl_row",
+    "n": 500,
+    "input_sha256": "09130df5862aab3e35dd8d0e1cf4f60e00c10fd0a841a0c55ec982045712f647",
+    "seconds": 0.6664685000432655,
+    "status": "PASS",
+    "cost": -83333000
+  },
+  {
+    "case": "multiplication_table_00",
+    "variant": "original_global",
+    "n": 500,
+    "input_sha256": "d36a43718ebe8f3699ba5f395963b6124d8aa90109e01e6beffcbfc9d3c11f96",
+    "seconds": 6.63318679202348,
+    "status": "PASS",
+    "cost": 20958500
+  },
+  {
+    "case": "multiplication_table_00",
+    "variant": "acl_global",
+    "n": 500,
+    "input_sha256": "d36a43718ebe8f3699ba5f395963b6124d8aa90109e01e6beffcbfc9d3c11f96",
+    "seconds": 1.3308294580201618,
+    "status": "PASS",
+    "cost": 20958500
+  },
+  {
+    "case": "multiplication_table_00",
+    "variant": "original_row",
+    "n": 500,
+    "input_sha256": "d36a43718ebe8f3699ba5f395963b6124d8aa90109e01e6beffcbfc9d3c11f96",
+    "seconds": 6.559654415992554,
+    "status": "PASS",
+    "cost": 20958500
+  },
+  {
+    "case": "multiplication_table_00",
+    "variant": "early_exit_row",
+    "n": 500,
+    "input_sha256": "d36a43718ebe8f3699ba5f395963b6124d8aa90109e01e6beffcbfc9d3c11f96",
+    "seconds": 1.216184124990832,
+    "status": "PASS",
+    "cost": 20958500
+  },
+  {
+    "case": "multiplication_table_00",
+    "variant": "acl_row",
+    "n": 500,
+    "input_sha256": "d36a43718ebe8f3699ba5f395963b6124d8aa90109e01e6beffcbfc9d3c11f96",
+    "seconds": 1.3979074169765227,
+    "status": "PASS",
+    "cost": 20958500
+  }
+]

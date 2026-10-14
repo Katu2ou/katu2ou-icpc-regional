@@ -1,0 +1,108 @@
+[
+  {
+    "key": "fps_multiply",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5 16 34 60 70 70 59 36\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "871938225\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "fps_inv",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "598946612 718735934 862483121 635682004 163871793\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "fps_log",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0 1 2 3 4\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "fps_exp",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 1 499122179 166374064 291154613\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "fps_pow",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0 0 0 0\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 2\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_02.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "1 0\n",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "key": "fps_helpers",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "5 16 34 60 70 70 59 36\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "871938225\n",
+        "stderr": ""
+      }
+    ]
+  }
+]

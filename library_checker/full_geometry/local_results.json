@@ -1,0 +1,22 @@
+[
+  {
+    "key": "geo_hull",
+    "compile": 0,
+    "samples": [
+      {
+        "name": "example_00.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "4\n0 0\n2 0\n2 2\n0 2\n",
+        "stderr": ""
+      },
+      {
+        "name": "example_01.in",
+        "ok": true,
+        "exit_code": 0,
+        "stdout": "0\n1\n1 1\n1\n1 1\n2\n-2 -2\n0 0\n",
+        "stderr": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "ans_big_00",
+      "checker_out": "b2sgIjEwNzM3NDE4MjMiCg==",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI5OTQ2IHRva2Vucwo=",
+      "memory": 27635712,
+      "status": "AC",
+      "time": 0.147
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTU0MzIxIHRva2Vucwo=",
+      "memory": 26873856,
+      "status": "AC",
+      "time": 0.174
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTc2MzggdG9rZW5zCg==",
+      "memory": 4329472,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTY2MzI4IHRva2Vucwo=",
+      "memory": 27635712,
+      "status": "AC",
+      "time": 0.188
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTY2NTIxIHRva2Vucwo=",
+      "memory": 27643904,
+      "status": "AC",
+      "time": 0.185
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTY2NjM2IHRva2Vucwo=",
+      "memory": 27656192,
+      "status": "AC",
+      "time": 0.183
+    },
+    {
+      "case": "almost_all_insert_00",
+      "checker_out": "b2sgIjExMjAiCg==",
+      "memory": 114876416,
+      "status": "AC",
+      "time": 0.402
+    },
+    {
+      "case": "almost_all_query_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.139
+    },
+    {
+      "case": "almost_all_query_close_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 1720320,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "max_ans_small_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 57458688,
+      "status": "AC",
+      "time": 0.282
+    }
+  ],
+  "overview": {
+    "id": 404447,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 114876416,
+    "problem_name": "set_xor_min",
+    "problem_title": "Set Xor-Min",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:50:33.53555Z",
+    "time": 0.402
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL binarytrie.cpp SHA256 f892b995b96238701dac104c32f904e20e5d828a02b6d2b9db3cf10c6aadd380\ntemplate<int B=30> struct binary_trie{ //0以上2^B未満の整数を管理するBinary Trie\n    struct N{int nx[2]={-1,-1},cnt=0;};\n    vector<N>t{N()};\n\n    void add(long long x,int d=1){ //xの個数をdだけ増減する\n        int v=0;t[v].cnt+=d;\n        for(int i=B-1;i>=0;i--){\n            int b=x>>i&1;\n            if(t[v].nx[b]<0)t[v].nx[b]=t.size(),t.emplace_back();\n            v=t[v].nx[b]; t[v].cnt+=d;\n        }\n    }\n\n    void insert(long long x){ //xを1個追加する\n        add(x,1);\n    }\n\n    void erase(long long x){ //xを1個削除する\n        add(x,-1);\n    }\n\n    long long min_xor(long long x){ //集合内のyについてx xor yの最小値を返す\n        int v=0; long long r=0;\n        for(int i=B-1;i>=0;i--){\n            int b=x>>i&1,u=t[v].nx[b];\n            if(u<0||!t[u].cnt)b^=1,r|=1LL<<i;\n            v=t[v].nx[b];\n        }\n        return r;\n    }\n\n    long long max_xor(long long x){ //集合内のyについてx xor yの最大値を返す\n        int v=0; long long r=0;\n        for(int i=B-1;i>=0;i--){\n            int b=x>>i&1,u=t[v].nx[b^1];\n            if(u>=0&&t[u].cnt)b^=1,r|=1LL<<i;\n            v=t[v].nx[b];\n        }\n        return r;\n    }\n};\n// END ORIGINAL binarytrie.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint q;cin>>q;binary_trie<30>tr;unordered_set<ll>s;const ll mask=(1LL<<30)-1;\nwhile(q--){int t;ll x;cin>>t>>x;if(t==0){if(s.insert(x).second)tr.add(x,1);}else if(t==1){if(s.erase(x))tr.add(x,-1);}\nelse cout<<(mask^tr.max_xor(mask^x))<<'\\n';}\n\n}\n"
+}

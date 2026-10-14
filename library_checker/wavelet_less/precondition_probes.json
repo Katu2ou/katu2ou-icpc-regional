@@ -1,0 +1,17 @@
+{
+  "insufficient_log": {
+    "probe": "insufficient_log",
+    "array": [
+      4
+    ],
+    "log": 2,
+    "threshold": 1,
+    "expected_mathematical_count": 0,
+    "actual": 1
+  },
+  "oversized_log": {
+    "returncode": -6,
+    "stderr": "library_checker/wavelet_less/../../wavelet_matrix.cpp:13:56: runtime error: shift exponent 64 is too large for 64-bit type 'value_type' (aka 'unsigned long long')\n==56644==WARNING: external symbolizer didn't start up correctly!\n==56644==WARNING: Can't write to symbolizer at fd 4\n==56644==WARNING: external symbolizer didn't start up correctly!\n==56644==WARNING: Can't write to symbolizer at fd 5\n==56644==WARNING: external symbolizer didn't start up correctly!\n==56644==WARNING: Can't write to symbolizer at fd 6\n==56644==WARNING: external symbolizer didn't start up correctly!\n==56644==WARNING: Can't write to symbolizer at fd 7\n==56644==WARNING: external symbolizer didn't start up correctly!\n==56644==WARNING: Failed to use and restart external symbolizer!\n    #0 0x0001008c5c2c in WaveletMatrix<unsigned long long, 65>::WaveletMatrix(std::__1::vector<unsigned long long, std::__1::allocator<unsigned long long>> const&)+0x8a4 (/private/tmp/icpc-wavelet-less/check_sanitized:arm64+0x100015c2c)\n    #1 0x0001008b14c0 in main+0x6a4 (/private/tmp/icpc-wavelet-less/check_sanitized:arm64+0x1000014c0)\n    #2 0x00019a036b94 in start+0x17b8 (/usr/lib/dyld:arm64e+0xfffffffffff3ab94)\n\nSUMMARY: UndefinedBehaviorSanitizer: undefined-behavior library_checker/wavelet_less/../../wavelet_matrix.cpp:13:56 \n",
+    "stdout": ""
+  }
+}

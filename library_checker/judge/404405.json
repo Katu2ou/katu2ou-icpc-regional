@@ -1,0 +1,168 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "all_same_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "all_same_01",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_02",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_03",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_04",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_05",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_06",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "small_random_07",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_01",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_02",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_03",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_04",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_05",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_06",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_random_07",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_colinear_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_colinear_01",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "near_circle_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "near_circle_01",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    },
+    {
+      "case": "max_ans_00",
+      "memory": 0,
+      "status": "-",
+      "time": 0
+    }
+  ],
+  "compile_error": "bWFpbi5jcHA6IEluIGZ1bmN0aW9uICdib29sIG9uU2VnbWVudChjb25zdCBMaW5lJiwgY29uc3QgUG9pbnQmKSc6Cm1haW4uY3BwOjYxOjEyOiBlcnJvcjogJ2Njdycgd2FzIG5vdCBkZWNsYXJlZCBpbiB0aGlzIHNjb3BlCiAgIDYxIHwgICAgIHJldHVybiBjY3cobC5hLGwuYixwKT09MDsKICAgICAgfCAgICAgICAgICAgIF5+fgptYWluLmNwcDogSW4gZnVuY3Rpb24gJ0NpcmNsZSBjaXJjdW1DaXJjbGUoUG9pbnQsIFBvaW50LCBQb2ludCknOgptYWluLmNwcDo2NjoxODogZXJyb3I6IG5vIG1hdGNoIGZvciAnb3BlcmF0b3IvJyAob3BlcmFuZCB0eXBlcyBhcmUgJ3N0ZDo6Y29tcGxleDxsb25nIGRvdWJsZT4nIGFuZCAnaW50JykKICAgNjYgfCAgICAgUG9pbnQgeD0oYStiKS8yLHk9KGErYykvMjsKICAgICAgfCAgICAgICAgICAgICB+fn5+fl5+CiAgICAgIHwgICAgICAgICAgICAgICB8ICAgfAogICAgICB8ICAgICAgICAgICAgICAgfCAgIGludAogICAgICB8ICAgICAgICAgICAgICAgc3RkOjpjb21wbGV4PGxvbmcgZG91YmxlPgptYWluLmNwcDo2NjoxODogbm90ZTogdGhlcmUgYXJlIDExIGNhbmRpZGF0ZXMKICAgNjYgfCAgICAgUG9pbnQgeD0oYStiKS8yLHk9KGErYykvMjsKICAgICAgfCAgICAgICAgICAgICB+fn5+fl5+CkluIGZpbGUgaW5jbHVkZWQgZnJvbSAvdXNyL2xvY2FsL2luY2x1ZGUvYysrLzE1LjIuMC94ODZfNjQtbGludXgtZ251L2JpdHMvc3RkYysrLmg6MTQxLAogICAgICAgICAgICAgICAgIGZyb20gbWFpbi5jcHA6MToKL3Vzci9sb2NhbC9pbmNsdWRlL2MrKy8xNS4yLjAvY29tcGxleDo0NjQ6NTogbm90ZTogY2FuZGlkYXRlIDE6ICd0ZW1wbGF0ZTxjbGFzcyBfVHA+IHN0ZDo6Y29tcGxleDxfVHA+IHN0ZDo6b3BlcmF0b3IvKGNvbnN0IGNvbXBsZXg8X1RwPiYsIGNvbnN0IGNvbXBsZXg8X1RwPiYpJwogIDQ2NCB8ICAgICBvcGVyYXRvci8oY29uc3QgY29tcGxleDxfVHA+JiBfX3gsIGNvbnN0IGNvbXBsZXg8X1RwPiYgX195KQogICAgICB8ICAgICBefn5+fn5+fgovdQ==",
+  "overview": {
+    "id": 404405,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": -1,
+    "problem_name": "static_convex_hull",
+    "problem_title": "Static Convex Hull",
+    "status": "CE",
+    "submission_time": "2026-09-21T06:24:40.263637Z",
+    "time": -0.001
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL geometry.cpp SHA256 ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d\nusing ld=long double;\nusing Point=complex<ld>; using pt=Point;\nconst ld EPS=1e-10L,PI=acosl(-1.L);\n\ninline bool equal(const ld&a,const ld&b){ //a,bが誤差を許して等しいか\n    return fabsl(a-b)<EPS;\n}\ninline int sgn(const ld&x){ //xの符号を-1,0,1で返す\n    return (x>EPS)-(x<-EPS);\n}\nPoint unitVector(const Point&a){ //aと同方向の単位ベクトル\n    assert(abs(a)>EPS); return a/abs(a);\n}\nPoint normalVector(const Point&a){ //aを反時計回りに90度回転\n    return a*Point(0,1);\n}\nld dot(const Point&a,const Point&b){ //内積\n    return real(conj(a)*b);\n}\nld cross(const Point&a,const Point&b){ //外積\n    return imag(conj(a)*b);\n}\nPoint rotate(const Point&p,ld t){ //pを反時計回りにt(rad)回転\n    return p*polar<ld>(1,t);\n}\nld radianToDegree(ld x){ //radを度に変換\n    return x*180/PI;\n}\nld degreeToRadian(ld x){ //度をradに変換\n    return x*PI/180;\n}\n\nstruct Line{\n    Point a,b;\n    Line()=default;\n    Line(Point x,Point y):a(x),b(y){} //2点x,yを通る直線(線分)\n    Line(ld A,ld B,ld C){ //Ax+By=Cを表す直線\n        assert(!equal(A,0)||!equal(B,0));\n        if(!equal(B,0))a={0,C/B},b={1,(C-A)/B};\n        else a={C/A,0},b={C/A,1};\n    }\n};\n\nstruct Circle{\n    Point p; ld r;\n    Circle()=default;\n    Circle(Point x,ld y):p(x),r(y){} //中心x,半径yの円\n};\n\nbool onLine(const Line&l,const Point&p){ //pが直線l上か\n    return fabsl(cross(l.b-l.a,p-l.a))<=EPS;\n}\n\nbool onSegment(const Line&l,const Point&p){ //pが線分l上か\n    return ccw(l.a,l.b,p)==0;\n}\n\nCircle circumCircle(Point a,Point b,Point c){ //三角形abcの外接円\n    assert(fabsl(cross(b-a,c-a))>EPS);\n    Point x=(a+b)/2,y=(a+c)/2;\n    Line l={x,x+normalVector(b-a)};\n    Line m={y,y+normalVector(c-a)};\n    Point p=crossPoint(l,m);\n    return {p,abs(p-a)};\n}\n\nPoint projection(const Line&l,const Point&p){ //lへpから下ろした垂線の足\n    Point d=l.b-l.a;\n    assert(abs(d)>EPS);\n    return l.a+d*dot(p-l.a,d)/norm(d);\n}\nPoint reflection(const Line&l,const Point&p){ //lに関するpの対称点\n    return 2.L*projection(l,p)-p;\n}\n\nint ccw(const Point&a,Point b,Point c){ //a,b,cの位置関係を判定\n    b-=a;c-=a; ld x=cross(b,c);\n    if(abs(x)>EPS)return x>0?1:-1; //反時計/時計\n    if(dot(b,c)<-EPS)return 2;      //c-a-b\n    if(norm(b)+EPS<norm(c))return -2; //a-b-c\n    return 0;                       //cが線分ab上\n}\n\nbool isOrthogonal(const Line&a,const Line&b){ //2直線が直交するか\n    return equal(dot(a.b-a.a,b.b-b.a),0);\n}\nbool isParallel(const Line&a,const Line&b){ //2直線が平行か\n    return equal(cross(a.b-a.a,b.b-b.a),0);\n}\nbool isIntersect(const Line&a,const Line&b){ //2線分が交差するか\n    return ccw(a.a,a.b,b.a)*ccw(a.a,a.b,b.b)<=0\n        && ccw(b.a,b.b,a.a)*ccw(b.a,b.b,a.b)<=0;\n}\n\nPoint crossPoint(const Line&a,const Line&b){ //2直線の交点\n    Point d=a.b-a.a,e=b.b-b.a;\n    ld z=cross(d,e),w=cross(d,b.a-a.a);\n    if(equal(z,0)){assert(equal(w,0));return b.a;}\n    return a.a+d*cross(b.a-a.a,e)/z;\n}\n\nld distanceBetweenLineAndPoint(const Line&l,const Point&p){ //直線lと点pの距離\n    Point d=l.b-l.a;\n    assert(abs(d)>EPS);\n    return fabsl(cross(d,p-l.a))/abs(d);\n}\nld distanceBetweenSegmentAndPoint(const Line&l,const Point&p){ //線分lと点pの距離\n    Point d=l.b-l.a;\n    assert(abs(d)>EPS);\n    if(dot(d,p-l.a)<EPS)return abs(p-l.a);\n    if(dot(-d,p-l.b)<EPS)return abs(p-l.b);\n    return fabsl(cross(d,p-l.a))/abs(d);\n}\nld distanceBetweenSegments(const Line&a,const Line&b){ //2線分間の距離\n    if(isIntersect(a,b))return 0;\n    return min({\n        distanceBetweenSegmentAndPoint(a,b.a),\n        distanceBetweenSegmentAndPoint(a,b.b),\n        distanceBetweenSegmentAndPoint(b,a.a),\n        distanceBetweenSegmentAndPoint(b,a.b)\n    });\n}\n\nld SignedPolygonArea(const vector<Point>&p){ //多角形の符号付き面積\n    ld s=0;\n    for(int i=0,n=p.size();i<n;i++)\n        s+=cross(p[i],p[(i+1)%n]);\n    return s/2;\n}\nld PolygonArea(const vector<Point>&p){ //多角形の面積\n    return fabsl(SignedPolygonArea(p));\n}\n\nbool isConvex(const vector<Point>&p){ //多角形が凸か\n    if(p.size()<3)return false;\n    int s=0;\n    for(int i=0,n=p.size();i<n;i++){\n        int t=sgn(cross(p[(i+1)%n]-p[i],\n                        p[(i+2)%n]-p[(i+1)%n]));\n        if(t&&s&&t!=s)return false;\n        if(t)s=t;\n    }\n    return true;\n}\n\nint isContained(const vector<Point>&g,const Point&p){ //点pが多角形gの内/辺上/外か(2/1/0)\n    bool in=0;\n    for(int i=0,n=g.size();i<n;i++){\n        Point a=g[i]-p,b=g[(i+1)%n]-p;\n        if(imag(a)>imag(b))swap(a,b);\n        if(imag(a)<=EPS&&EPS<imag(b)&&cross(a,b)<-EPS)in^=1;\n        if(equal(cross(a,b),0)&&dot(a,b)<=EPS)return 1;\n    }\n    return in?2:0;\n}\n\nvector<Point> ConvexHull(vector<Point>p,bool col=false){ //凸包を反時計回りに返す(col=trueなら辺上も含む)\n    sort(p.begin(),p.end(),[](Point a,Point b){\n        return real(a)!=real(b)?real(a)<real(b):imag(a)<imag(b);\n    });\n    p.erase(unique(p.begin(),p.end(),[](Point a,Point b){\n        return abs(a-b)<EPS;\n    }),p.end());\n\n    int n=p.size(),k=0;\n    if(n<=1)return p;\n    vector<Point>h(2*n);\n    if(col){\n        bool all=1;\n        for(int i=2;i<n;i++)\n            if(fabsl(cross(p[1]-p[0],p[i]-p[0]))>EPS) all=0;\n        if(all)return p;\n    }\n\n    auto bad=[&](Point a,Point b,Point c){ //凸包に不要な中間点か\n        ld x=cross(b-a,c-b);\n        return col?x<-EPS:x<EPS;\n    };\n\n    for(auto x:p){\n        while(k>=2&&bad(h[k-2],h[k-1],x))--k;\n        h[k++]=x;\n    }\n    for(int i=n-2,t=k+1;i>=0;i--){\n        while(k>=t&&bad(h[k-2],h[k-1],p[i]))--k;\n        h[k++]=p[i];\n    }\n    h.resize(k-1);\n    return h;\n}\n\nint isIntersect(const Circle&a,const Circle&b){ //2円の位置関係(返り値=共通接線数,-1は同一円)\n    ld d=abs(a.p-b.p),s=a.r+b.r,t=fabsl(a.r-b.r);\n    if(equal(d,0)&&equal(a.r,b.r))return -1;\n    if(d>s+EPS)return 4; //離れている\n    if(equal(d,s))return 3; //外接\n    if(d<t-EPS)return 0; //内包\n    if(equal(d,t))return 1; //内接\n    return 2; //2点で交わる\n}\n\nCircle inCircle(const Point&a,const Point&b,const Point&c){ //三角形abcの内接円\n    ld A=abs(b-c),B=abs(a-c),C=abs(a-b);\n    assert(A+B+C>EPS&&fabsl(cross(b-a,c-a))>EPS);\n    Point p=(a*A+b*B+c*C)/(A+B+C);\n    return {p,distanceBetweenLineAndPoint({a,b},p)};\n}\n\nvector<Point> crossPoint(const Circle&c,const Line&l){ //円cと直線lの交点\n    ld d=distanceBetweenLineAndPoint(l,c.p);\n    if(d>c.r+EPS)return {};\n    Point h=projection(l,c.p);\n    if(equal(d,c.r))return {h};\n    Point u=unitVector(l.b-l.a)\n           *sqrt(max<ld>(0,c.r*c.r-d*d));\n    return {h-u,h+u};\n}\n\nvector<Point> crossPoint(const Circle&a,const Circle&b){ //2円の交点\n    int m=isIntersect(a,b);\n    if(m==4||m==0||m==-1)return {};\n\n    ld d=abs(b.p-a.p);\n    ld x=(a.r*a.r+d*d-b.r*b.r)/(2*d);\n    ld y=sqrt(max<ld>(0,a.r*a.r-x*x));\n\n    Point u=(b.p-a.p)/d,h=a.p+u*x;\n    if(m==1||m==3)return {h};\n\n    Point v=u*Point(0,y);\n    return {h+v,h-v};\n}\n\nvector<Point> tangentToCircle(const Point&p,const Circle&c){ //点pから円cへの接点\n    ld d=norm(c.p-p);\n    if(d<c.r*c.r-EPS)return {};\n    return crossPoint(c,Circle(p,sqrt(max<ld>(0,d-c.r*c.r))));\n}\n\nvector<Line> tangent(const Circle&a,const Circle&b){ //2円の共通接線\n    vector<Line>r;\n    ld g=abs(a.p-b.p);\n    if(equal(g,0))return r;\n\n    Point u=unitVector(b.p-a.p),v=normalVector(u);\n\n    for(int s:{-1,1}){\n        ld h=(a.r+b.r*s)/g,q=1-h*h;\n        if(q<-EPS)continue;\n\n        if(fabsl(q)<EPS){\n            Point w=h>0?u:-u;\n            r.push_back({a.p+w*a.r,a.p+w*a.r+v});\n        }else{\n            Point U=u*h,V=v*sqrt(max<ld>(0,q));\n            for(int t:{1,-1}){\n                Point w=U+V*(ld)t;\n                r.push_back({\n                    a.p+w*a.r,\n                    b.p-w*(b.r*s)\n                });\n            }\n        }\n    }\n    return r;\n}\n// END ORIGINAL geometry.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint t;cin>>t;while(t--){int n;cin>>n;vector<Point>p(n);for(auto&z:p){ll x,y;cin>>x>>y;z=Point(x,y);}\nauto h=ConvexHull(p);cout<<h.size()<<'\\n';for(auto z:h)cout<<llround(z.real())<<' '<<llround(z.imag())<<'\\n';}\n\n}\n"
+}

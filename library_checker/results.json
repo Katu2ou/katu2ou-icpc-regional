@@ -1,0 +1,1266 @@
+[
+  {
+    "key": "binary_indexed_tree",
+    "problem": "point_add_range_sum",
+    "libraries": [
+      {
+        "file": "binary_indexed_tree.cpp",
+        "sha256": "cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354"
+      }
+    ],
+    "source": "submissions/binary_indexed_tree.cc",
+    "lang": "cpp17",
+    "source_sha256": "d959f31be1fbb60a8dbd13d1bd539f173061bcf0a8256d835c7861bfd7b7c86c",
+    "note": "",
+    "started_at": "2026-09-21T06:21:03.270927+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404395,
+    "url": "https://judge.yosupo.jp/submission/404395",
+    "source_verified": true,
+    "overview": {
+      "id": 404395,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 8691712,
+      "problem_name": "point_add_range_sum",
+      "problem_title": "Point Add Range Sum",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:21:03.523459Z",
+      "time": 0.124
+    },
+    "checked_at": "2026-09-21T06:21:31.784693+00:00"
+  },
+  {
+    "key": "binarytrie",
+    "problem": "set_xor_min",
+    "libraries": [
+      {
+        "file": "binarytrie.cpp",
+        "sha256": "f892b995b96238701dac104c32f904e20e5d828a02b6d2b9db3cf10c6aadd380"
+      }
+    ],
+    "source": "submissions/binarytrie.cc",
+    "lang": "cpp17",
+    "source_sha256": "f082641464b0594b7910f65d74325af0c26bc005888d3383290f57bda8c15d05",
+    "note": "The adapter enforces set semantics (duplicate insert / absent erase are ignored).",
+    "started_at": "2026-09-21T06:21:04.621975+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404396,
+    "url": "https://judge.yosupo.jp/submission/404396",
+    "source_verified": true,
+    "overview": {
+      "id": 404396,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 114896896,
+      "problem_name": "set_xor_min",
+      "problem_title": "Set Xor-Min",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:21:04.910048Z",
+      "time": 0.39
+    },
+    "checked_at": "2026-09-21T06:21:50.065434+00:00"
+  },
+  {
+    "key": "bmbm_recurrence",
+    "problem": "find_linear_recurrence",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "bmbm.cpp",
+        "sha256": "4170242b4c6a6adfe8738ea2ba31b896a5a00a6a146cec56dba204e16c6447ad"
+      }
+    ],
+    "source": "submissions/bmbm_recurrence.cc",
+    "lang": "cpp17",
+    "source_sha256": "44eaf1258cba4796772bd6bbf3869eea17cd77c72d9aadd9d2411ee88094b728",
+    "note": "",
+    "started_at": "2026-09-21T06:21:40.047196+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404397,
+    "url": "https://judge.yosupo.jp/submission/404397",
+    "source_verified": true,
+    "overview": {
+      "id": 404397,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 1060864,
+      "problem_name": "find_linear_recurrence",
+      "problem_title": "Find Linear Recurrence",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:21:40.257209Z",
+      "time": 0.087
+    },
+    "checked_at": "2026-09-21T06:22:08.411056+00:00"
+  },
+  {
+    "key": "bmbm_kth",
+    "problem": "kth_term_of_linearly_recurrent_sequence",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "bmbm.cpp",
+        "sha256": "4170242b4c6a6adfe8738ea2ba31b896a5a00a6a146cec56dba204e16c6447ad"
+      }
+    ],
+    "source": "submissions/bmbm_kth.cc",
+    "lang": "cpp17",
+    "source_sha256": "5411fc0824ff21c1bae10b434fd45ba274bfcf427d33726cc1b8c44d9c7be965",
+    "note": "",
+    "started_at": "2026-09-21T06:21:58.325240+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404398,
+    "url": "https://judge.yosupo.jp/submission/404398",
+    "source_verified": true,
+    "overview": {
+      "id": 404398,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 8941568,
+      "problem_name": "kth_term_of_linearly_recurrent_sequence",
+      "problem_title": "Kth term of Linearly Recurrent Sequence",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:21:58.540559Z",
+      "time": 4.532
+    },
+    "checked_at": "2026-09-21T06:23:00.864305+00:00"
+  },
+  {
+    "key": "cartesiantree",
+    "problem": "cartesian_tree",
+    "libraries": [
+      {
+        "file": "cartesiantree.cpp",
+        "sha256": "3feb3f7a2361dbca6ac98f6264df277b79b8390069f015b58dbb7e4bfb25d6b9"
+      }
+    ],
+    "source": "submissions/cartesiantree.cc",
+    "lang": "cpp17",
+    "source_sha256": "168662cfa73557793c9d5bc24e731f23d27a465df269d4b560e8e4128e9bbe0f",
+    "note": "",
+    "started_at": "2026-09-21T06:22:16.679886+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404399,
+    "url": "https://judge.yosupo.jp/submission/404399",
+    "source_verified": true,
+    "overview": {
+      "id": 404399,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 23941120,
+      "problem_name": "cartesian_tree",
+      "problem_title": "Cartesian Tree",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:22:16.955154Z",
+      "time": 0.096
+    },
+    "checked_at": "2026-09-21T06:23:27.807382+00:00"
+  },
+  {
+    "key": "convex_hull_trick",
+    "problem": "line_add_get_min",
+    "libraries": [
+      {
+        "file": "convex_hull_trick.cpp",
+        "sha256": "02bc0eda4b2ce72142a20cf5086495a05f2f30e94affb840638baefff69b31d9"
+      }
+    ],
+    "source": "submissions/convex_hull_trick.cc",
+    "lang": "cpp17",
+    "source_sha256": "8aad51f8c2b44807f70be11d20b08ebe97bee2a49105070be82d45ad9c5401b9",
+    "note": "Negating lines converts the library maximum query to the problem minimum query.",
+    "started_at": "2026-09-21T06:23:09.172014+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404400,
+    "url": "https://judge.yosupo.jp/submission/404400",
+    "source_verified": true,
+    "overview": {
+      "id": 404400,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 28729344,
+      "problem_name": "line_add_get_min",
+      "problem_title": "Line Add Get Min",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:23:09.388765Z",
+      "time": 0.155
+    },
+    "checked_at": "2026-09-21T06:23:46.175262+00:00"
+  },
+  {
+    "key": "dsu",
+    "problem": "unionfind",
+    "libraries": [
+      {
+        "file": "dsu.cpp",
+        "sha256": "9bd6258609e9d5fafcf11a5a0a03d7be840bef81bb469ef587240bcec72ca6c9"
+      }
+    ],
+    "source": "submissions/dsu.cc",
+    "lang": "cpp17",
+    "source_sha256": "35e6fac3fe3b683789c301c5fa01a547e2fffeb945b1c7bf265406b09c2993b6",
+    "note": "",
+    "started_at": "2026-09-21T06:23:36.057423+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404401,
+    "url": "https://judge.yosupo.jp/submission/404401",
+    "source_verified": true,
+    "overview": {
+      "id": 404401,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 1626112,
+      "problem_name": "unionfind",
+      "problem_title": "Unionfind",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:23:36.278434Z",
+      "time": 0.034
+    },
+    "checked_at": "2026-09-21T06:24:04.764349+00:00"
+  },
+  {
+    "key": "dynamic_segtree",
+    "problem": "point_add_range_sum",
+    "libraries": [
+      {
+        "file": "dynamic_segtree.cpp",
+        "sha256": "7e11fd649e9dedc3643a14954010547bb9b96337125fe496202538928f139025"
+      }
+    ],
+    "source": "submissions/dynamic_segtree.cc",
+    "lang": "cpp17",
+    "source_sha256": "a154aa6f16f33a116b37d519eda0c15644caaddc86b9d893bac5c7c389cdbe89",
+    "note": "",
+    "started_at": "2026-09-21T06:23:54.433435+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404402,
+    "url": "https://judge.yosupo.jp/submission/404402",
+    "source_verified": true,
+    "overview": {
+      "id": 404402,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 28712960,
+      "problem_name": "point_add_range_sum",
+      "problem_title": "Point Add Range Sum",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:23:54.678824Z",
+      "time": 0.341
+    },
+    "checked_at": "2026-09-21T06:24:31.591494+00:00"
+  },
+  {
+    "key": "eulertour",
+    "problem": "lca",
+    "libraries": [
+      {
+        "file": "eulertour.cpp",
+        "sha256": "5e273cfd2b94f79a448e1fad990e91d7674a0f0bfdc960e4a1436d34ea438067"
+      },
+      {
+        "file": "segtree.cpp",
+        "sha256": "551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4"
+      }
+    ],
+    "source": "submissions/eulertour.cc",
+    "lang": "cpp17",
+    "source_sha256": "b56f71ab02087b4f778b86aaa2861617bb67bb9d2a696d2bc0dac6c813890a9f",
+    "note": "Euler tour plus the repository segtree for range minimum queries.",
+    "started_at": "2026-09-21T06:24:12.998252+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404404,
+    "url": "https://judge.yosupo.jp/submission/404404",
+    "source_verified": true,
+    "overview": {
+      "id": 404404,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 125231104,
+      "problem_name": "lca",
+      "problem_title": "Lowest Common Ancestor",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:24:13.203203Z",
+      "time": 0.375
+    },
+    "checked_at": "2026-09-21T06:25:33.463635+00:00"
+  },
+  {
+    "key": "geometry",
+    "problem": "static_convex_hull",
+    "libraries": [
+      {
+        "file": "geometry.cpp",
+        "sha256": "ba92041712ea20e9e476f7c65a22e50b22a708110c203ad4a333adb0f7662a1d"
+      }
+    ],
+    "source": "submissions/geometry.cc",
+    "lang": "cpp17",
+    "source_sha256": "0cb983981d7d875b6abdfa8f05738a5d5c7497e9026fbed8ebf958d5ea70fcd2",
+    "note": "The entire geometry file is included unchanged; compilation errors are reported as judge results.",
+    "started_at": "2026-09-21T06:24:39.923744+00:00",
+    "status": "CE",
+    "anonymous": true,
+    "id": 404405,
+    "url": "https://judge.yosupo.jp/submission/404405",
+    "source_verified": true,
+    "overview": {
+      "id": 404405,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": -1,
+      "problem_name": "static_convex_hull",
+      "problem_title": "Static Convex Hull",
+      "status": "CE",
+      "submission_time": "2026-09-21T06:24:40.263637Z",
+      "time": -0.001
+    },
+    "checked_at": "2026-09-21T06:25:43.493910+00:00"
+  },
+  {
+    "key": "hld_path_sum",
+    "problem": "vertex_add_path_sum",
+    "libraries": [
+      {
+        "file": "hld.cpp",
+        "sha256": "35d59446461568951b4ce0ad275e03b08660a023647fc3f9286285f3ad5be528"
+      },
+      {
+        "file": "binary_indexed_tree.cpp",
+        "sha256": "cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354"
+      }
+    ],
+    "source": "submissions/hld_path_sum.cc",
+    "lang": "cpp17",
+    "source_sha256": "23794a66fb441399b9898da8f59c02a386a8bb7143c1cb953047ec806ea4184e",
+    "note": "",
+    "started_at": "2026-09-21T06:25:41.858026+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404406,
+    "url": "https://judge.yosupo.jp/submission/404406",
+    "source_verified": true,
+    "overview": {
+      "id": 404406,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 76460032,
+      "problem_name": "vertex_add_path_sum",
+      "problem_title": "Vertex Add Path Sum",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:25:42.146444Z",
+      "time": 0.535
+    },
+    "checked_at": "2026-09-21T06:26:11.729408+00:00"
+  },
+  {
+    "key": "hld_short",
+    "problem": "vertex_add_subtree_sum",
+    "libraries": [
+      {
+        "file": "hld_short.cpp",
+        "sha256": "202d35f1d43d34ceb4578492f0a1f1fc072c2f707c95e627767610d27edef85d"
+      },
+      {
+        "file": "binary_indexed_tree.cpp",
+        "sha256": "cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354"
+      }
+    ],
+    "source": "submissions/hld_short.cc",
+    "lang": "cpp17",
+    "source_sha256": "61b92e769dba30a16aed6eedc27b1eeb27b23f99ba75ffec66396e5bdb235061",
+    "note": "The short HLD expects a directed children-only tree; the adapter supplies that representation.",
+    "started_at": "2026-09-21T06:25:51.804513+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404407,
+    "url": "https://judge.yosupo.jp/submission/404407",
+    "source_verified": true,
+    "overview": {
+      "id": 404407,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 72921088,
+      "problem_name": "vertex_add_subtree_sum",
+      "problem_title": "Vertex Add Subtree Sum",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:25:52.965341Z",
+      "time": 0.244
+    },
+    "checked_at": "2026-09-21T06:26:38.747064+00:00"
+  },
+  {
+    "key": "lazy_segtree",
+    "problem": "range_affine_range_sum",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "lazy_segtree.cpp",
+        "sha256": "f05867c65f1b7a1dc5048a9ec0915c1ca693c6db979db25739f5ba8fe1ad5e75"
+      }
+    ],
+    "source": "submissions/lazy_segtree.cc",
+    "lang": "cpp17",
+    "source_sha256": "327690e1d50f62b11229c8e926bf032526badb012613cf300bfc613f2b4a6dfe",
+    "note": "",
+    "started_at": "2026-09-21T06:26:20.005156+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404408,
+    "url": "https://judge.yosupo.jp/submission/404408",
+    "source_verified": true,
+    "overview": {
+      "id": 404408,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 25657344,
+      "problem_name": "range_affine_range_sum",
+      "problem_title": "Range Affine Range Sum",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:26:20.280496Z",
+      "time": 0.635
+    },
+    "checked_at": "2026-09-21T06:26:57.032363+00:00"
+  },
+  {
+    "key": "lcp_array",
+    "problem": "number_of_substrings",
+    "libraries": [
+      {
+        "file": "suffix_array.cpp",
+        "sha256": "8f5f09d7155bd06123e9b61524c3e08f74f506eb2b12c634517f4a2b20accb95"
+      },
+      {
+        "file": "lcp_array.cpp",
+        "sha256": "80307d9a7e20a8e172b0b66c5fa89a6b613536daeb111e85dbc6963810e1dd83"
+      }
+    ],
+    "source": "submissions/lcp_array.cc",
+    "lang": "cpp17",
+    "source_sha256": "05a8a3730153e2de068ec9f574aa8e364baa1bc5f39728866a04c8657d8f689f",
+    "note": "",
+    "started_at": "2026-09-21T06:26:47.002946+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404409,
+    "url": "https://judge.yosupo.jp/submission/404409",
+    "source_verified": true,
+    "overview": {
+      "id": 404409,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 14225408,
+      "problem_name": "number_of_substrings",
+      "problem_title": "Number of Substrings",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:26:47.23225Z",
+      "time": 0.128
+    },
+    "checked_at": "2026-09-21T06:27:23.977320+00:00"
+  },
+  {
+    "key": "linear_equation",
+    "problem": "system_of_linear_equations",
+    "libraries": [
+      {
+        "file": "linear_equation.cpp",
+        "sha256": "7bffbcf79b034790cf3f83626b926aed1cf233af384605021e324063b362bd8d"
+      }
+    ],
+    "source": "submissions/linear_equation.cc",
+    "lang": "cpp17",
+    "source_sha256": "760a2176089736386ce4e55bf78faceba731c958ac56ae10422540cc48d24b19",
+    "note": "Uses AC Library modint as the generic coefficient type; linear_equation.cpp is unchanged.",
+    "started_at": "2026-09-21T06:27:05.298401+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404410,
+    "url": "https://judge.yosupo.jp/submission/404410",
+    "source_verified": true,
+    "overview": {
+      "id": 404410,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 4997120,
+      "problem_name": "system_of_linear_equations",
+      "problem_title": "System of Linear Equations",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:27:05.517064Z",
+      "time": 0.135
+    },
+    "checked_at": "2026-09-21T06:27:50.846866+00:00"
+  },
+  {
+    "key": "linear_equation_det",
+    "problem": "matrix_det",
+    "libraries": [
+      {
+        "file": "linear_equation.cpp",
+        "sha256": "7bffbcf79b034790cf3f83626b926aed1cf233af384605021e324063b362bd8d"
+      }
+    ],
+    "source": "submissions/linear_equation_det.cc",
+    "lang": "cpp17",
+    "source_sha256": "dc6d62b5ce9740f70f4c624ae42089d0582e3152fd7bc3d51d00ddd89bb8f660",
+    "note": "Uses AC Library modint as the generic coefficient type; linear_equation.cpp is unchanged.",
+    "started_at": "2026-09-21T06:27:32.236354+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404412,
+    "url": "https://judge.yosupo.jp/submission/404412",
+    "source_verified": true,
+    "overview": {
+      "id": 404412,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 1884160,
+      "problem_name": "matrix_det",
+      "problem_title": "Determinant of Matrix",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:27:32.4585Z",
+      "time": 0.087
+    },
+    "checked_at": "2026-09-21T06:28:17.991682+00:00"
+  },
+  {
+    "key": "linear_equation_rank",
+    "problem": "matrix_rank",
+    "libraries": [
+      {
+        "file": "linear_equation.cpp",
+        "sha256": "7bffbcf79b034790cf3f83626b926aed1cf233af384605021e324063b362bd8d"
+      }
+    ],
+    "source": "submissions/linear_equation_rank.cc",
+    "lang": "cpp17",
+    "source_sha256": "657ab41d28198d5a732ac70540081a1e5362d7bf847f9f60693e338bb04c5062",
+    "note": "Uses AC Library modint as the generic coefficient type; linear_equation.cpp is unchanged.",
+    "started_at": "2026-09-21T06:27:59.120783+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404413,
+    "url": "https://judge.yosupo.jp/submission/404413",
+    "source_verified": true,
+    "overview": {
+      "id": 404413,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 14725120,
+      "problem_name": "matrix_rank",
+      "problem_title": "Rank of Matrix",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:27:59.501105Z",
+      "time": 0.088
+    },
+    "checked_at": "2026-09-21T06:28:44.911921+00:00"
+  },
+  {
+    "key": "linear_equation_bitset",
+    "problem": "system_of_linear_equations_mod_2",
+    "libraries": [
+      {
+        "file": "linear_equation_bitset.cpp",
+        "sha256": "b640813a10442c1d972300c9651f1a651c4ca3a8e6d7c9dc7601e19510cfd25e"
+      }
+    ],
+    "source": "submissions/linear_equation_bitset.cc",
+    "lang": "cpp17",
+    "source_sha256": "b089dc4c8718f3e41f68ecdf4260f16e03f5304e265479476cad4d235824d563",
+    "note": "",
+    "started_at": "2026-09-21T06:28:26.288372+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404414,
+    "url": "https://judge.yosupo.jp/submission/404414",
+    "source_verified": true,
+    "overview": {
+      "id": 404414,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 21884928,
+      "problem_name": "system_of_linear_equations_mod_2",
+      "problem_title": "System of Linear Equations (Mod 2)",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:28:26.508625Z",
+      "time": 0.539
+    },
+    "checked_at": "2026-09-21T06:29:37.543355+00:00"
+  },
+  {
+    "key": "manacher",
+    "problem": "enumerate_palindromes",
+    "libraries": [
+      {
+        "file": "manacher.cpp",
+        "sha256": "bd451b6e7c694dbdba1a540afc10749c6cbcefea8141e9882d3028530ceff029"
+      }
+    ],
+    "source": "submissions/manacher.cc",
+    "lang": "cpp17",
+    "source_sha256": "b3d226e43f43eb3d504efe5841a2d333f337538e3b9e58d5656b1cf2ca4618a0",
+    "note": "Separator insertion converts odd-radius output to odd and even palindrome lengths.",
+    "started_at": "2026-09-21T06:28:53.208579+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404415,
+    "url": "https://judge.yosupo.jp/submission/404415",
+    "source_verified": true,
+    "overview": {
+      "id": 404415,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 13258752,
+      "problem_name": "enumerate_palindromes",
+      "problem_title": "Enumerate Palindromes",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:28:53.424321Z",
+      "time": 0.044
+    },
+    "checked_at": "2026-09-21T06:29:55.912419+00:00"
+  },
+  {
+    "key": "math",
+    "problem": "sum_of_floor_of_linear",
+    "libraries": [
+      {
+        "file": "math.cpp",
+        "sha256": "f5029e95aa05d429c28c233f2d8fd8270e6be35a02b7e0952711288d13c6ddd0"
+      }
+    ],
+    "source": "submissions/math.cc",
+    "lang": "cpp17",
+    "source_sha256": "ebbc140da5e76e199dd0d976a7a57df6a5f3c3ba5fdc3eee58f692f95170671d",
+    "note": "Tests floor_sum; the other functions in math.cpp are included but not exercised by this problem.",
+    "started_at": "2026-09-21T06:29:45.836608+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404416,
+    "url": "https://judge.yosupo.jp/submission/404416",
+    "source_verified": true,
+    "overview": {
+      "id": 404416,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 1871872,
+      "problem_name": "sum_of_floor_of_linear",
+      "problem_title": "Sum of Floor of Linear",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:29:46.037194Z",
+      "time": 0.026
+    },
+    "checked_at": "2026-09-21T06:30:14.251190+00:00"
+  },
+  {
+    "key": "maxflow",
+    "problem": "bipartitematching",
+    "libraries": [
+      {
+        "file": "maxflow.cpp",
+        "sha256": "ce8402f77805182da0c9fe639700bd7442cd7c37baddb67d662245fa9222eb0b"
+      }
+    ],
+    "source": "submissions/maxflow.cc",
+    "lang": "cpp17",
+    "source_sha256": "1689029788e38478136ff9b21524e0680d05645e5ab6b0fc281df98ba6ff64d8",
+    "note": "",
+    "started_at": "2026-09-21T06:30:04.164744+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404417,
+    "url": "https://judge.yosupo.jp/submission/404417",
+    "source_verified": true,
+    "overview": {
+      "id": 404417,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 34770944,
+      "problem_name": "bipartitematching",
+      "problem_title": "Matching on Bipartite Graph",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:30:04.363916Z",
+      "time": 2.339
+    },
+    "checked_at": "2026-09-21T06:31:15.747562+00:00"
+  },
+  {
+    "key": "mincostflow",
+    "problem": "assignment",
+    "libraries": [
+      {
+        "file": "mincostflow.cpp",
+        "sha256": "56de4e37599146e56d522e39c5486e71253b259ea6e71538c31ca4cd63cbe7a6"
+      }
+    ],
+    "source": "submissions/mincostflow.cc",
+    "lang": "cpp17",
+    "source_sha256": "df77f322d1d83bb5100660dbff127404ef4f144ae586d50dfd6ca2428bf29ec7",
+    "note": "Costs are shifted by a common constant to provide nonnegative initial edge costs.",
+    "started_at": "2026-09-21T06:30:22.706259+00:00",
+    "status": "TLE",
+    "anonymous": true,
+    "id": 404419,
+    "url": "https://judge.yosupo.jp/submission/404419",
+    "source_verified": true,
+    "overview": {
+      "id": 404419,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 26701824,
+      "problem_name": "assignment",
+      "problem_title": "Assignment Problem",
+      "status": "TLE",
+      "submission_time": "2026-09-21T06:30:22.938552Z",
+      "time": 5
+    },
+    "checked_at": "2026-09-21T06:31:51.157032+00:00"
+  },
+  {
+    "key": "mo",
+    "problem": "static_range_count_distinct",
+    "libraries": [
+      {
+        "file": "mo.cpp",
+        "sha256": "d151507fa0fa4187fd55e9c3f3572018ab55707bd59e59930556ca1c05538421"
+      }
+    ],
+    "source": "submissions/mo.cc",
+    "lang": "cpp17",
+    "source_sha256": "7aeb724b0938870f47f2c04c0071cf9b07a5dc012f274696f217ea621804d0f3",
+    "note": "",
+    "started_at": "2026-09-21T06:31:24.047290+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404420,
+    "url": "https://judge.yosupo.jp/submission/404420",
+    "source_verified": true,
+    "overview": {
+      "id": 404420,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 16891904,
+      "problem_name": "static_range_count_distinct",
+      "problem_title": "Static Range Count Distinct",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:31:24.262792Z",
+      "time": 0.891
+    },
+    "checked_at": "2026-09-21T06:32:09.526422+00:00"
+  },
+  {
+    "key": "modint_convolution",
+    "problem": "convolution_mod",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      }
+    ],
+    "source": "submissions/modint_convolution.cc",
+    "lang": "cpp17",
+    "source_sha256": "dab45f525418b37f1ee100ec134cc5a5a768b221f5a3907fe3314d77c4ac81e2",
+    "note": "",
+    "started_at": "2026-09-21T06:31:59.469612+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404422,
+    "url": "https://judge.yosupo.jp/submission/404422",
+    "source_verified": true,
+    "overview": {
+      "id": 404422,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 19685376,
+      "problem_name": "convolution_mod",
+      "problem_title": "Convolution",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:31:59.675764Z",
+      "time": 0.263
+    },
+    "checked_at": "2026-09-21T06:33:36.265248+00:00"
+  },
+  {
+    "key": "rollback_mo",
+    "problem": "static_range_count_distinct",
+    "libraries": [
+      {
+        "file": "rollback_mo.cpp",
+        "sha256": "f5c4ab0529de51d49aaaa652fa9d69b378a06b588c62fcc9c3357f6e263b36e2"
+      }
+    ],
+    "source": "submissions/rollback_mo.cc",
+    "lang": "cpp17",
+    "source_sha256": "ea36ad3c744e8422642bc314e67358186337ed2180b47a8fc24fe15c4acbcc9c",
+    "note": "",
+    "started_at": "2026-09-21T06:32:17.815668+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404423,
+    "url": "https://judge.yosupo.jp/submission/404423",
+    "source_verified": true,
+    "overview": {
+      "id": 404423,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 21184512,
+      "problem_name": "static_range_count_distinct",
+      "problem_title": "Static Range Count Distinct",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:32:18.034794Z",
+      "time": 3.851
+    },
+    "checked_at": "2026-09-21T06:34:04.234392+00:00"
+  },
+  {
+    "key": "rolling_hash",
+    "problem": "zalgorithm",
+    "libraries": [
+      {
+        "file": "rolling_hash.cpp",
+        "sha256": "a930917443c03ab6b3e359237dda5c02e322e09e64a40318bd1ce0ad63f3cf85"
+      }
+    ],
+    "source": "submissions/rolling_hash.cc",
+    "lang": "cpp17",
+    "source_sha256": "aeb46396a9a4e3477a2a5dca9c9755058641be0c30dcfe73096bb8a27600ad4e",
+    "note": "Computes each suffix/prefix LCP by binary search over the library hashes.",
+    "started_at": "2026-09-21T06:33:44.813144+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404425,
+    "url": "https://judge.yosupo.jp/submission/404425",
+    "source_verified": true,
+    "overview": {
+      "id": 404425,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 12734464,
+      "problem_name": "zalgorithm",
+      "problem_title": "Z Algorithm",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:33:45.063999Z",
+      "time": 0.103
+    },
+    "checked_at": "2026-09-21T06:34:39.733737+00:00"
+  },
+  {
+    "key": "scc",
+    "problem": "scc",
+    "libraries": [
+      {
+        "file": "scc.cpp",
+        "sha256": "04ef8d63ea4eca2d30becc10cf2cd7bf3e4762d4cfd9c0a5762ab88b8952e478"
+      }
+    ],
+    "source": "submissions/scc.cc",
+    "lang": "cpp17",
+    "source_sha256": "5c0480d19ae5a05c2b78f9584f35f29c117867d73c5cbf3ff270fcfa82e84611",
+    "note": "",
+    "started_at": "2026-09-21T06:34:12.699276+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404426,
+    "url": "https://judge.yosupo.jp/submission/404426",
+    "source_verified": true,
+    "overview": {
+      "id": 404426,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 77660160,
+      "problem_name": "scc",
+      "problem_title": "Strongly Connected Components",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:34:12.900679Z",
+      "time": 0.341
+    },
+    "checked_at": "2026-09-21T06:34:58.043941+00:00"
+  },
+  {
+    "key": "segtree",
+    "problem": "point_set_range_composite",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "segtree.cpp",
+        "sha256": "551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4"
+      }
+    ],
+    "source": "submissions/segtree.cc",
+    "lang": "cpp17",
+    "source_sha256": "fd2160be163b94dacad6a8f9a2a9af9cf322cc1061c14f6ad647111d0f3ad7a5",
+    "note": "",
+    "started_at": "2026-09-21T06:34:47.989812+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404427,
+    "url": "https://judge.yosupo.jp/submission/404427",
+    "source_verified": true,
+    "overview": {
+      "id": 404427,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 17313792,
+      "problem_name": "point_set_range_composite",
+      "problem_title": "Point Set Range Composite",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:34:48.195821Z",
+      "time": 0.23
+    },
+    "checked_at": "2026-09-21T06:35:24.875839+00:00"
+  },
+  {
+    "key": "suffix_array",
+    "problem": "suffixarray",
+    "libraries": [
+      {
+        "file": "suffix_array.cpp",
+        "sha256": "8f5f09d7155bd06123e9b61524c3e08f74f506eb2b12c634517f4a2b20accb95"
+      }
+    ],
+    "source": "submissions/suffix_array.cc",
+    "lang": "cpp17",
+    "source_sha256": "f11cdb2f2a31cd8fe3f227daf5cff7dccf2ccf6208f85807623d6cb38d54955a",
+    "note": "",
+    "started_at": "2026-09-21T06:35:06.327870+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404429,
+    "url": "https://judge.yosupo.jp/submission/404429",
+    "source_verified": true,
+    "overview": {
+      "id": 404429,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 14303232,
+      "problem_name": "suffixarray",
+      "problem_title": "Suffix Array",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:35:06.531823Z",
+      "time": 0.199
+    },
+    "checked_at": "2026-09-21T06:36:34.272322+00:00"
+  },
+  {
+    "key": "template",
+    "problem": "aplusb",
+    "libraries": [
+      {
+        "file": "template.cpp",
+        "sha256": "c8101c0f16a17523ba4d8b00917b91632527cbf6504cae13e031c952daeac82a"
+      }
+    ],
+    "source": "submissions/template.cc",
+    "lang": "cpp17",
+    "source_sha256": "307de7aa35b2fbf8033e5140f34ec7a44f5739d60a7e8a294b983de5d80030b3",
+    "note": "The unchanged template is namespaced to avoid a second entry point. A+B exercises chmin/chmax; the empty solve() and rep macro are not validated.",
+    "started_at": "2026-09-21T06:35:33.136622+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404430,
+    "url": "https://judge.yosupo.jp/submission/404430",
+    "source_verified": true,
+    "overview": {
+      "id": 404430,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 835584,
+      "problem_name": "aplusb",
+      "problem_title": "A + B",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:35:33.35174Z",
+      "time": 0.01
+    },
+    "checked_at": "2026-09-21T06:36:52.572365+00:00"
+  },
+  {
+    "key": "trie",
+    "problem": "associative_array",
+    "libraries": [
+      {
+        "file": "trie.cpp",
+        "sha256": "edc9ae30944fc4b46446e45266c819967464a4b5dbbde70c49b01c36839be26c"
+      }
+    ],
+    "source": "submissions/trie.cc",
+    "lang": "cpp17",
+    "source_sha256": "657dde3d7a8eddd65841b339beb1467319ac04d8fc9b682746da7aa2b53f6d9d",
+    "note": "Decimal strings encode keys; the trie resolves string keys to node IDs, with values stored separately by node ID.",
+    "started_at": "2026-09-21T06:36:42.535863+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404431,
+    "url": "https://judge.yosupo.jp/submission/404431",
+    "source_verified": true,
+    "overview": {
+      "id": 404431,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 767344640,
+      "problem_name": "associative_array",
+      "problem_title": "Associative Array",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:36:42.745813Z",
+      "time": 1.511
+    },
+    "checked_at": "2026-09-21T06:37:28.450531+00:00"
+  },
+  {
+    "key": "twosat",
+    "problem": "two_sat",
+    "libraries": [
+      {
+        "file": "twosat.cpp",
+        "sha256": "f017d09f72050bbac8228d0d64ebef684855e940d07167fac88e231c2cc041bb"
+      }
+    ],
+    "source": "submissions/twosat.cc",
+    "lang": "cpp17",
+    "source_sha256": "a104c0eebdba1a74f69fc589209f879ce646eb32e324fb8d00e4b77b6d61fec0",
+    "note": "",
+    "started_at": "2026-09-21T06:37:00.871254+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404432,
+    "url": "https://judge.yosupo.jp/submission/404432",
+    "source_verified": true,
+    "overview": {
+      "id": 404432,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 153763840,
+      "problem_name": "two_sat",
+      "problem_title": "2 Sat",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:37:01.087648Z",
+      "time": 0.602
+    },
+    "checked_at": "2026-09-21T06:37:56.065560+00:00"
+  },
+  {
+    "key": "wavelet_matrix_kth",
+    "problem": "range_kth_smallest",
+    "libraries": [
+      {
+        "file": "wavelet_matrix.cpp",
+        "sha256": "189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a"
+      }
+    ],
+    "source": "submissions/wavelet_matrix_kth.cc",
+    "lang": "cpp17",
+    "source_sha256": "51c04c2de7e88603266643776a9fbe1d79afbd4e789d94ccae8d1b35af02e5db",
+    "note": "",
+    "started_at": "2026-09-21T06:37:36.757596+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404433,
+    "url": "https://judge.yosupo.jp/submission/404433",
+    "source_verified": true,
+    "overview": {
+      "id": 404433,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 27807744,
+      "problem_name": "range_kth_smallest",
+      "problem_title": "Range Kth Smallest",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:37:36.990125Z",
+      "time": 0.281
+    },
+    "checked_at": "2026-09-21T06:38:14.833412+00:00"
+  },
+  {
+    "key": "wavelet_matrix_rank",
+    "problem": "static_range_frequency",
+    "libraries": [
+      {
+        "file": "wavelet_matrix.cpp",
+        "sha256": "189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a"
+      }
+    ],
+    "source": "submissions/wavelet_matrix_rank.cc",
+    "lang": "cpp17",
+    "source_sha256": "273b61a5b17a012049df052f6184f785314716faa9bbabe427748fb92dfb71af",
+    "note": "",
+    "started_at": "2026-09-21T06:38:04.401263+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404434,
+    "url": "https://judge.yosupo.jp/submission/404434",
+    "source_verified": true,
+    "overview": {
+      "id": 404434,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 67112960,
+      "problem_name": "static_range_frequency",
+      "problem_title": "Static Range Frequency",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:38:04.76156Z",
+      "time": 1.328
+    },
+    "checked_at": "2026-09-21T06:38:41.816555+00:00"
+  },
+  {
+    "key": "z_algorithm",
+    "problem": "zalgorithm",
+    "libraries": [
+      {
+        "file": "z_algorithm.cpp",
+        "sha256": "c1778879548e8f4dcfee817fa76584528c7b2792ce3f2024e901cce8ef83eb69"
+      }
+    ],
+    "source": "submissions/z_algorithm.cc",
+    "lang": "cpp17",
+    "source_sha256": "061ae7fdeba00b44b7cfb253150f8d2ea39ec6246480345e8e7f84efcbb9ad76",
+    "note": "",
+    "started_at": "2026-09-21T06:38:23.162890+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404435,
+    "url": "https://judge.yosupo.jp/submission/404435",
+    "source_verified": true,
+    "overview": {
+      "id": 404435,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 6733824,
+      "problem_name": "zalgorithm",
+      "problem_title": "Z Algorithm",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:38:23.417827Z",
+      "time": 0.028
+    },
+    "checked_at": "2026-09-21T06:39:00.346210+00:00"
+  },
+  {
+    "key": "rerooting",
+    "problem": "tree_path_composite_sum",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "rerooting.cpp",
+        "sha256": "d958e31409808929a8223c1b55c36aa66c8688f8f392b58b5db67662e7b28aed"
+      }
+    ],
+    "source": "submissions/rerooting.cc",
+    "lang": "cpp17",
+    "source_sha256": "48d8cba35b44ba0352f121715c484c35499321417e40b2c64281fddcd08b1175",
+    "note": "",
+    "started_at": "2026-09-21T06:38:50.085018+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404436,
+    "url": "https://judge.yosupo.jp/submission/404436",
+    "source_verified": true,
+    "overview": {
+      "id": 404436,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 50114560,
+      "problem_name": "tree_path_composite_sum",
+      "problem_title": "Tree Path Composite Sum",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:38:50.32022Z",
+      "time": 0.135
+    },
+    "checked_at": "2026-09-21T06:39:18.896514+00:00"
+  },
+  {
+    "key": "dynamic_segtree_composite",
+    "problem": "point_set_range_composite",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "dynamic_segtree.cpp",
+        "sha256": "7e11fd649e9dedc3643a14954010547bb9b96337125fe496202538928f139025"
+      }
+    ],
+    "source": "submissions/dynamic_segtree_composite.cc",
+    "lang": "cpp17",
+    "source_sha256": "2f961fc32a1e2c39900335afe69b0a20c25528b2b9cef1c36628ae057f385f77",
+    "note": "",
+    "started_at": "2026-09-21T06:39:08.655769+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404437,
+    "url": "https://judge.yosupo.jp/submission/404437",
+    "source_verified": true,
+    "overview": {
+      "id": 404437,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 27295744,
+      "problem_name": "point_set_range_composite",
+      "problem_title": "Point Set Range Composite",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:39:08.967566Z",
+      "time": 0.541
+    },
+    "checked_at": "2026-09-21T06:39:45.717539+00:00"
+  },
+  {
+    "key": "hld_composite",
+    "problem": "vertex_set_path_composite",
+    "libraries": [
+      {
+        "file": "modint_convolution.cpp",
+        "sha256": "92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454"
+      },
+      {
+        "file": "hld.cpp",
+        "sha256": "35d59446461568951b4ce0ad275e03b08660a023647fc3f9286285f3ad5be528"
+      },
+      {
+        "file": "segtree.cpp",
+        "sha256": "551be17d2a6920acafff5be0d18e2e630b8517299503abbbf50305b59c0796f4"
+      }
+    ],
+    "source": "submissions/hld_composite.cc",
+    "lang": "cpp17",
+    "source_sha256": "760273c94fd1aebf7a325ea1aa281d048f078b2cb6f626d97ca472037838906c",
+    "note": "",
+    "started_at": "2026-09-21T06:39:27.131228+00:00",
+    "status": "AC",
+    "anonymous": true,
+    "id": 404438,
+    "url": "https://judge.yosupo.jp/submission/404438",
+    "source_verified": true,
+    "overview": {
+      "id": 404438,
+      "is_latest": true,
+      "lang": "cpp17",
+      "memory": 39731200,
+      "problem_name": "vertex_set_path_composite",
+      "problem_title": "Vertex Set Path Composite",
+      "status": "AC",
+      "submission_time": "2026-09-21T06:39:27.354767Z",
+      "time": 0.568
+    },
+    "checked_at": "2026-09-21T06:40:11.800337+00:00"
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjUyIHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjI3IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNzE1IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjE4IHRva2Vucwo=",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDEzIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1Mzk3IHRva2Vucwo=",
+      "memory": 31248384,
+      "status": "AC",
+      "time": 0.181
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2MzEyIHRva2Vucwo=",
+      "memory": 36478976,
+      "status": "AC",
+      "time": 0.21
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMTIyIHRva2Vucwo=",
+      "memory": 6598656,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4NTYgdG9rZW5zCg==",
+      "memory": 32018432,
+      "status": "AC",
+      "time": 0.136
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk2NDYgdG9rZW5zCg==",
+      "memory": 21471232,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5OTA3IHRva2Vucwo=",
+      "memory": 39763968,
+      "status": "AC",
+      "time": 0.238
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMDU2IHRva2Vucwo=",
+      "memory": 39886848,
+      "status": "AC",
+      "time": 0.244
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5Nzc0IHRva2Vucwo=",
+      "memory": 39874560,
+      "status": "AC",
+      "time": 0.244
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgMjQ5OTM0IHRva2Vucwo=",
+      "memory": 72794112,
+      "status": "AC",
+      "time": 0.198
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgMjQ5NDU1IHRva2Vucwo=",
+      "memory": 72921088,
+      "status": "AC",
+      "time": 0.197
+    }
+  ],
+  "overview": {
+    "id": 404407,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 72921088,
+    "problem_name": "vertex_add_subtree_sum",
+    "problem_title": "Vertex Add Subtree Sum",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:25:52.965341Z",
+    "time": 0.244
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL hld_short.cpp SHA256 202d35f1d43d34ceb4578492f0a1f1fc072c2f707c95e627767610d27edef85d\n#include <bits/stdc++.h>\nusing namespace std;\nvector<vector<int>> g;\nvector<int> sz, in, out, nxt;\nint t;\nvoid dfs_sz(int v = 0) {\n    sz[v] = 1;\n    for(auto &u: g[v]) {\n        dfs_sz(u); sz[v] += sz[u];\n        if(sz[u] > sz[g[v][0]]) { swap(u, g[v][0]); }\n    }\n}\nvoid dfs_hld(int v = 0) {\n    in[v] = t++;\n    for(auto u: g[v]) {\n        nxt[u] = (u == g[v][0] ? nxt[v] : u);\n        dfs_hld(u);\n    }\n    out[v] = t;\n}\n\n// END ORIGINAL hld_short.cpp\n\n// BEGIN ORIGINAL binary_indexed_tree.cpp SHA256 cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354\n#pragma once\n#include <bits/stdc++.h>\nusing namespace std;\ntemplate<typename T>\nclass BIT {\n\tint size;\n\tvector<T>dat;\npublic:\n\tBIT() {}\n\tBIT(int n) { init(n); }\n\tvoid init(int n) { size = n; dat.assign(size + 1, 0); }\n\tvoid add(int i, T x) {\n\t\ti++;\n\t\twhile (i <= size) { dat[i] += x; i += i & -i; }\n\t}\n\t//[l,r)\n\tvoid add(int l, int r, T x) { add(l, x); add(r, -x); }\n\t//[0,i]\n\tT query(int i) {\n\t\ti++; T sum = 0;\n\t\twhile (i > 0) { sum += dat[i]; i -= i & -i; }\n\t\treturn sum;\n\t}\n\t//[l,r)\n\tT query(int l, int r) { return query(r - 1) - query(l - 1); }\n\t//[0,x] >= w\n\tint lower_bound(T w) {\n\t\tif (w <= 0) return 0;\n\t\tint x = 0, k = 1;\n\t\twhile ((k << 1) < size) k <<= 1;\n\t\tfor (; k > 0; k >>= 1) {\n\t\t\tif (x + k <= size && dat[x + k] < w) { w -= dat[x + k]; x += k; }\n\t\t}\n\t\treturn x;\n\t}\n};//size, 0-indexed\n\n// END ORIGINAL binary_indexed_tree.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<ll>a(n);for(auto&x:a)cin>>x;g.resize(n);sz.resize(n);in.resize(n);out.resize(n);nxt.resize(n);\nfor(int i=1,p;i<n;i++){cin>>p;g[p].push_back(i);}dfs_sz();dfs_hld();BIT<ll>bit(n);for(int i=0;i<n;i++)bit.add(in[i],a[i]);\nwhile(q--){int type,u;cin>>type>>u;if(type==0){ll x;cin>>x;bit.add(in[u],x);}else cout<<bit.query(in[u],out[u])<<'\\n';}\n\n}\n"
+}

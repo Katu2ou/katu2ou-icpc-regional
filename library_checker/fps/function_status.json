@@ -1,0 +1,114 @@
+[
+  {
+    "function": "fps(vector<mint>)",
+    "line": 3,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "pre(int)",
+    "line": 5,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "operator+(fps,const fps&)",
+    "line": 9,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "operator-(fps,const fps&)",
+    "line": 14,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "operator*(const fps&,const fps&)",
+    "line": 19,
+    "primary_submission": "fps_multiply",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404682",
+    "method": "対応する公式問題の出力として直接検証"
+  },
+  {
+    "function": "operator*=(mint)",
+    "line": 23,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "operator*(fps,mint)",
+    "line": 27,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "operator*(mint,fps)",
+    "line": 28,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "diff()",
+    "line": 30,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "integral()",
+    "line": 36,
+    "primary_submission": "fps_helpers",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404688",
+    "method": "提出内の独立した係数検査＋公式入力の配列に対する検査"
+  },
+  {
+    "function": "inv(int=-1)",
+    "line": 48,
+    "primary_submission": "fps_inv",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404683",
+    "method": "対応する公式問題の出力として直接検証"
+  },
+  {
+    "function": "log(int=-1)",
+    "line": 61,
+    "primary_submission": "fps_log",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404685",
+    "method": "対応する公式問題の出力として直接検証"
+  },
+  {
+    "function": "exp(int=-1)",
+    "line": 70,
+    "primary_submission": "fps_exp",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404686",
+    "method": "対応する公式問題の出力として直接検証"
+  },
+  {
+    "function": "pow(long long,int=-1)",
+    "line": 85,
+    "primary_submission": "fps_pow",
+    "status": "AC",
+    "url": "https://judge.yosupo.jp/submission/404687",
+    "method": "対応する公式問題の出力として直接検証"
+  }
+]

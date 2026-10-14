@@ -1,0 +1,4 @@
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/submissions/template.cc: In function 'int original_template::main()':
+/Users/kaiwa/competitive-programming/katu2ou-icpc-regional/library_checker/submissions/template.cc:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   28 | }
+      | ^

@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjcxIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjI1IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTA4IHRva2Vucwo=",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDc2IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTA5IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTA0IHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTAwIHRva2Vucwo=",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNDkyIHRva2Vucwo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDc0IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNDk1IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNDg4IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1OTY3IHRva2Vucwo=",
+      "memory": 23900160,
+      "status": "AC",
+      "time": 0.508
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2NjA0IHRva2Vucwo=",
+      "memory": 24653824,
+      "status": "AC",
+      "time": 0.53
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMDIyIHRva2Vucwo=",
+      "memory": 5099520,
+      "status": "AC",
+      "time": 0.349
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwNTUyIHRva2Vucwo=",
+      "memory": 25468928,
+      "status": "AC",
+      "time": 0.631
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjQ5MjczIHRva2Vucwo=",
+      "memory": 25616384,
+      "status": "AC",
+      "time": 0.635
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5OTY5IHRva2Vucwo=",
+      "memory": 25657344,
+      "status": "AC",
+      "time": 0.634
+    }
+  ],
+  "overview": {
+    "id": 404408,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 25657344,
+    "problem_name": "range_affine_range_sum",
+    "problem_title": "Range Affine Range Sum",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:26:20.280496Z",
+    "time": 0.635
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL modint_convolution.cpp SHA256 92d6333c009329bccaa214bbc205c02750cc60094dddb0db1740182eb6ef5454\nstruct mint{\n    static const int M=998244353;\n    int x;\n    mint(long long v=0):x((v%M+M)%M){}\n    int val()const{return x;}\n    static int mod(){return M;}\n    mint& operator+=(mint a){if((x+=a.x)>=M)x-=M;return *this;}\n    mint& operator-=(mint a){if((x-=a.x)<0)x+=M;return *this;}\n    mint& operator*=(mint a){x=(long long)x*a.x%M;return *this;}\n    mint pow(long long n)const{\n        mint a=*this,r=1;\n        for(;n;n>>=1,a*=a)if(n&1)r*=a;\n        return r;\n    }\n    mint inv()const{return pow(M-2);}\n    mint& operator/=(mint a){return *this*=a.inv();}\n    friend mint operator+(mint a,mint b){return a+=b;}\n    friend mint operator-(mint a,mint b){return a-=b;}\n    friend mint operator*(mint a,mint b){return a*=b;}\n    friend mint operator/(mint a,mint b){return a/=b;}\n};\nusing modint998244353=mint;\nvoid ntt(vector<mint>&a,bool inv=0){\n    int n=a.size();\n    for(int i=1,j=0;i<n;i++){\n        int b=n>>1; for(;j&b;b>>=1)j^=b; j^=b;\n        if(i<j)swap(a[i],a[j]);\n    }\n    for(int l=2;l<=n;l<<=1){\n        mint w=mint(3).pow((mint::M-1)/l);\n        if(inv)w=w.inv();\n        for(int i=0;i<n;i+=l){\n            mint z=1;\n            for(int j=0;j<l/2;j++){\n                mint x=a[i+j],y=a[i+j+l/2]*z;\n                a[i+j]=x+y; a[i+j+l/2]=x-y; z*=w;\n            }\n        }\n    }\n    if(inv){\n        mint z=mint(n).inv();\n        for(auto&x:a)x*=z;\n    }\n}\nvector<mint> convolution(vector<mint>a,vector<mint>b){\n    if(a.empty()||b.empty())return {};\n    int n=a.size()+b.size()-1,z=1;\n    while(z<n)z<<=1;\n    a.resize(z); b.resize(z); ntt(a); ntt(b);\n    for(int i=0;i<z;i++)a[i]*=b[i];\n    ntt(a,1); a.resize(n);\n    return a;\n}\n// END ORIGINAL modint_convolution.cpp\n\n// BEGIN ORIGINAL lazy_segtree.cpp SHA256 f05867c65f1b7a1dc5048a9ec0915c1ca693c6db979db25739f5ba8fe1ad5e75\ntemplate<class S,S op(S,S),S e(),class F,\n         S mapping(F,S),F composition(F,F),F id()>\nstruct lazy_segtree{\n    int n,sz; vector<S>d; vector<F>lz;\n    lazy_segtree(int m=0):n(1),sz(m){\n        while(n<m)n*=2;\n        d.assign(2*n,e()); lz.assign(2*n,id());\n    }\n    lazy_segtree(vector<S>a):lazy_segtree(a.size()){\n        copy(a.begin(),a.end(),d.begin()+n);\n        for(int i=n-1;i;i--)d[i]=op(d[2*i],d[2*i+1]);\n    }\n    void all(int k,F f){\n        d[k]=mapping(f,d[k]);\n        lz[k]=composition(f,lz[k]);\n    }\n    void push(int k){\n        all(2*k,lz[k]); all(2*k+1,lz[k]); lz[k]=id();\n    }\n    void set(int p,S x){set(p,x,1,0,n);}\n    void set(int p,S x,int k,int l,int r){\n        if(r-l==1){d[k]=x;lz[k]=id();return;}\n        push(k); int m=(l+r)/2;\n        p<m?set(p,x,2*k,l,m):set(p,x,2*k+1,m,r);\n        d[k]=op(d[2*k],d[2*k+1]);\n    }\n    S get(int p){return prod(p,p+1);}\n    S prod(int a,int b){return prod(a,b,1,0,n);}\n    S prod(int a,int b,int k,int l,int r){\n        if(r<=a||b<=l)return e();\n        if(a<=l&&r<=b)return d[k];\n        push(k); int m=(l+r)/2;\n        return op(prod(a,b,2*k,l,m),prod(a,b,2*k+1,m,r));\n    }\n    S all_prod(){return d[1];}\n    void apply(int p,F f){apply(p,p+1,f);}\n    void apply(int a,int b,F f){apply(a,b,f,1,0,n);}\n    void apply(int a,int b,F f,int k,int l,int r){\n        if(r<=a||b<=l)return;\n        if(a<=l&&r<=b){all(k,f);return;}\n        push(k); int m=(l+r)/2;\n        apply(a,b,f,2*k,l,m); apply(a,b,f,2*k+1,m,r);\n        d[k]=op(d[2*k],d[2*k+1]);\n    }\n\n    template<class G> int max_right(int l,G g){\n        assert(g(e())); S x=e();\n        int r=mr(l,g,x,1,0,n); return r<0?sz:r;\n    }\n    template<class G> int mr(int a,G&g,S&x,int k,int l,int r){\n        if(r<=a||sz<=l)return -1;\n        if(a<=l&&r<=sz){\n            S y=op(x,d[k]);\n            if(g(y)){x=y;return -1;}\n            if(r-l==1)return l;\n        }\n        push(k); int m=(l+r)/2;\n        int q=mr(a,g,x,2*k,l,m);\n        return q<0?mr(a,g,x,2*k+1,m,r):q;\n    }\n    template<class G> int min_left(int r,G g){\n        assert(g(e())); S x=e();\n        int l=ml(r,g,x,1,0,n); return l<0?0:l;\n    }\n    template<class G> int ml(int b,G&g,S&x,int k,int l,int r){\n        if(b<=l)return -1;\n        if(r<=b){\n            S y=op(d[k],x);\n            if(g(y)){x=y;return -1;}\n            if(r-l==1)return r;\n        }\n        push(k); int m=(l+r)/2;\n        int q=ml(b,g,x,2*k+1,m,r);\n        return q<0?ml(b,g,x,2*k,l,m):q;\n    }\n};\n\n// END ORIGINAL lazy_segtree.cpp\n\n\nstruct S{mint sum,len;};struct F{mint a,b;};\nS op(S a,S b){return {a.sum+b.sum,a.len+b.len};} S e(){return {0,0};}\nS mapping(F f,S s){return {f.a*s.sum+f.b*s.len,s.len};}\nF composition(F f,F g){return {f.a*g.a,f.a*g.b+f.b};}F id(){return {1,0};}\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<S>a(n);for(auto&x:a){int v;cin>>v;x={v,1};}lazy_segtree<S,op,e,F,mapping,composition,id> seg(a);\nwhile(q--){int t,l,r;cin>>t>>l>>r;if(t==0){int b,c;cin>>b>>c;seg.apply(l,r,{b,c});}else cout<<seg.prod(l,r).sum.val()<<'\\n';}\n\n}\n"
+}

@@ -1,0 +1,276 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 29184000,
+      "status": "AC",
+      "time": 2.212
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 28741632,
+      "status": "AC",
+      "time": 2.227
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 4333568,
+      "status": "AC",
+      "time": 0.232
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31817728,
+      "status": "AC",
+      "time": 2.233
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31686656,
+      "status": "AC",
+      "time": 2.232
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31830016,
+      "status": "AC",
+      "time": 2.234
+    },
+    {
+      "case": "lower_deg_zero_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5779456,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "lower_deg_zero_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5787648,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "lower_deg_zero_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5783552,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "lower_deg_zero_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5787648,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "lower_deg_zero_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "lower_deg_zero_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5771264,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "lower_deg_zero_06",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5783552,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "lower_deg_zero_07",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5783552,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 4730880,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "all_zero_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 5369856,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "monomial_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5783552,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "monomial_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5738496,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "monomial_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5771264,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "monomial_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5783552,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "monomial_ans_low_deg_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 29171712,
+      "status": "AC",
+      "time": 2.186
+    },
+    {
+      "case": "monomial_ans_low_deg_01",
+      "checker_out": "b2sgNDYzMDQ3IHRva2Vucwo=",
+      "memory": 12132352,
+      "status": "AC",
+      "time": 0.325
+    },
+    {
+      "case": "monomial_ans_low_deg_02",
+      "checker_out": "b2sgNTMzMzggdG9rZW5zCg==",
+      "memory": 2060288,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "monomial_ans_low_deg_03",
+      "checker_out": "b2sgNDI5MjUyIHRva2Vucwo=",
+      "memory": 29007872,
+      "status": "AC",
+      "time": 2.201
+    },
+    {
+      "case": "lower_deg_zero2_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28848128,
+      "status": "AC",
+      "time": 2.212
+    },
+    {
+      "case": "lower_deg_zero2_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27693056,
+      "status": "AC",
+      "time": 2.203
+    },
+    {
+      "case": "lower_deg_zero2_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 29458432,
+      "status": "AC",
+      "time": 2.198
+    },
+    {
+      "case": "lower_deg_zero2_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11124736,
+      "status": "AC",
+      "time": 0.171
+    },
+    {
+      "case": "binary_exp_max_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31690752,
+      "status": "AC",
+      "time": 2.213
+    },
+    {
+      "case": "overflow_killer_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "overflow_killer_01",
+      "checker_out": "b2sgMzMgdG9rZW5zCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "M_zero_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 4734976,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "M_zero_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 5246976,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 404687,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 31830016,
+    "problem_name": "pow_of_formal_power_series",
+    "problem_title": "Pow of Formal Power Series",
+    "status": "AC",
+    "submission_time": "2026-09-21T14:25:08.310283Z",
+    "time": 2.234
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll=long long;\n\n// BEGIN UNCHANGED modint_convolution.cpp\nstruct mint{\n    static const int M=998244353;\n    int x;\n    mint(long long v=0):x((v%M+M)%M){}\n    int val()const{return x;}\n    static int mod(){return M;}\n    mint& operator+=(mint a){if((x+=a.x)>=M)x-=M;return *this;}\n    mint& operator-=(mint a){if((x-=a.x)<0)x+=M;return *this;}\n    mint& operator*=(mint a){x=(long long)x*a.x%M;return *this;}\n    mint pow(long long n)const{\n        mint a=*this,r=1;\n        for(;n;n>>=1,a*=a)if(n&1)r*=a;\n        return r;\n    }\n    mint inv()const{return pow(M-2);}\n    mint& operator/=(mint a){return *this*=a.inv();}\n    friend mint operator+(mint a,mint b){return a+=b;}\n    friend mint operator-(mint a,mint b){return a-=b;}\n    friend mint operator*(mint a,mint b){return a*=b;}\n    friend mint operator/(mint a,mint b){return a/=b;}\n};\nusing modint998244353=mint;\nvoid ntt(vector<mint>&a,bool inv=0){\n    int n=a.size();\n    for(int i=1,j=0;i<n;i++){\n        int b=n>>1; for(;j&b;b>>=1)j^=b; j^=b;\n        if(i<j)swap(a[i],a[j]);\n    }\n    for(int l=2;l<=n;l<<=1){\n        mint w=mint(3).pow((mint::M-1)/l);\n        if(inv)w=w.inv();\n        for(int i=0;i<n;i+=l){\n            mint z=1;\n            for(int j=0;j<l/2;j++){\n                mint x=a[i+j],y=a[i+j+l/2]*z;\n                a[i+j]=x+y; a[i+j+l/2]=x-y; z*=w;\n            }\n        }\n    }\n    if(inv){\n        mint z=mint(n).inv();\n        for(auto&x:a)x*=z;\n    }\n}\nvector<mint> convolution(vector<mint>a,vector<mint>b){\n    if(a.empty()||b.empty())return {};\n    int n=a.size()+b.size()-1,z=1;\n    while(z<n)z<<=1;\n    a.resize(z); b.resize(z); ntt(a); ntt(b);\n    for(int i=0;i<z;i++)a[i]*=b[i];\n    ntt(a,1); a.resize(n);\n    return a;\n}\n// END UNCHANGED modint_convolution.cpp\n\n// BEGIN UNCHANGED fps.cpp\nstruct fps:vector<mint>{\n    using vector<mint>::vector;\n    fps(vector<mint>a):vector<mint>(move(a)){}\n\n    fps pre(int n)const{\n        return fps(begin(),begin()+min(n,(int)size()));\n    }\n\n    friend fps operator+(fps a,const fps&b){\n        if(a.size()<b.size())a.resize(b.size());\n        for(int i=0;i<(int)b.size();i++)a[i]+=b[i];\n        return a;\n    }\n    friend fps operator-(fps a,const fps&b){\n        if(a.size()<b.size())a.resize(b.size());\n        for(int i=0;i<(int)b.size();i++)a[i]-=b[i];\n        return a;\n    }\n    friend fps operator*(const fps&a,const fps&b){\n        return convolution(a,b);\n    }\n\n    fps& operator*=(mint c){\n        for(auto&x:*this)x*=c;\n        return *this;\n    }\n    friend fps operator*(fps a,mint c){return a*=c;}\n    friend fps operator*(mint c,fps a){return a*=c;}\n\n    fps diff()const{\n        fps r(max(0,(int)size()-1));\n        for(int i=1;i<(int)size();i++)r[i-1]=(*this)[i]*i;\n        return r;\n    }\n\n    fps integral()const{\n        fps r(size()+1);\n        static vector<mint>iv{0,1};\n        while(iv.size()<=size()){\n            int i=iv.size();\n            iv.push_back(mint(mint::M-mint::M/i)*iv[mint::M%i]);\n        }\n        for(int i=0;i<(int)size();i++)r[i+1]=(*this)[i]*iv[i+1];\n        return r;\n    }\n\n    // f[0] != 0\n    fps inv(int n=-1)const{\n        if(n<0)n=size();\n        assert(!empty()&&(*this)[0].val());\n        fps g{(*this)[0].inv()};\n        for(int m=1;m<n;m<<=1){\n            int k=min(n,m<<1);\n            g=(g+g-g*g*pre(k)).pre(k);\n        }\n        g.resize(n);\n        return g;\n    }\n\n    // f[0] = 1\n    fps log(int n=-1)const{\n        if(n<0)n=size();\n        assert(!empty()&&(*this)[0].val()==1);\n        fps r=(diff()*inv(n)).pre(max(0,n-1)).integral();\n        r.resize(n);\n        return r;\n    }\n\n    // f[0] = 0\n    fps exp(int n=-1)const{\n        if(n<0)n=size();\n        assert(empty()||(*this)[0].val()==0);\n        if(!n)return {};\n        fps g{1};\n        for(int m=1;m<n;m<<=1){\n            int k=min(n,m<<1);\n            fps q=pre(k)-g.log(k);\n            q[0]+=1;\n            g=(g*q).pre(k);\n        }\n        return g;\n    }\n\n    // k >= 0\n    fps pow(long long k,int n=-1)const{\n        assert(k>=0);\n        if(n<0)n=size();\n        if(!n)return {};\n        if(!k){\n            fps r(n);\n            r[0]=1;\n            return r;\n        }\n\n        int s=0;\n        while(s<(int)size()&&!(*this)[s].val())s++;\n\n        if(s==(int)size()||s>(n-1)/k)return fps(n);\n\n        int sh=s*k;\n        mint c=(*this)[s];\n\n        fps f(begin()+s,end());\n        f*=c.inv();\n\n        f=(f.log(n-sh)*mint(k)).exp(n-sh);\n        f*=c.pow(k);\n\n        fps r(sh);\n        r.insert(r.end(),f.begin(),f.end());\n        r.resize(n);\n        return r;\n    }\n};\n// END UNCHANGED fps.cpp\n\n\n\nfps read_fps(int n){vector<mint>a(n);for(auto&x:a){long long y;cin>>y;x=mint(y);}return fps(move(a));}\nvoid print_fps(const fps&a){for(int i=0;i<(int)a.size();i++)cout<<a[i].val()<<(i+1==(int)a.size()?'\\n':' ');if(a.empty())cout<<'\\n';}\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\nint n;long long k;cin>>n>>k;fps a=read_fps(n);print_fps(a.pow(k));\n}\n"
+}

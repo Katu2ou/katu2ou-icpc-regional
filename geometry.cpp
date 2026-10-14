@@ -30,6 +30,15 @@ ld degreeToRadian(ld x){ //度をradに変換
     return x*PI/180;
 }
 
+int ccw(const Point&a,Point b,Point c){ //a,b,cの位置関係を判定
+    b-=a;c-=a; ld x=cross(b,c);
+    if(abs(x)>EPS)return x>0?1:-1; //反時計/時計
+    if(dot(b,c)<-EPS)return 2;      //c-a-b
+    if(norm(b)+EPS<norm(c))return -2; //a-b-c
+    return 0;                       //cが線分ab上
+}
+
+
 struct Line{
     Point a,b;
     Line()=default;
@@ -47,6 +56,14 @@ struct Circle{
     Circle(Point x,ld y):p(x),r(y){} //中心x,半径yの円
 };
 
+
+Point crossPoint(const Line&a,const Line&b){ //2直線の交点
+    Point d=a.b-a.a,e=b.b-b.a;
+    ld z=cross(d,e),w=cross(d,b.a-a.a);
+    if(equal(z,0)){assert(equal(w,0));return b.a;}
+    return a.a+d*cross(b.a-a.a,e)/z;
+}
+
 bool onLine(const Line&l,const Point&p){ //pが直線l上か
     return fabsl(cross(l.b-l.a,p-l.a))<=EPS;
 }
@@ -57,7 +74,7 @@ bool onSegment(const Line&l,const Point&p){ //pが線分l上か
 
 Circle circumCircle(Point a,Point b,Point c){ //三角形abcの外接円
     assert(fabsl(cross(b-a,c-a))>EPS);
-    Point x=(a+b)/2,y=(a+c)/2;
+    Point x=(a+b)/2.0L,y=(a+c)/2.0L;
     Line l={x,x+normalVector(b-a)};
     Line m={y,y+normalVector(c-a)};
     Point p=crossPoint(l,m);
@@ -73,13 +90,6 @@ Point reflection(const Line&l,const Point&p){ //lに関するpの対称点
     return 2.L*projection(l,p)-p;
 }
 
-int ccw(const Point&a,Point b,Point c){ //a,b,cの位置関係を判定
-    b-=a;c-=a; ld x=cross(b,c);
-    if(abs(x)>EPS)return x>0?1:-1; //反時計/時計
-    if(dot(b,c)<-EPS)return 2;      //c-a-b
-    if(norm(b)+EPS<norm(c))return -2; //a-b-c
-    return 0;                       //cが線分ab上
-}
 
 bool isOrthogonal(const Line&a,const Line&b){ //2直線が直交するか
     return equal(dot(a.b-a.a,b.b-b.a),0);
@@ -90,13 +100,6 @@ bool isParallel(const Line&a,const Line&b){ //2直線が平行か
 bool isIntersect(const Line&a,const Line&b){ //2線分が交差するか
     return ccw(a.a,a.b,b.a)*ccw(a.a,a.b,b.b)<=0
         && ccw(b.a,b.b,a.a)*ccw(b.a,b.b,a.b)<=0;
-}
-
-Point crossPoint(const Line&a,const Line&b){ //2直線の交点
-    Point d=a.b-a.a,e=b.b-b.a;
-    ld z=cross(d,e),w=cross(d,b.a-a.a);
-    if(equal(z,0)){assert(equal(w,0));return b.a;}
-    return a.a+d*cross(b.a-a.a,e)/z;
 }
 
 ld distanceBetweenLineAndPoint(const Line&l,const Point&p){ //直線lと点pの距離

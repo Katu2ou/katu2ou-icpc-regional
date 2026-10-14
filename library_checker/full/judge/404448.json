@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgMTIyOTEgdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjAwMjk3IHRva2Vucwo=",
+      "memory": 94588928,
+      "status": "AC",
+      "time": 0.506
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjAwODk2IHRva2Vucwo=",
+      "memory": 94556160,
+      "status": "AC",
+      "time": 0.501
+    },
+    {
+      "case": "max_sparse_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 98488320,
+      "status": "AC",
+      "time": 0.508
+    },
+    {
+      "case": "max_sparse_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 98230272,
+      "status": "AC",
+      "time": 0.5
+    },
+    {
+      "case": "max_all0_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 93794304,
+      "status": "AC",
+      "time": 0.388
+    },
+    {
+      "case": "max_all0_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 93777920,
+      "status": "AC",
+      "time": 0.389
+    },
+    {
+      "case": "max_all1_00",
+      "checker_out": "b2sgNzUwMjcyIHRva2Vucwo=",
+      "memory": 95629312,
+      "status": "AC",
+      "time": 0.512
+    },
+    {
+      "case": "max_all1_01",
+      "checker_out": "b2sgNzUwMjMyIHRva2Vucwo=",
+      "memory": 95657984,
+      "status": "AC",
+      "time": 0.517
+    },
+    {
+      "case": "max_query0_1_2_00",
+      "checker_out": "b2sgMzM0MjM1IHRva2Vucwo=",
+      "memory": 91705344,
+      "status": "AC",
+      "time": 0.416
+    },
+    {
+      "case": "max_query0_1_2_01",
+      "checker_out": "b2sgMzMzNjYxIHRva2Vucwo=",
+      "memory": 91787264,
+      "status": "AC",
+      "time": 0.407
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjAxMDggdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTk4MjQgdG9rZW5zCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNjAwOTAgdG9rZW5zCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjAxMTIgdG9rZW5zCg==",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTk5ODYgdG9rZW5zCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgNjAwNTcgdG9rZW5zCg==",
+      "memory": 974848,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNTk4NzYgdG9rZW5zCg==",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgNjAwODMgdG9rZW5zCg==",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNjAwNjggdG9rZW5zCg==",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgNTk5MjAgdG9rZW5zCg==",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.011
+    }
+  ],
+  "overview": {
+    "id": 404448,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 98488320,
+    "problem_name": "predecessor_problem",
+    "problem_title": "Predecessor Problem",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:50:52.226093Z",
+    "time": 0.517
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL binary_indexed_tree.cpp SHA256 cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354\n#pragma once\n#include <bits/stdc++.h>\nusing namespace std;\ntemplate<typename T>\nclass BIT {\n\tint size;\n\tvector<T>dat;\npublic:\n\tBIT() {}\n\tBIT(int n) { init(n); }\n\tvoid init(int n) { size = n; dat.assign(size + 1, 0); }\n\tvoid add(int i, T x) {\n\t\ti++;\n\t\twhile (i <= size) { dat[i] += x; i += i & -i; }\n\t}\n\t//[l,r)\n\tvoid add(int l, int r, T x) { add(l, x); add(r, -x); }\n\t//[0,i]\n\tT query(int i) {\n\t\ti++; T sum = 0;\n\t\twhile (i > 0) { sum += dat[i]; i -= i & -i; }\n\t\treturn sum;\n\t}\n\t//[l,r)\n\tT query(int l, int r) { return query(r - 1) - query(l - 1); }\n\t//[0,x] >= w\n\tint lower_bound(T w) {\n\t\tif (w <= 0) return 0;\n\t\tint x = 0, k = 1;\n\t\twhile ((k << 1) < size) k <<= 1;\n\t\tfor (; k > 0; k >>= 1) {\n\t\t\tif (x + k <= size && dat[x + k] < w) { w -= dat[x + k]; x += k; }\n\t\t}\n\t\treturn x;\n\t}\n};//size, 0-indexed\n\n// END ORIGINAL binary_indexed_tree.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint n,q;string s;cin>>n>>q>>s;BIT<int>b;b.init(n);vector<int>a(n);for(int i=0;i<n;i++){a[i]=s[i]-'0';b.add(i,a[i]);}\nwhile(q--){int t,k;cin>>t>>k;if(t<2){int v=t==0;b.add(k,v-a[k]);a[k]=v;}else if(t==2)cout<<b.query(k,k+1)<<'\\n';\nelse if(t==3){int target=b.query(k-1)+1;cout<<(target>b.query(n-1)?-1:b.lower_bound(target))<<'\\n';}\nelse{int target=b.query(k);cout<<(target==0?-1:b.lower_bound(target))<<'\\n';}}\n\n}\n"
+}

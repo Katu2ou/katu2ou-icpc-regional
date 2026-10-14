@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4Nzc5IHRva2Vucwo=",
+      "memory": 18137088,
+      "status": "AC",
+      "time": 0.446
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTQ4NzU3IHRva2Vucwo=",
+      "memory": 21086208,
+      "status": "AC",
+      "time": 0.481
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 8794112,
+      "status": "AC",
+      "time": 0.303
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 23089152,
+      "status": "AC",
+      "time": 0.208
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.229
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjk5IHRva2Vucwo=",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM1IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMzk1IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjM5IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgODEzIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMjIxIHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMjUyIHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMjExIHRva2Vucwo=",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgMzAzIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNzkyIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 27799552,
+      "status": "AC",
+      "time": 0.688
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 27779072,
+      "status": "AC",
+      "time": 0.679
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 27623424,
+      "status": "AC",
+      "time": 0.68
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 27791360,
+      "status": "AC",
+      "time": 0.681
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 27738112,
+      "status": "AC",
+      "time": 0.682
+    },
+    {
+      "case": "dense_small_a_00",
+      "checker_out": "b2sgMTk4NDg1IHRva2Vucwo=",
+      "memory": 1277952,
+      "status": "AC",
+      "time": 0.135
+    },
+    {
+      "case": "dense_large_a_00",
+      "checker_out": "b2sgMTk4NDg1IHRva2Vucwo=",
+      "memory": 2625536,
+      "status": "AC",
+      "time": 0.148
+    },
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 2134016,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 404441,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 27799552,
+    "problem_name": "range_kth_smallest",
+    "problem_title": "Range Kth Smallest",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:48:08.733073Z",
+    "time": 0.688
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL wavelet_matrix.cpp SHA256 189730cd8f8f10c48fb39d4f31c6cee56fa50cbd98720bec127f02858bc3bc3a\ntemplate<class T,int LOG=numeric_limits<make_unsigned_t<T>>::digits> //LOGは log_2 A_i より大きい値を選択 \nstruct WaveletMatrix{ //WaveletMatrix<int,10> など\n    using U=make_unsigned_t<T>;\n    int n; array<int,LOG>mid{}; array<vector<int>,LOG>s;\n    WaveletMatrix(const vector<T>&A):n(A.size()){ // 非負整数列Aから構築\n        vector<U>a(n),b(n);\n        for(int i=0;i<n;i++){\n            if constexpr(is_signed_v<T>) assert(A[i]>=0);\n            a[i]=(U)A[i];\n        }\n        for(int h=LOG-1;h>=0;h--){\n            s[h].assign(n+1,0);\n            for(int i=0;i<n;i++)s[h][i+1]=s[h][i]+(a[i]>>h&1);\n            mid[h]=n-s[h][n];\n            int p=0,q=mid[h];\n            for(U x:a)((x>>h&1)?b[q++]:b[p++])=x;\n            a.swap(b);\n        }\n    }\n    T access(int k)const{ // 元配列のA[k]を返す\n        U x=0;\n        for(int h=LOG-1;h>=0;h--){\n            int o=s[h][k],b=s[h][k+1]-o;\n            if(b)x|=U(1)<<h,k=mid[h]+o;\n            else k-=o;\n        }\n        return (T)x;\n    }\n    int rank(T x,int l,int r)const{ // [l,r)にあるxの個数\n        if constexpr(is_signed_v<T>)if(x<0)return 0;\n        U y=(U)x;\n        if constexpr(LOG<numeric_limits<U>::digits)if(y>>LOG)return 0;\n        for(int h=LOG-1;h>=0;h--){\n            int L=s[h][l],R=s[h][r];\n            if(y>>h&1)l=mid[h]+L,r=mid[h]+R;\n            else l-=L,r-=R;\n        }\n        return r-l;\n    }\n    int rank(T x,int r)const{ // [0,r)にあるxの個数\n        return rank(x,0,r);\n    }\n    T kth(int l,int r,int k)const{ // [l,r)のk番目に小さい値 (0-indexed)\n        U x=0;\n        for(int h=LOG-1;h>=0;h--){\n            int L=s[h][l],R=s[h][r],z=r-l-(R-L);\n            if(k<z)l-=L,r-=R;\n            else x|=U(1)<<h,k-=z,l=mid[h]+L,r=mid[h]+R;\n        }\n        return (T)x;\n    }\n    T kth_largest(int l,int r,int k)const{ // [l,r)のk番目に大きい値\n        return kth(l,r,r-l-1-k);\n    }\n    int less(int l,int r,T x)const{ // [l,r)にあるx未満の値の個数\n        if constexpr(is_signed_v<T>)if(x<=0)return 0;\n        U y=(U)x;\n        if constexpr(LOG<numeric_limits<U>::digits)if(y>>LOG)return r-l;\n        int c=0;\n        for(int h=LOG-1;h>=0;h--){\n            int L=s[h][l],R=s[h][r],z=r-l-(R-L);\n            if(y>>h&1)c+=z,l=mid[h]+L,r=mid[h]+R;\n            else l-=L,r-=R;\n        }\n        return c;\n    }\n    int range_freq(int l,int r,T lo,T hi)const{ // [l,r)でlo<=A[i]<hiの個数\n        return less(l,r,hi)-less(l,r,lo);\n    }\n    optional<T> prev_value(int l,int r,T x)const{ // [l,r)のx未満の最大値\n        int k=less(l,r,x);\n        if(!k)return nullopt;\n        return kth(l,r,k-1);\n    }\n    optional<T> next_value(int l,int r,T x)const{ // [l,r)のx以上の最小値\n        int k=less(l,r,x);\n        if(k==r-l)return nullopt;\n        return kth(l,r,k);\n    }\n};\n// END ORIGINAL wavelet_matrix.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<int>a(n);for(auto&x:a)cin>>x;WaveletMatrix<int,30>w(a);\nfor(int i=0;i<n;i++)assert(w.access(i)==a[i]);\nfor(int i=0;i<q;i++){int l,r,k;cin>>l>>r>>k;int z=w.kth_largest(l,r,r-l-1-k);\nassert(w.kth(l,r,k)==z);assert(w.less(l,r,z)<=k&&k<w.less(l,r,z+1));\nassert(w.rank(z,l,r)==w.rank(z,r)-w.rank(z,l));\nassert(w.range_freq(l,r,z,z+1)==w.rank(z,l,r));\nassert(w.prev_value(l,r,z+1)==optional<int>(z));assert(w.next_value(l,r,z)==optional<int>(z));\nif(i<100&&r-l<=10000){vector<int>b(a.begin()+l,a.begin()+r);sort(b.begin(),b.end());\nfor(int x:{-1,0,z,z+1,1000000001,1073741824}){\nauto lo=lower_bound(b.begin(),b.end(),x);assert(w.less(l,r,x)==lo-b.begin());\nassert(w.rank(x,l,r)==upper_bound(b.begin(),b.end(),x)-lo);\noptional<int>p,v;if(lo!=b.begin())p=*prev(lo);if(lo!=b.end())v=*lo;\nassert(w.prev_value(l,r,x)==p);assert(w.next_value(l,r,x)==v);\n}}\ncout<<z<<'\\n';}\n\n}\n"
+}

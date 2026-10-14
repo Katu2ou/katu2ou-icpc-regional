@@ -1,0 +1,269 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallest_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallest_01",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallest_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 528384,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallest_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 868352,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2445312,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 12980224,
+      "status": "AC",
+      "time": 0.279
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3547136,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 4132864,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 3444736,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.252
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4997120,
+      "status": "AC",
+      "time": 0.252
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.251
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.251
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5013504,
+      "status": "AC",
+      "time": 0.251
+    },
+    {
+      "case": "max_small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_small_01",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 4628480,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_max_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 19832832,
+      "status": "AC",
+      "time": 0.443
+    },
+    {
+      "case": "small_max_01",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_lowrank_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 21843968,
+      "status": "AC",
+      "time": 0.485
+    },
+    {
+      "case": "max_lowrank_01",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.092
+    },
+    {
+      "case": "max_lowrank_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 21479424,
+      "status": "AC",
+      "time": 0.529
+    },
+    {
+      "case": "max_lowrank_03",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "max_lowrank_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5263360,
+      "status": "AC",
+      "time": 0.264
+    },
+    {
+      "case": "max_lowrank_05",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "max_lowrank_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 21884928,
+      "status": "AC",
+      "time": 0.539
+    },
+    {
+      "case": "max_lowrank_07",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5009408,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "max_lowrank_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 17391616,
+      "status": "AC",
+      "time": 0.502
+    },
+    {
+      "case": "max_lowrank_09",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.248
+    }
+  ],
+  "overview": {
+    "id": 404414,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 21884928,
+    "problem_name": "system_of_linear_equations_mod_2",
+    "problem_title": "System of Linear Equations (Mod 2)",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:28:26.508625Z",
+    "time": 0.539
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL linear_equation_bitset.cpp SHA256 b640813a10442c1d972300c9651f1a651c4ca3a8e6d7c9dc7601e19510cfd25e\n// F_2上の線形方程式 Ax=b を解く\n// a[i][0..W-1] : Aのi行目, a[i][W] : b[i]\n// 返り値 : 解なしなら {}\n//          解ありなら {v,w1,...,wk}\n//          全解は x=v+c1*w1+...+ck*wk (ci in F_2)\n//   v      : 特殊解\n//   w1..wk : Ker(A)の基底 O(HW^2/64)\ntemplate<int MAX>\nvector<bitset<MAX>> LinearEquation(vector<bitset<MAX+1>>a,int W){\n    int H=a.size(),r=0;\n    vector<int>p(W,-1);\n    for(int j=0;j<W;j++){\n        int q=r; while(q<H&&!a[q][j])q++;\n        if(q==H)continue;\n        swap(a[r],a[q]); p[j]=r;\n        for(int i=0;i<H;i++)if(i!=r&&a[i][j])a[i]^=a[r];\n        r++;\n    }\n    for(int i=r;i<H;i++)if(a[i][W])return {};\n\n    vector<bitset<MAX>>res(1);\n    for(int j=0;j<W;j++)if(p[j]>=0)\n        res[0][j]=a[p[j]][W];\n\n    for(int j=0;j<W;j++)if(p[j]<0){\n        bitset<MAX>x; x[j]=1;\n        for(int k=0;k<W;k++)if(p[k]>=0&&a[p[k]][j])x[k]=1;\n        res.push_back(x);\n    }\n    return res;\n}\n// END ORIGINAL linear_equation_bitset.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,m;cin>>n>>m;vector<bitset<4097>>a(n);string s;\nfor(int i=0;i<n;i++){cin>>s;for(int j=0;j<m;j++)a[i][j]=s[j]=='1';}\ncin>>s;for(int i=0;i<n;i++)a[i][m]=s[i]=='1';auto sol=LinearEquation<4096>(a,m);\nif(sol.empty()){cout<<-1<<'\\n';return 0;}cout<<sol.size()-1<<'\\n';for(auto&row:sol){for(int j=0;j<m;j++)cout<<row[j];cout<<'\\n';}\n\n}\n"
+}

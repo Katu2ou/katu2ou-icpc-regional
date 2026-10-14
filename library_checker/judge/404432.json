@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 80867328,
+      "status": "AC",
+      "time": 0.385
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 91643904,
+      "status": "AC",
+      "time": 0.428
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 23207936,
+      "status": "AC",
+      "time": 0.124
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 56520704,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 46497792,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 101867520,
+      "status": "AC",
+      "time": 0.575
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 101609472,
+      "status": "AC",
+      "time": 0.59
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 101601280,
+      "status": "AC",
+      "time": 0.568
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 101703680,
+      "status": "AC",
+      "time": 0.601
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 101593088,
+      "status": "AC",
+      "time": 0.602
+    },
+    {
+      "case": "cycle_unsat_00",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 151121920,
+      "status": "AC",
+      "time": 0.22
+    },
+    {
+      "case": "cycle_unsat_01",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 152563712,
+      "status": "AC",
+      "time": 0.22
+    },
+    {
+      "case": "long_chain_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 153763840,
+      "status": "AC",
+      "time": 0.236
+    },
+    {
+      "case": "long_chain_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 153747456,
+      "status": "AC",
+      "time": 0.235
+    },
+    {
+      "case": "long_chain_02",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 139321344,
+      "status": "AC",
+      "time": 0.224
+    },
+    {
+      "case": "long_chain_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 139583488,
+      "status": "AC",
+      "time": 0.223
+    }
+  ],
+  "overview": {
+    "id": 404432,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 153763840,
+    "problem_name": "two_sat",
+    "problem_title": "2 Sat",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:37:01.087648Z",
+    "time": 0.602
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL twosat.cpp SHA256 f017d09f72050bbac8228d0d64ebef684855e940d07167fac88e231c2cc041bb\nstruct two_sat{\n    int n; vector<vector<int>>g,rg; vector<bool>a;\n    two_sat(int N):n(N),g(2*N),rg(2*N),a(N){}\n\n    void add(int x,int y){g[x].push_back(y);rg[y].push_back(x);}\n    void add_clause(int i,bool f,int j,bool h){\n        add(2*i+!f,2*j+h); add(2*j+!h,2*i+f);\n    }\n\n    bool satisfiable(){\n        int N=2*n; vector<int>v(N),o,c(N);\n        auto dfs=[&](auto&&self,int x)->void{\n            v[x]=1;\n            for(int y:g[x])if(!v[y])self(self,y);\n            o.push_back(x);\n        };\n        for(int i=0;i<N;i++)if(!v[i])dfs(dfs,i);\n\n        fill(v.begin(),v.end(),0); reverse(o.begin(),o.end());\n        int k=0;\n        auto rdfs=[&](auto&&self,int x)->void{\n            v[x]=1;c[x]=k;\n            for(int y:rg[x])if(!v[y])self(self,y);\n        };\n        for(int x:o)if(!v[x])rdfs(rdfs,x),k++;\n\n        for(int i=0;i<n;i++){\n            if(c[2*i]==c[2*i+1])return false;\n            a[i]=c[2*i]<c[2*i+1];\n        }\n        return true;\n    }\n\n    vector<bool> answer(){return a;}\n};\n// END ORIGINAL twosat.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nstring p,cnf;int n,m;cin>>p>>cnf>>n>>m;two_sat sat(n);for(int i=0,a,b,z;i<m;i++){cin>>a>>b>>z;sat.add_clause(abs(a)-1,a>0,abs(b)-1,b>0);}\nif(!sat.satisfiable()){cout<<\"s UNSATISFIABLE\\n\";return 0;}cout<<\"s SATISFIABLE\\nv \";auto a=sat.answer();for(int i=0;i<n;i++)cout<<(a[i]?i+1:-i-1)<<' ';cout<<\"0\\n\";\n\n}\n"
+}

@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9867264,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9818112,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9830400,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 4763648,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 14807040,
+      "status": "AC",
+      "time": 1.327
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 16490496,
+      "status": "AC",
+      "time": 1.649
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 9850880,
+      "status": "AC",
+      "time": 0.399
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 17821696,
+      "status": "AC",
+      "time": 1.866
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 18743296,
+      "status": "AC",
+      "time": 1.946
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 21184512,
+      "status": "AC",
+      "time": 3.851
+    }
+  ],
+  "overview": {
+    "id": 404423,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 21184512,
+    "problem_name": "static_range_count_distinct",
+    "problem_title": "Static Range Count Distinct",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:32:18.034794Z",
+    "time": 3.851
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL rollback_mo.cpp SHA256 f5c4ab0529de51d49aaaa652fa9d69b378a06b588c62fcc9c3357f6e263b36e2\nstruct MoRollBack{\n    int w,l=0,r=0; // 現在の区間 [l,r)\n    vector<pair<int,int>>q;\n    vector<int>ord;\n    MoRollBack(int N,int Q):w(max(1,(int)sqrt(max(1,N)))),ord(Q){\n        iota(ord.begin(),ord.end(),0);\n    }\n    void add(int L,int R){ // クエリ[L,R)を追加\n        q.push_back({L,R});\n    }\n    template<class A,class REM,class RS,class S,class B>\n    void run(const A&add,const REM&rem,const RS&reset,\n             const S&snapshot,const B&rollback){ // 全クエリを処理\n        assert(q.size()==ord.size());\n        sort(ord.begin(),ord.end(),[&](int i,int j){\n            int a=q[i].first/w,b=q[j].first/w;\n            return a!=b?a<b:q[i].second<q[j].second;\n        });\n        l=r=0; reset();\n        for(int i:ord)if(q[i].second-q[i].first<w){\n            auto [L,R]=q[i];\n            l=r=L;\n            while(r<R){\n                int j=r++;\n                add(j); // add後の区間 [l,r) を参照できる\n            }\n            rem(i);     // [l,r) はクエリ区間そのもの\n            l=r=0;\n            rollback(); // rollback後は空区間 [0,0)\n        }\n        int last=-1;\n        for(int i:ord)if(q[i].second-q[i].first>=w){\n            auto [L,R]=q[i];\n            int b=L/w,base=(b+1)*w;\n            if(b!=last){\n                last=b;\n                l=r=base;\n                reset(); // 空区間 [base,base)\n            }\n            while(r<R){\n                int j=r++;\n                add(j); // 右に追加後\n            }\n            snapshot();\n            while(l>L)\n                add(--l); // 左に追加後\n            rem(i); // [l,r)=[L,R)\n            l=base;\n            rollback(); // [base,r) まで戻す\n        }\n    }\n};\n/* 区間内の異なる値の個数\nint N,Q;\ncin>>N>>Q;\nvector<int>A(N);\nfor(int &x:A)cin>>x;\nMoRollBack mo(N,Q);\nfor(int i=0;i<Q;i++){\n    int l,r;\n    cin>>l>>r;\n    mo.add(l,r);\n}\nvector<int>cnt(1000001),ans(Q);\nvector<int>hist;\nint distinct=0,snap=0;\nauto undo=[&](){\n    int i=hist.back();\n    hist.pop_back();\n\n    if(--cnt[A[i]]==0)\n        distinct--;\n};\nauto add=[&](int i){ // iを追加\n    hist.push_back(i);\n\n    if(cnt[A[i]]++==0)\n        distinct++;\n\n    cout<<\"add \"<<i<<\" -> [\"\n        <<mo.l<<\",\"<<mo.r<<\")\\n\";\n};\nauto rem=[&](int q){ // q番目の答えを記録\n    ans[q]=distinct;\n\n    cout<<\"query \"<<q<<\" = [\"\n        <<mo.l<<\",\"<<mo.r<<\")\\n\";\n};\nauto reset=[&](){ // 状態を空にする\n    while(!hist.empty())undo();\n    snap=0;\n};\nauto snapshot=[&](){ // 現在位置を保存\n    snap=hist.size();\n};\nauto rollback=[&](){ // snapshotまで巻き戻す\n    while((int)hist.size()>snap)\n        undo();\n};\nmo.run(add,rem,reset,snapshot,rollback);\nfor(int x:ans)\n    cout<<x<<\"\\n\";\n*/\n// END ORIGINAL rollback_mo.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<int>a(n);for(auto&x:a)cin>>x;auto vals=a;sort(vals.begin(),vals.end());vals.erase(unique(vals.begin(),vals.end()),vals.end());\nfor(auto&x:a)x=lower_bound(vals.begin(),vals.end(),x)-vals.begin();MoRollBack mo(n,q);for(int i=0,l,r;i<q;i++){cin>>l>>r;mo.add(l,r);}\nvector<int>cnt(vals.size()),ans(q),hist;int distinct=0,snap=0;\nauto undo=[&](){int i=hist.back();hist.pop_back();if(--cnt[a[i]]==0)distinct--;};\nauto add=[&](int i){hist.push_back(i);if(cnt[a[i]]++==0)distinct++;};\nauto reset=[&](){while(!hist.empty())undo();snap=0;};\nauto snapshot=[&](){snap=hist.size();};auto rollback=[&](){while((int)hist.size()>snap)undo();};\nmo.run(add,[&](int i){ans[i]=distinct;},reset,snapshot,rollback);for(int x:ans)cout<<x<<'\\n';\n\n}\n"
+}

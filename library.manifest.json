@@ -1,6 +1,6 @@
 {
   "pdf": "library.pdf",
-  "pages": 19,
+  "pages": 20,
   "paper": "A4",
   "orientation": "portrait",
   "columns": 2,
@@ -42,15 +42,27 @@
       "bold": true
     }
   },
-  "printed_lines": 2433,
-  "visual_wraps": 41,
-  "total_source_lines": 1711,
+  "printed_lines": 2501,
+  "visual_wraps": 43,
+  "total_source_lines": 1755,
   "sources": [
+    {
+      "file": "binary_indexed_tree.cpp",
+      "lines": 36,
+      "printed_lines": 57,
+      "sha256": "cfa80d0f4b90eb57ce2c4b07534ad1233508e649657a02fa5b00225448d52354"
+    },
     {
       "file": "binarytrie.cpp",
       "lines": 41,
       "printed_lines": 58,
       "sha256": "f892b995b96238701dac104c32f904e20e5d828a02b6d2b9db3cf10c6aadd380"
+    },
+    {
+      "file": "bmbm.cpp",
+      "lines": 43,
+      "printed_lines": 75,
+      "sha256": "4170242b4c6a6adfe8738ea2ba31b896a5a00a6a146cec56dba204e16c6447ad"
     },
     {
       "file": "cartesiantree.cpp",
@@ -95,10 +107,16 @@
       "sha256": "35d59446461568951b4ce0ad275e03b08660a023647fc3f9286285f3ad5be528"
     },
     {
+      "file": "hld_short.cpp",
+      "lines": 20,
+      "printed_lines": 23,
+      "sha256": "202d35f1d43d34ceb4578492f0a1f1fc072c2f707c95e627767610d27edef85d"
+    },
+    {
       "file": "lazy_segtree.cpp",
-      "lines": 131,
-      "printed_lines": 224,
-      "sha256": "1f7cf6812eb5ad3841c1506a26ad82374b257974d221dbaa11509af3839e2a55"
+      "lines": 76,
+      "printed_lines": 137,
+      "sha256": "f05867c65f1b7a1dc5048a9ec0915c1ca693c6db979db25739f5ba8fe1ad5e75"
     },
     {
       "file": "lcp_array.cpp",

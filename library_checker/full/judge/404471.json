@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9818112,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9662464,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9687040,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 4759552,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 11223040,
+      "status": "AC",
+      "time": 0.601
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 12709888,
+      "status": "AC",
+      "time": 0.678
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 9568256,
+      "status": "AC",
+      "time": 0.18
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13754368,
+      "status": "AC",
+      "time": 0.826
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14798848,
+      "status": "AC",
+      "time": 0.805
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16904192,
+      "status": "AC",
+      "time": 0.972
+    }
+  ],
+  "overview": {
+    "id": 404471,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 16904192,
+    "problem_name": "static_range_count_distinct",
+    "problem_title": "Static Range Count Distinct",
+    "status": "AC",
+    "submission_time": "2026-09-21T07:07:32.065389Z",
+    "time": 0.972
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL mo.cpp SHA256 d151507fa0fa4187fd55e9c3f3572018ab55707bd59e59930556ca1c05538421\nstruct Mo{\n    int n,l=0,r=0; // 現在の区間[l,r)\n    vector<pair<int,int>>lr; //[l,r) addやeraseでは更新後のl,rを参照できる\n    Mo(int N):n(N){} //i番目の答えが入る\n    void add(int l,int r){ // [l,r) のクエリを追加\n        lr.emplace_back(l,r);\n    }\n    template<class AL,class AR,class EL,class ER,class O>\n    void build(const AL&al,const AR&ar,const EL&el,const ER&er,const O&out){\n        int Q=lr.size(); if(!Q)return;\n        int B=max(1,n/(int)sqrt(Q));\n        vector<int>o(Q); iota(o.begin(),o.end(),0);\n        sort(o.begin(),o.end(),[&](int a,int b){\n            int x=lr[a].first/B,y=lr[b].first/B;\n            return x!=y?x<y:\n                (x&1?lr[a].second>lr[b].second:lr[a].second<lr[b].second);\n        });\n        l=r=0;\n        for(int i:o){\n            auto [L,R]=lr[i];\n            while(l>L)al(--l);\n            while(r<R)ar(r++);\n            while(l<L)el(l++);\n            while(r>R)er(--r);\n            out(i);\n        }\n    }\n    template<class A,class E,class O>\n    void build(const A&add,const E&erase,const O&out){ //add(i):\n        build(add,add,erase,erase,out);\n    }\n};\n// auto add_left = [&](int i){}; 左側のi番目の要素を加える\n// auto erase = [&](int i){};\n// auto out = [&](int q){}; 現在のクエリ(q番目)の答えを求める\n\n// END ORIGINAL mo.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nmt19937 rng(9284);for(int rep=0;rep<30;rep++){int n=1+rng()%30;vector<int>a(n);for(auto&v:a)v=rng()%11;vector<pair<int,int>>qs;Mo mo(n);for(int i=0;i<100;i++){int l=rng()%(n+1),r=rng()%(n+1);if(l>r)swap(l,r);qs.push_back({l,r});mo.add(l,r);}\nvector<int>cnt(11);ll inversions=0;auto al=[&](int i){for(int x=0;x<a[i];x++)inversions+=cnt[x];cnt[a[i]]++;};auto ar=[&](int i){for(int x=a[i]+1;x<=10;x++)inversions+=cnt[x];cnt[a[i]]++;};\nauto el=[&](int i){cnt[a[i]]--;for(int x=0;x<a[i];x++)inversions-=cnt[x];};auto er=[&](int i){cnt[a[i]]--;for(int x=a[i]+1;x<=10;x++)inversions-=cnt[x];};\nmo.build(al,ar,el,er,[&](int i){auto[l,r]=qs[i];ll expected=0;for(int u=l;u<r;u++)for(int v=u+1;v<r;v++)expected+=a[u]>a[v];assert(inversions==expected);});}\nint n,q;cin>>n>>q;vector<int>a(n);for(auto&x:a)cin>>x;auto vs=a;sort(vs.begin(),vs.end());vs.erase(unique(vs.begin(),vs.end()),vs.end());for(auto&x:a)x=lower_bound(vs.begin(),vs.end(),x)-vs.begin();\nMo mo(n);for(int i=0,l,r;i<q;i++){cin>>l>>r;mo.add(l,r);}vector<int>cnt(vs.size()),ans(q);int d=0;mo.build([&](int i){d+=cnt[a[i]]++==0;},[&](int i){d-=--cnt[a[i]]==0;},[&](int i){ans[i]=d;});for(int x:ans)cout<<x<<'\\n';\n\n}\n"
+}

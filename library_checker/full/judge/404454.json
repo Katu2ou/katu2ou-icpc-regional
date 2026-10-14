@@ -1,0 +1,164 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2371584,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2109440,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2265088,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2138112,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2162688,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 37888000,
+      "status": "AC",
+      "time": 0.334
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 44204032,
+      "status": "AC",
+      "time": 0.379
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 7475200,
+      "status": "AC",
+      "time": 0.149
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 41209856,
+      "status": "AC",
+      "time": 0.36
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27672576,
+      "status": "AC",
+      "time": 0.268
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 47714304,
+      "status": "AC",
+      "time": 0.411
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 47562752,
+      "status": "AC",
+      "time": 0.417
+    },
+    {
+      "case": "uni_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 49233920,
+      "status": "AC",
+      "time": 0.24
+    },
+    {
+      "case": "almost_uni_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 49188864,
+      "status": "AC",
+      "time": 0.262
+    },
+    {
+      "case": "almost_uni_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 49139712,
+      "status": "AC",
+      "time": 0.26
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 59887616,
+      "status": "AC",
+      "time": 0.393
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 55861248,
+      "status": "AC",
+      "time": 0.392
+    },
+    {
+      "case": "almost_line_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 55468032,
+      "status": "AC",
+      "time": 0.379
+    },
+    {
+      "case": "almost_line_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 54943744,
+      "status": "AC",
+      "time": 0.382
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 74608640,
+      "status": "AC",
+      "time": 0.319
+    }
+  ],
+  "overview": {
+    "id": 404454,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 74608640,
+    "problem_name": "jump_on_tree",
+    "problem_title": "Jump on Tree",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:54:53.122497Z",
+    "time": 0.417
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;using ll=long long;\n\n\n// BEGIN ORIGINAL hld.cpp SHA256 35d59446461568951b4ce0ad275e03b08660a023647fc3f9286285f3ad5be528\ntemplate <typename Graph>\nstruct HeavyLightDecomposition{\n    //Edge query:: seg.set(hld.get_edge(u[i],v[i]),w[i]);\n    //auto f=[&](ll u,ll v){ans+=seg.prod(u,v);return;};\n    //hld.path_query<function<void(ll,ll)>>(uc,vc,false,f);\nprivate:\n\tvoid dfs_sz(int now,int p){\n\t\t// 1st dfs\n\t\tpar[now]=p;\n\t\tdepth[now]=(p==-1?0:depth[p]+1);\n\t\tsize[now]=1;\n\n\t\tif(G[now].size()&&G[now][0]==p)swap(G[now][0],G[now].back());\n\t\tfor(auto &e:G[now]){\n\t\t\tif(e==p)continue;\n\t\t\tdfs_sz(e,now);\n\t\t\tsize[now]+=size[e];\n\t\t\tif(size[e]>size[G[now][0]]){\n\t\t\t\tswap(G[now][0],e);\n\t\t\t}\n\t\t}\n\t}\n\tvoid dfs_hld(int now,int p){\n\t\tid[now]=id_k;\n\t\tvertex[id_k++]=now;\n\t\tfor(auto &e:G[now]){\n\t\t\tif(e==p)continue;\n\t\t\tbool heavy=(e==G[now][0]);\n\t\t\thead[e]=(heavy?head[now]:e);\n\t\t\tdfs_hld(e,now);\n\t\t}\n\t}\n\tvector<pair<int,int>>ascend(int u,int v)const{\n\t\tvector<pair<int,int>>res;\n\t\twhile(head[u]!=head[v]){\n\t\t\tres.push_back({id[u],id[head[u]]});\n\t\t\tu=par[head[u]];\n\t\t}\n\t\tif(u!=v)res.push_back({id[u],id[v]+1});\n\t\treturn res;\n\t}\n\tvector<pair<int,int>>descend(int u,int v)const{\n\t\tif(u==v)return {};\n\t\tif(head[u]==head[v])return {{id[u]+1,id[v]}};\n\t\tauto res=descend(u,par[head[v]]);\n\t\tres.push_back({id[head[v]],id[v]});\n\t\treturn res;\n\t}\n\npublic:\n\tGraph& G;\n\tint root,id_k;\n\tvector<int>size,par,depth,head,id,vertex;\n\t//head[v]:=vを通るheavy pathのうち最も根側にある頂点\n\t//id[v]:=vを行きがけ順で何番目に通るか\n\t//vertex[i]:=行きがけ順でi番目に通る頂点番号\n\tHeavyLightDecomposition(Graph& _g,int _root=0):\n\t\tG(_g),\n\t\troot(_root),\n\t\tid_k(0),\n\t\tsize(G.size(),0),\n\t\tpar(G.size(),root),\n\t\tdepth(G.size(),0),\n\t\thead(G.size(),0),\n\t\tid(G.size(),0),\n\t\tvertex(G.size(),0){\n\t\t\tdfs_sz(root,-1);\n\t\t\tdfs_hld(root,-1);\n\t\t}\n\t\n\t\ttemplate<typename F>\n\t\tvoid path_query(int u,int v,bool vertex,const F& f){\n\t\t\tint l=lca(u,v);\n\t\t\tfor(auto [l,r]:ascend(u,l)){\n\t\t\t\tint s=l+1,t=r;\n\t\t\t\ts>t?f(t,s):f(s,t);\n\t\t\t}\n\t\t\tif(vertex)f(id[l],id[l]+1);\n\t\t\tfor(auto [l,r]:descend(l,v)){\n\t\t\t\tint s=l,t=r+1;\n\t\t\t\ts>t?f(t,s):f(s,t);\n\t\t\t}\n\t\t}\n\n\t\ttemplate<typename F>\n\t\tvoid path_noncommutative_query(int u,int v,bool vertex,const F& f){\n\t\t\tint l=lca(u,v);\n\t\t\tfor(auto [l,r]:ascend(u,l))f(l+1,r);\n\t\t\tif(vertex)f(id[l],id[l]+1);\n\t\t\tfor(auto [l,r]:descend(l,v))f(l,r+1);\n\t\t}\n\n\t\tint level_ancestor(int v,int d){\n\t\t\t//vの祖先で深さdにあるものは?\n\t\t\tassert(depth[v]>=d);\n\t\t\twhile(depth[head[v]]>d){\n\t\t\t\tv=par[head[v]];\n\t\t\t}\n\t\t\treturn vertex[id[v]-(depth[v]-d)];\n\t\t}\n\n\t\tint lca(int u,int v){\n\t\t\twhile(head[u]!=head[v]){\n\t\t\t\tif(id[u]>id[v])swap(u,v);\n\t\t\t\tv=par[head[v]];\n\t\t\t}\n\t\t\treturn (id[u]<id[v]?u:v);\n\t\t}\n\n\t\tint dist(int u,int v){\n\t\t\treturn depth[u]+depth[v]-2*depth[lca(u,v)];\n\t\t}\n\t\tint get_edge(int u,int v){\n\t\t\tif(abs(depth[u]-depth[v])!=1)return -1;\n\t\t\tif(depth[u]>depth[v])return id[u];\n\t\t\treturn id[v];\n\t\t}\n};\n\n// END ORIGINAL hld.cpp\n\n\nint main(){ios::sync_with_stdio(false);cin.tie(nullptr);\n\nint n,q;cin>>n>>q;vector<vector<int>>g(n);vector<pair<int,int>>edges;\nfor(int i=1,u,v;i<n;i++){cin>>u>>v;g[u].push_back(v);g[v].push_back(u);edges.push_back({u,v});}\nHeavyLightDecomposition<vector<vector<int>>>h(g);\nfor(auto[u,v]:edges){int child=h.par[u]==v?u:v;assert(h.get_edge(u,v)==h.id[child]);assert(h.get_edge(v,u)==h.id[child]);}\nwhile(q--){int s,t,k;cin>>s>>t>>k;int l=h.lca(s,t),d=h.dist(s,t);if(k>d){cout<<-1<<'\\n';continue;}\nint z=k<=h.depth[s]-h.depth[l]?h.level_ancestor(s,h.depth[s]-k):h.level_ancestor(t,h.depth[t]-(d-k));cout<<z<<'\\n';}\n\n}\n"
+}

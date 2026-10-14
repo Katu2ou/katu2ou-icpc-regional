@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ2MjcgdG9rZW5zCg==",
+      "memory": 1359872,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQ0MDQgdG9rZW5zCg==",
+      "memory": 1626112,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTk3NzMgdG9rZW5zCg==",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4MTYgdG9rZW5zCg==",
+      "memory": 1585152,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk3MjMgdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNzAxMDcgdG9rZW5zCg==",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNTQwODEgdG9rZW5zCg==",
+      "memory": 1626112,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgNTY3NyB0b2tlbnMK",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgMjQ1MzYgdG9rZW5zCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgOTc5NTMgdG9rZW5zCg==",
+      "memory": 1359872,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzUwIHRva2Vucwo=",
+      "memory": 1593344,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk5NDggdG9rZW5zCg==",
+      "memory": 1593344,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk2MzIgdG9rZW5zCg==",
+      "memory": 1138688,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgNjY2NjcgdG9rZW5zCg==",
+      "memory": 1585152,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "path_01",
+      "checker_out": "b2sgNjY2NjcgdG9rZW5zCg==",
+      "memory": 1613824,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "path_02",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 1593344,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "path_03",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 1626112,
+      "status": "AC",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 404401,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 1626112,
+    "problem_name": "unionfind",
+    "problem_title": "Unionfind",
+    "status": "AC",
+    "submission_time": "2026-09-21T06:23:36.278434Z",
+    "time": 0.034
+  },
+  "source": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\n\n// BEGIN ORIGINAL dsu.cpp SHA256 9bd6258609e9d5fafcf11a5a0a03d7be840bef81bb469ef587240bcec72ca6c9\nstruct dsu{\n    vector<int>p;\n    dsu(int n):p(n,-1){}\n    int leader(int x){return p[x]<0?x:p[x]=leader(p[x]);}\n    int merge(int a,int b){\n        a=leader(a);b=leader(b);\n        if(a==b)return a;\n        if(p[a]>p[b])swap(a,b);\n        p[a]+=p[b];p[b]=a;return a;\n    }\n    bool same(int a,int b){return leader(a)==leader(b);}\n    int size(int a){return -p[leader(a)];}\n};\n// END ORIGINAL dsu.cpp\n\n\nint main() {\n  ios::sync_with_stdio(false); cin.tie(nullptr);\n\nint n,q;cin>>n>>q;dsu d(n);while(q--){int t,u,v;cin>>t>>u>>v;if(t==0)d.merge(u,v);else cout<<d.same(u,v)<<'\\n';}\n\n}\n"
+}
